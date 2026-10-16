@@ -622,7 +622,7 @@ Estado de la fase: **completada**. Cinco sesiones que ya nombraban una sala en e
 
 ## Fase 27 — 16 de octubre de 2026
 
-Estado de la fase: **completada**. `#salas` pasa de 5 a 14 fichas. Las nueve nuevas se apoyan en páginas abiertas. Area, Area Concor, Area de Beethoven, Barçalles, La Festa y Penélope no tienen ficha. El directorio busca por nombre y alias, filtra por localidad y ordena alfabéticamente. No hay imágenes nuevas ni cambios en los 55 perfiles, las 618 tarjetas ni las 150 sesiones. La compilación para Pages queda en `assets/index-fttSzolT.js` y `assets/index-BC1EX7JV.css`.
+Estado de la fase: **completada**. `#salas` pasa de 5 a 14 fichas. Las nueve nuevas se apoyan en páginas abiertas. Area, Area Concor, Area de Beethoven, Barçalles, La Festa y Penélope no tienen ficha. El directorio busca por nombre y alias, filtra por localidad y ordena alfabéticamente. No hay imágenes nuevas ni cambios en los 55 perfiles, las 618 tarjetas ni las 150 sesiones. Pages sirve `assets/index-fttSzolT.js` y `assets/index-BC1EX7JV.css`.
 
 `npm test`: 45 pruebas, 0 fallos. La compilación local queda en `assets/index-B7R9dYT-.js` y `assets/index-D2rVgAoB.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-fttSzolT.js` y `assets/index-BC1EX7JV.css`. El detalle está en `informes/FASE-27-archivo-historico-discotecas.md`.
 

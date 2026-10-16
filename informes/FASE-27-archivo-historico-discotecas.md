@@ -73,3 +73,7 @@ Compilación con `VITE_BASE=/makina-sound/`: `assets/index-fttSzolT.js` (835,35 
 En el navegador, a ancho de escritorio, el directorio muestra 14 salas en orden alfabético. Buscar «ocho» deja una ficha y el recuento pasa a 1 de 14. Mataró deja Chasis y Kontrol. Una búsqueda sin resultado muestra el estado vacío. Quitar filtros restaura las 14. La ficha de Disco Ocho enlaza a DJ Pepebilly, y la ficha del DJ vuelve a Disco Ocho y al Psicódromo. Chasis conserva a Ricardo F y las cinco sesiones. Chocolate no enlaza ninguna sesión. `#salas/no-existe` muestra «Sala no encontrada».
 
 A 390 px, `innerWidth`, `scrollWidth` y `clientWidth` valen 390. La búsqueda y el filtro quedan en columna y la primera tarjeta se lee entera. No se afirma que la consola estuviera limpia.
+
+## Publicación
+
+El workflow [38880856594](https://github.com/ym4jk6ky7h-crypto/makina-sound/actions/runs/38880856594) terminó en success. GitHub Pages responde 200 y sirve `assets/index-fttSzolT.js` y `assets/index-BC1EX7JV.css`. El JavaScript público contiene «Disco Ocho», «Montigalà» y la nota que deja Area de Beethoven sin fusionar.
