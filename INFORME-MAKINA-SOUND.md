@@ -604,8 +604,8 @@ Estado de la fase: **completada**. `#djs` muestra 55 artistas y las cifras 46 / 
 
 ## Fase 24 — 16 de octubre de 2026
 
-Estado de la fase: **implementada**. Se han vuelto a abrir las páginas de los 13 retratos pendientes. Ninguna licencia permite republicar la imagen, y un archivo de Commons titulado «DJ SONIC» no identifica al DJ de Pont Aeri. Siguen 0 retratos verificados. El monograma lleva la palabra «Archivo» y las iniciales. Scorpia entra con la crónica de La Veu de l'Anoia, sin fecha de cierre. Psicódromo entra con el reportaje de Vice y la residencia que ya cita el CCCB. El Periódico devolvió 406 y no se usa. El catálogo musical no cambia: 55 perfiles, 618 tarjetas y 150 sesiones.
+Estado de la fase: **completada**. Se han vuelto a abrir las páginas de los 13 retratos pendientes. Ninguna licencia permite republicar la imagen, y un archivo de Commons titulado «DJ SONIC» no identifica al DJ de Pont Aeri. Siguen 0 retratos verificados. El monograma lleva la palabra «Archivo» y las iniciales. Scorpia entra con la crónica de La Veu de l'Anoia, sin fecha de cierre. Psicódromo entra con el reportaje de Vice y la residencia que ya cita el CCCB. El Periódico devolvió 406 y no se usa. El catálogo musical no cambia: 55 perfiles, 618 tarjetas y 150 sesiones.
 
-`npm test`: 42 pruebas, 0 fallos. Compilación local: `dist/assets/index-BXcVzFdt.js` y `dist/assets/index-idiTVNtF.css`. Con `VITE_BASE=/makina-sound/`: `dist/assets/index-BAFDdWrk.js` y `dist/assets/index-vCsw9VGd.css`. La publicación queda pendiente de confirmar el flujo. El detalle está en `informes/FASE-24-retratos-y-archivo-historico.md`.
+`npm test`: 42 pruebas, 0 fallos. La compilación de Pages queda en `assets/index-BAFDdWrk.js` y `assets/index-vCsw9VGd.css`. El detalle está en `informes/FASE-24-retratos-y-archivo-historico.md`.
 
 

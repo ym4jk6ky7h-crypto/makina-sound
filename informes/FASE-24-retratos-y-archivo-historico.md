@@ -87,7 +87,7 @@ Se intentó instalar un listener de errores antes de cargar `#djs`. Después de 
 
 ## Publicación
 
-Pendiente de confirmar el flujo de GitHub Actions. Hasta entonces, https://ym4jk6ky7h-crypto.github.io/makina-sound/ sigue sirviendo la fase 23.
+Publicada. El flujo «Publicar MAKINA SOUND» del commit `8764662` terminó en éxito (run `38867160775`). https://ym4jk6ky7h-crypto.github.io/makina-sound/ respondió 200 y sirvió `assets/index-BAFDdWrk.js` y `assets/index-vCsw9VGd.css`. Ese JavaScript contiene Scorpia, Psicódromo y «Monograma de».
 
 ## Limitaciones
 
