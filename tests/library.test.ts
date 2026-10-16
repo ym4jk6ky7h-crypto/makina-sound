@@ -185,3 +185,51 @@ describe("fase 22 salas y flyers", () => {
     if (paper.kind === "profile") assert.equal(paper.venue?.id, "pont-aeri");
   });
 });
+
+describe("fase 26 relaciones de sesión", () => {
+  const venues = openVenues(JSON.parse(readFileSync(new URL("../src/data/venues.json", import.meta.url), "utf8")));
+  const djs = openDjs(JSON.parse(readFileSync(new URL("../src/data/djs.json", import.meta.url), "utf8")));
+  const sessions = openCatalog(
+    JSON.parse(readFileSync(new URL("../src/data/sources.json", import.meta.url), "utf8")),
+    JSON.parse(readFileSync(new URL("../src/data/sessions.json", import.meta.url), "utf8")),
+  ).sessions;
+
+  it("enlaza la sala solo cuando el título de YouTube la nombra y deja fuera el resto", () => {
+    assert.equal(sessions.length, 150);
+    assert.equal(djs.length, 55);
+    const pont = venues.find((venue) => venue.id === "pont-aeri");
+    const chasis = venues.find((venue) => venue.id === "chasis");
+    const xque = venues.find((venue) => venue.id === "xque");
+    const tracker = sessions.find((session) => session.title.includes("Intro Sesión Xque"));
+    assert.ok(pont && chasis && xque && tracker);
+    assert.deepEqual(pont.sessionIds, ["gWNOt-He3g8", "dGN_8ey-jwM"]);
+    assert.equal(pont.djIds.includes("dj-nau"), false);
+    assert.deepEqual(chasis.sessionIds, ["BwIWr8hEAY4", "kXoeGh41i4M", "MJHKZX-zSvg", "g1unn_TmztE", "r38U4a2ZHS8"]);
+    assert.deepEqual(chasis.djIds, ["ricardo-f"]);
+    assert.deepEqual(xque.sessionIds, ["ZiVYJdWRF_s", tracker.id]);
+    assert.equal(xque.djIds.includes("javi-tracker"), false);
+    assert.equal(venues.find((venue) => venue.id === "scorpia")?.sessionIds.length, 0);
+    assert.equal(venues.find((venue) => venue.id === "psicodromo")?.sessionIds.length, 0);
+    assert.equal(pont.links.some((link) => link.url === "https://www.youtube.com/watch?v=dGN_8ey-jwM"), true);
+    assert.match(pont.links.find((link) => link.url.endsWith("dGN_8ey-jwM"))?.note ?? "", /publicación/);
+
+    assert.equal(sessions.find((session) => session.id === "sTYNvGG68mQ")?.djIds, undefined);
+    assert.equal(sessions.find((session) => session.id === "UUBhGxPmaZg")?.djIds, undefined);
+    assert.equal(sessions.find((session) => session.id === "YqBps9i2xa8")?.djIds, undefined);
+    assert.equal(sessions.find((session) => session.id === "gWNOt-He3g8")?.djIds, undefined);
+    assert.deepEqual(sessions.find((session) => session.id === "BhhRd4TgRE0")?.djIds, ["dj-sepi"]);
+    assert.deepEqual(sessions.find((session) => session.id === "g1unn_TmztE")?.djIds, ["julio-posadas"]);
+    assert.deepEqual(sessions.find((session) => session.id === "r38U4a2ZHS8")?.djIds, ["xavi-bcn"]);
+    assert.equal(sessions.find((session) => session.id === "Ra-85WUVk2k")?.djIds, undefined);
+
+    const names = djs.map((dj) => ({ id: dj.id, name: dj.name }));
+    const titles = sessions.map((session) => ({ id: session.id, title: session.title }));
+    const screen = describeVenue("chasis", venues, names, titles, []);
+    assert.equal(screen.kind, "profile");
+    if (screen.kind === "profile") {
+      assert.deepEqual(screen.sessions.map((session) => session.id), chasis.sessionIds);
+      assert.deepEqual(screen.djs.map((dj) => dj.id), ["ricardo-f"]);
+    }
+    assert.equal(describeVenue("sala-inexistente", venues, names, titles, []).kind, "missing");
+  });
+});

@@ -9,15 +9,47 @@
     "paragraphs": [
       "La web oficial ordena las etapas así: Terrassa en 1991, Manresa en 2000, Traiguera en 2000 y Vallgorguina en 2002. No es una sola dirección. Es una sucesión de locales con el mismo nombre, y la página consultada en 2026 sigue anunciando reencuentros.",
       "Esa web presenta a Skudero, Xavi Metralla, Sonic y Sisu como el núcleo de una etapa de Vallgorguina, y dice que la cabina empieza antes y reúne a más generaciones. El CCCB incluye a Nando Dixkontrol entre los residentes de Pont Aeri, sin fechar esa etapa en la ficha leída. Las biografías ya publicadas de DJ Pastis y DJ Buenri los sitúan en la sala antes de su paso a Xque.",
-      "El 5 de agosto de 2012, La Vanguardia recogió el anuncio de Ramón Escudero: el local de Vallgorguina cerraría a partir de noviembre, después de 21 años, por la subida del IVA del ocio nocturno. El 9 Nou, el 28 de diciembre de 2012, contó el cierre de esa sala. Una sesión del catálogo titulada «Closing Party @ Pont Aeri (Junio 2024)» nombra el nombre en 2024: no es el cierre de 2012, y la fecha guardada es la de publicación del vídeo."
+      "El 5 de agosto de 2012, La Vanguardia recogió el anuncio de Ramón Escudero: el local de Vallgorguina cerraría a partir de noviembre, después de 21 años, por la subida del IVA del ocio nocturno. El 9 Nou, el 28 de diciembre de 2012, contó el cierre de esa sala. Una sesión del catálogo titulada «Closing Party @ Pont Aeri (Junio 2024)» nombra el nombre en 2024: no es el cierre de 2012, y la fecha guardada es la de publicación del vídeo. Otra sesión, «DJ NAU @ Pont aeri (34 Aniversario cierre Sala Terrassa) Abril 2026», también nombra la sala en el título. Abril de 2026 no se guarda como fecha de la noche ni como fecha de un cierre del local de Terrassa."
     ],
-    "djIds": ["dj-skudero", "xavi-metralla", "dj-sonic", "dj-sisu", "nando-dixkontrol", "dj-pastis", "dj-buenri"],
-    "sessionIds": ["gWNOt-He3g8"],
+    "djIds": [
+      "dj-skudero",
+      "xavi-metralla",
+      "dj-sonic",
+      "dj-sisu",
+      "nando-dixkontrol",
+      "dj-pastis",
+      "dj-buenri"
+    ],
+    "sessionIds": [
+      "gWNOt-He3g8",
+      "dGN_8ey-jwM"
+    ],
     "links": [
-      { "label": "Web oficial", "url": "https://www.pontaeri.es/", "note": "Respalda el origen en 1991 y las etapas de Terrassa, Manresa, Traiguera y Vallgorguina, y el núcleo de cabina de esa última etapa." },
-      { "label": "La Vanguardia, 5 de agosto de 2012", "url": "https://www.lavanguardia.com/vida/20120805/54334033363/vallgorguina-iva-hunde-discoteca-pont-aeri-cierra.html", "note": "Recoge el anuncio de cierre del local de Vallgorguina. La fecha del enlace es la del artículo, no la de la última noche." },
-      { "label": "El 9 Nou, 28 de diciembre de 2012", "url": "https://el9nou.cat/valles-oriental/actualitat/el-darrer-vol-del-pont-aeri/", "note": "Cuenta el cierre de esa sala. No convierte «este sábado» en una fecha calculada aquí." },
-      { "label": "CCCB, Nando Dixkontrol", "url": "https://www.cccb.org/ca/w/collectius/nando-dixkontrol", "note": "Lo incluye entre los residentes de Pont Aeri. No fecha esa etapa." }
+      {
+        "label": "Web oficial",
+        "url": "https://www.pontaeri.es/",
+        "note": "Respalda el origen en 1991 y las etapas de Terrassa, Manresa, Traiguera y Vallgorguina, y el núcleo de cabina de esa última etapa."
+      },
+      {
+        "label": "La Vanguardia, 5 de agosto de 2012",
+        "url": "https://www.lavanguardia.com/vida/20120805/54334033363/vallgorguina-iva-hunde-discoteca-pont-aeri-cierra.html",
+        "note": "Recoge el anuncio de cierre del local de Vallgorguina. La fecha del enlace es la del artículo, no la de la última noche."
+      },
+      {
+        "label": "El 9 Nou, 28 de diciembre de 2012",
+        "url": "https://el9nou.cat/valles-oriental/actualitat/el-darrer-vol-del-pont-aeri/",
+        "note": "Cuenta el cierre de esa sala. No convierte «este sábado» en una fecha calculada aquí."
+      },
+      {
+        "label": "CCCB, Nando Dixkontrol",
+        "url": "https://www.cccb.org/ca/w/collectius/nando-dixkontrol",
+        "note": "Lo incluye entre los residentes de Pont Aeri. No fecha esa etapa."
+      },
+      {
+        "label": "YouTube, DJ NAU @ Pont aeri (34 Aniversario cierre Sala Terrassa) Abril 2026",
+        "url": "https://www.youtube.com/watch?v=dGN_8ey-jwM",
+        "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      }
     ],
     "checkedAt": "2026-10-16",
     "status": "published"
@@ -32,12 +64,32 @@
     "paragraphs": [
       "El artículo de la Wikipedia en español describe Xque —también escrito X-Que? o X-Què?— como una discoteca de Palafrugell entre 1992 y 2007, y después de Olot entre 2010 y 2011. Atribuye la inauguración de 1992 a Gin Lemon SL y el giro hacia el hard trance y la mákina a la residencia de Oskar Mad.",
       "El mismo texto fecha el paso de David Álvarez, luego DJ Pastis, en 1995, primero con Oskar Mad y después con DJ Sek, y la llegada de David Pàmies, luego DJ Buenri, en 1996, procedente del Pont Aeri de Terrassa. El cierre de Palafrugell lo sitúa el 21 de julio de 2007, el día del decimoquinto aniversario. La cifra de asistencia que acompaña esa frase lleva en el artículo la marca de cita requerida y no se publica aquí.",
-      "Para Olot, la Wikipedia da el 25 de septiembre de 2010 como apertura y marzo de 2011 como cierre, y remite al Diari de Girona. Nombra como residentes a DJ Sepi, DJ Bull y Fran Bit, y la incorporación de DJ Pastis a partir del 25 de diciembre. Esa reapertura no es la sala de Palafrugell. El vídeo del catálogo «Final concurso de dj's del Xque 2004» nombra la sala en el título; la ficha de sesión solo atribuye a quien ya tiene identificador."
+      "Para Olot, la Wikipedia da el 25 de septiembre de 2010 como apertura y marzo de 2011 como cierre, y remite al Diari de Girona. Nombra como residentes a DJ Sepi, DJ Bull y Fran Bit, y la incorporación de DJ Pastis a partir del 25 de diciembre. Esa reapertura no es la sala de Palafrugell. El vídeo del catálogo «Final concurso de dj's del Xque 2004» nombra la sala en el título; la ficha de sesión solo atribuye a quien ya tiene identificador. El vídeo «30 JAVI TRACKER I Intro Sesión Xque 2005/07» también nombra Xque en el título. Los años escritos en el título no se publican como fecha de la actuación, y Javi Tracker no entra como residente."
     ],
-    "djIds": ["oskar-mad", "dj-pastis", "dj-sek", "dj-buenri", "dj-sepi", "dj-bull", "fran-bit"],
-    "sessionIds": ["ZiVYJdWRF_s"],
+    "djIds": [
+      "oskar-mad",
+      "dj-pastis",
+      "dj-sek",
+      "dj-buenri",
+      "dj-sepi",
+      "dj-bull",
+      "fran-bit"
+    ],
+    "sessionIds": [
+      "ZiVYJdWRF_s",
+      "Pj40ivKMZig"
+    ],
     "links": [
-      { "label": "Wikipedia en español", "url": "https://es.wikipedia.org/wiki/Xque", "note": "Respalda las fechas de Palafrugell y Olot y los nombres que esta ficha publica. La cifra de asistencia del cierre no entra: el artículo la marca como pendiente de fuente." }
+      {
+        "label": "Wikipedia en español",
+        "url": "https://es.wikipedia.org/wiki/Xque",
+        "note": "Respalda las fechas de Palafrugell y Olot y los nombres que esta ficha publica. La cifra de asistencia del cierre no entra: el artículo la marca como pendiente de fuente."
+      },
+      {
+        "label": "YouTube, 30 JAVI TRACKER I Intro Sesión Xque 2005/07",
+        "url": "https://www.youtube.com/watch?v=Pj40ivKMZig",
+        "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      }
     ],
     "checkedAt": "2026-10-16",
     "status": "published"
@@ -51,12 +103,39 @@
     "period": "Residencia de Ricardo F: nueve años desde 1993. Apertura y cierre del local, sin fecha publicada aquí.",
     "paragraphs": [
       "La ficha de Ricardo F, apoyada en su entrevista con Makineros, lo presenta como residente de Chasis, en Mataró, durante nueve años desde 1993. En esa conversación habla de una sala que creció y de recopilatorios de la marca. Las cifras de público son su relato, no un aforo comprobado aparte, y no se repiten aquí como dato del edificio.",
-      "En el catálogo hay dos vídeos cuyo título dice «Ricardo F @ Chasis 2000». La fecha que guarda MAKINA SOUND es la de publicación del vídeo, no la de la noche."
+      "En el catálogo, cinco vídeos nombran Chasis en el título publicado por YouTube: las dos partes de «Ricardo F @ Chasis 2000», «Ricardo F live @ CHASIS Fiebre de Abril (Homenaje Ronda Barceló)», «Julio Posadas live @ CHASIS Fiebre de Abril» y «Xavi BCN live @ CHASIS Fiesta Blanca». Esa mención relaciona el vídeo con la sala. No convierte el año 2000 ni «Fiebre de Abril» en la fecha de la noche: la fecha guardada es la de publicación del vídeo. Julio Posadas y Xavi BCN no entran como residentes."
     ],
-    "djIds": ["ricardo-f"],
-    "sessionIds": ["BwIWr8hEAY4", "kXoeGh41i4M"],
+    "djIds": [
+      "ricardo-f"
+    ],
+    "sessionIds": [
+      "BwIWr8hEAY4",
+      "kXoeGh41i4M",
+      "MJHKZX-zSvg",
+      "g1unn_TmztE",
+      "r38U4a2ZHS8"
+    ],
     "links": [
-      { "label": "Entrevista en Makineros", "url": "https://makineros.com/entrevistamos-a-ricardo-fdj-residente-de-la-sala-chasis-durante-9-anos/", "note": "Respalda la residencia de Ricardo F, nueve años desde 1993. No fecha la apertura ni el cierre del edificio." }
+      {
+        "label": "Entrevista en Makineros",
+        "url": "https://makineros.com/entrevistamos-a-ricardo-fdj-residente-de-la-sala-chasis-durante-9-anos/",
+        "note": "Respalda la residencia de Ricardo F, nueve años desde 1993. No fecha la apertura ni el cierre del edificio."
+      },
+      {
+        "label": "YouTube, Ricardo F live @ CHASIS Fiebre de Abril (Homenaje Ronda Barceló)",
+        "url": "https://www.youtube.com/watch?v=MJHKZX-zSvg",
+        "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      },
+      {
+        "label": "YouTube, Julio Posadas live @ CHASIS Fiebre de Abril",
+        "url": "https://www.youtube.com/watch?v=g1unn_TmztE",
+        "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      },
+      {
+        "label": "YouTube, Xavi BCN live @ CHASIS Fiesta Blanca",
+        "url": "https://www.youtube.com/watch?v=r38U4a2ZHS8",
+        "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      }
     ],
     "checkedAt": "2026-10-16",
     "status": "published"
@@ -73,7 +152,9 @@
       "El mismo texto fecha el relevo en la primavera de 1993: la dirección dejó la sala en manos de Francesc Martínez y Albert Grados, con los nombres Frank Trax y MC Kryger. El local pasó a llamarse Scorpia: Central del Sonido y orientó la música hacia el trance, el hardtrance y lo que entonces empezaba a llamarse música máquina. La crónica no da una fecha de cierre.",
       "Frank T.R.A.X. entra en esta ficha porque la crónica nombra a Frank Trax en ese relevo y el perfil del archivo ya lo identifica como residente de Scorpia. No hay una sesión del catálogo cuyo título nombre la sala. No se copia ninguna fotografía de las obras: la página no autoriza reproducirla."
     ],
-    "djIds": ["frank-trax"],
+    "djIds": [
+      "frank-trax"
+    ],
     "sessionIds": [],
     "links": [
       {
@@ -97,7 +178,10 @@
       "Ese texto nombra a Pepebilly como DJ en la obra del local. El CCCB, en la ficha de Nando Dixkontrol actualizada el 12 de abril de 2017, lo incluye entre los residentes de Psicódromo y no fecha esa residencia. Las fichas ya publicadas de DJ Pastis y DJ Buenri dicen que entonces eran clientes, no DJs: no entran aquí como residentes.",
       "Una crónica de El Periódico del 22 de septiembre de 2019 no se pudo abrir: la petición devolvió 406. No se usa. No se publica una fotografía."
     ],
-    "djIds": ["nando-dixkontrol", "dj-pepebilly"],
+    "djIds": [
+      "nando-dixkontrol",
+      "dj-pepebilly"
+    ],
     "sessionIds": [],
     "links": [
       {

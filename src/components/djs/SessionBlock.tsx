@@ -8,10 +8,12 @@ const PAGE = 8;
 
 export function SessionBlock({
   sessions,
+  sessionVenues,
   playingKey,
   onPlay,
 }: {
   sessions: SessionRecord[];
+  sessionVenues?: ReadonlyMap<string, { id: string; name: string }[]>;
   playingKey: string | null;
   onPlay: (key: string) => void;
 }) {
@@ -37,6 +39,9 @@ export function SessionBlock({
                   <p className="dj-kicker">{session.djIds && session.djIds.length > 1 ? "Sesión compartida" : "Sesión"}</p>
                   <h3>{session.title}</h3>
                   {session.publishedAt ? <p className="dj-meta">Publicada el {session.publishedAt}</p> : null}
+                  {(sessionVenues?.get(session.id) ?? []).map((room) => (
+                    <p className="dj-meta" key={room.id}><a href={`#salas/${room.id}`}>{room.name}</a></p>
+                  ))}
                   <p className="dj-release-links">
                     {playable ? (
                       <button type="button" onClick={() => onPlay(`session:${session.id}`)}>

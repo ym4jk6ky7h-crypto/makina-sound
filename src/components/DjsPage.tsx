@@ -211,6 +211,17 @@ function DjProfilePage({
   onPlay: (key: string) => void;
 }) {
   const rooms = venuesForDj(profile.id, readVenues());
+  const sessionVenues = useMemo(() => {
+    const map = new Map<string, { id: string; name: string }[]>();
+    for (const venue of readVenues()) {
+      for (const sessionId of venue.sessionIds) {
+        const current = map.get(sessionId) ?? [];
+        current.push({ id: venue.id, name: venue.name });
+        map.set(sessionId, current);
+      }
+    }
+    return map;
+  }, []);
   const playing = playingSource(profile, playingKey);
   const player = mediaPlayer(playing);
   const [lead, ...rest] = profile.biography;
@@ -276,7 +287,7 @@ function DjProfilePage({
           {profile.sessionsEmpty ? (
             <p className="dj-empty">{profile.sessionsEmpty}</p>
           ) : (
-            <SessionBlock sessions={profile.sessions} playingKey={playingKey} onPlay={onPlay} />
+            <SessionBlock sessions={profile.sessions} sessionVenues={sessionVenues} playingKey={playingKey} onPlay={onPlay} />
           )}
         </section>
         {rooms.length > 0 ? (
