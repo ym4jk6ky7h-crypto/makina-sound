@@ -254,3 +254,47 @@ describe("fase 09 directorio", () => {
     assert.deepEqual([...names].sort((a, b) => a.localeCompare(b, "es")), names);
   });
 });
+
+describe("fase 23 directorio", () => {
+  const rooms = [
+    { id: "chasis", name: "Chasis", djIds: ["ricardo-f"] },
+    { id: "pont-aeri", name: "Pont Aeri", djIds: ["dj-skudero"] },
+  ];
+
+  it("busca por sala, filtra por contenido y ordena por registros", () => {
+    const byRoom = describeDjScreen("", djs, catalog.sessions, { text: "chasis", sort: "name" }, rooms);
+    assert.equal(byRoom.kind, "directory");
+    if (byRoom.kind !== "directory") return;
+    assert.deepEqual(byRoom.cards.map((card) => card.id), ["ricardo-f"]);
+    assert.equal(byRoom.counts.artists, 55);
+    assert.ok(byRoom.counts.withReleases > 0);
+    assert.ok(byRoom.counts.withSessions > 0);
+    assert.equal(byRoom.counts.withRooms, 2);
+
+    const onlySessions = describeDjScreen("", djs, catalog.sessions, { text: "", sort: "name", content: "sesiones" }, rooms);
+    assert.equal(onlySessions.kind, "directory");
+    if (onlySessions.kind !== "directory") return;
+    assert.equal(onlySessions.cards.length, byRoom.counts.withSessions);
+    assert.equal(onlySessions.cards.every((card) => card.marks.some((mark) => mark.endsWith("sesión") || mark.endsWith("sesiones"))), true);
+
+    const byVenue = describeDjScreen("", djs, catalog.sessions, { text: "", sort: "name", room: "chasis" }, rooms);
+    assert.equal(byVenue.kind, "directory");
+    if (byVenue.kind !== "directory") return;
+    assert.deepEqual(byVenue.cards.map((card) => card.id), ["ricardo-f"]);
+
+    const heavy = describeDjScreen("", djs, catalog.sessions, { text: "", sort: "records" }, rooms);
+    assert.equal(heavy.kind, "directory");
+    if (heavy.kind !== "directory") return;
+    assert.equal(heavy.cards[0]?.id, "ruboy");
+    const ruboy = heavy.cards.find((card) => card.id === "ruboy");
+    assert.equal(ruboy?.marks.includes("142 lanzamientos"), true);
+    const blob = JSON.stringify(heavy);
+    assert.equal(blob.includes("youtube"), false);
+
+    const none = describeDjScreen("", djs, catalog.sessions, { text: "zzzz-no-existe", sort: "name" }, rooms);
+    assert.equal(none.kind, "directory");
+    if (none.kind !== "directory") return;
+    assert.equal(none.cards.length, 0);
+    assert.equal(none.counts.artists, 55);
+  });
+});

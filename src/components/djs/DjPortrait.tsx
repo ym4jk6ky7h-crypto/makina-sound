@@ -31,7 +31,7 @@ export function DjPortrait({
     return (
       <span className={large ? "dj-monogram is-large" : "dj-monogram"}>
         <span aria-hidden="true">{artistInitials(name)}</span>
-        <span className="dj-sr">{missing ? "Imagen no disponible" : `Sin retrato de ${name}`}</span>
+        <span className="dj-sr">{missing ? "Imagen no disponible" : `Monograma de ${name}`}</span>
       </span>
     );
   }

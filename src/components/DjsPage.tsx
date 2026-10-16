@@ -5,6 +5,7 @@ import { readVenues } from "../data/library.ts";
 import { venuesForDj } from "../lib/places.ts";
 import type { DjSort } from "../lib/djs.ts";
 import { describeDjScreen, mediaPlayer } from "../lib/djView.ts";
+import type { DjContentFilter } from "../lib/djView.ts";
 import type { DjProfileView, PlayableMedia } from "../lib/djView.ts";
 import { readFocus } from "../lib/section.ts";
 import { SessionPlayer } from "./SessionPlayer.tsx";
@@ -16,6 +17,14 @@ const sorts: { id: DjSort; label: string }[] = [
   { id: "name", label: "Nombre" },
   { id: "date-desc", label: "Desde el más reciente" },
   { id: "date-asc", label: "Desde 1995" },
+  { id: "records", label: "Con más registros" },
+];
+
+const contents: { id: DjContentFilter; label: string }[] = [
+  { id: "all", label: "Todo el archivo" },
+  { id: "discografia", label: "Con discografía" },
+  { id: "sesiones", label: "Con sesiones" },
+  { id: "sala", label: "Con sala" },
 ];
 
 function reviewLabel(value: string): string {
@@ -32,8 +41,14 @@ function reviewLabel(value: string): string {
 export function DjsPage() {
   const djs = useMemo(() => readDjs(), []);
   const catalog = useMemo(() => readCatalog(), []);
+  const rooms = useMemo(
+    () => readVenues().map((venue) => ({ id: venue.id, name: venue.name, djIds: venue.djIds })),
+    [],
+  );
   const [text, setText] = useState("");
   const [sort, setSort] = useState<DjSort>("name");
+  const [content, setContent] = useState<DjContentFilter>("all");
+  const [room, setRoom] = useState("");
   const [focus, setFocus] = useState(() => readFocus());
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
@@ -51,9 +66,16 @@ export function DjsPage() {
   }, [focus]);
 
   const screen = useMemo(
-    () => describeDjScreen(focus, djs, catalog.sessions, { text, sort }),
-    [catalog.sessions, djs, focus, sort, text],
+    () => describeDjScreen(focus, djs, catalog.sessions, { text, sort, content, room }, rooms),
+    [catalog.sessions, content, djs, focus, room, rooms, sort, text],
   );
+  const filtered = text.trim().length > 0 || content !== "all" || room !== "" || sort !== "name";
+  function clearFilters() {
+    setText("");
+    setSort("name");
+    setContent("all");
+    setRoom("");
+  }
 
   if (screen.kind === "missing") {
     return (
@@ -90,6 +112,13 @@ export function DjsPage() {
             <p className="dj-lead">
               Artistas de mákina y remember con trayectoria y una fuente que se puede abrir. Un nombre en un cartel no basta para entrar.
             </p>
+            {screen.kind === "directory" ? (
+              <dl className="dj-stats">
+                <div><dt>Con discografía</dt><dd>{screen.counts.withReleases}</dd></div>
+                <div><dt>Con sesiones</dt><dd>{screen.counts.withSessions}</dd></div>
+                <div><dt>Con sala</dt><dd>{screen.counts.withRooms}</dd></div>
+              </dl>
+            ) : null}
           </div>
           <p className="dj-count" aria-label={visibleLabel}>
             <span className="dj-count-num">{screen.cards.length}</span>
@@ -104,27 +133,47 @@ export function DjsPage() {
           <>
             <section className="dj-tools" aria-label="Buscar DJs">
               <form className="dj-search" role="search" onSubmit={(event) => event.preventDefault()}>
-                <label htmlFor="buscar-djs">Buscar por nombre</label>
+                <label htmlFor="buscar-djs">Buscar por nombre o sala</label>
                 <input
                   id="buscar-djs"
                   value={text}
                   onChange={(event) => setText(event.target.value)}
-                  placeholder="Nombre del DJ"
+                  placeholder="Nombre del DJ o sala"
                 />
               </form>
+              <label className="dj-sort">
+                Contenido
+                <select value={content} onChange={(event) => setContent(event.target.value as DjContentFilter)}>
+                  {contents.map((item) => (
+                    <option key={item.id} value={item.id}>{item.label}</option>
+                  ))}
+                </select>
+              </label>
+              <label className="dj-sort">
+                Sala
+                <select value={room} onChange={(event) => setRoom(event.target.value)}>
+                  <option value="">Todas</option>
+                  {rooms.map((item) => (
+                    <option key={item.id} value={item.id}>{item.name}</option>
+                  ))}
+                </select>
+              </label>
               <label className="dj-sort">
                 Orden
                 <select value={sort} onChange={(event) => setSort(event.target.value as DjSort)}>
                   {sorts.map((item) => (
-                    <option key={item.id} value={item.id}>
-                      {item.label}
-                    </option>
+                    <option key={item.id} value={item.id}>{item.label}</option>
                   ))}
                 </select>
               </label>
+              {filtered ? (
+                <button className="dj-clear" type="button" onClick={clearFilters}>Quitar filtros</button>
+              ) : null}
             </section>
             {screen.cards.length === 0 ? (
-              <p className="dj-empty" role="status">Ningún DJ coincide. Prueba con otro nombre.</p>
+              <p className="dj-empty" role="status">
+                Ningún DJ coincide. Prueba con otro nombre o quita los filtros.
+              </p>
             ) : (
               <ul className="dj-gallery">
                 {screen.cards.map((dj) => (
@@ -136,7 +185,9 @@ export function DjsPage() {
                         {dj.facts.map((fact) => (
                           <span key={fact} className="dj-card-meta">{fact}</span>
                         ))}
-                        {dj.hint ? <span className="dj-card-hint">{dj.hint}</span> : null}
+                        {dj.marks.map((mark) => (
+                          <span key={mark} className="dj-card-hint">{mark}</span>
+                        ))}
                       </span>
                     </a>
                   </li>
@@ -208,17 +259,17 @@ function DjProfilePage({
           {profile.artistGroups.map((group) => (
             <ReleaseGrid key={group.role} group={group} playingKey={playingKey} onPlay={onPlay} />
           ))}
-          <h3>Producciones</h3>
-          {profile.productionsEmpty ? (
-            <p className="dj-empty">{profile.productionsEmpty}</p>
-          ) : (
-            <ReleaseGrid
-              group={{ role: "produced", title: "Para otros artistas", tracks: profile.productions }}
-              playingKey={playingKey}
-              onPlay={onPlay}
-              hideTitle
-            />
-          )}
+          {profile.productions.length > 0 ? (
+            <>
+              <h3>Producciones</h3>
+              <ReleaseGrid
+                group={{ role: "produced", title: "Para otros artistas", tracks: profile.productions }}
+                playingKey={playingKey}
+                onPlay={onPlay}
+                hideTitle
+              />
+            </>
+          ) : null}
         </section>
         <section className="dj-block" aria-labelledby="sesiones-dj">
           <h2 id="sesiones-dj">Sesiones</h2>

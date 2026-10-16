@@ -38,7 +38,26 @@ export type DjDirectoryCard = {
   href: string;
   facts: string[];
   hint: string | null;
+  marks: string[];
   image: DjImage;
+};
+
+export type DjContentFilter = "all" | "discografia" | "sesiones" | "sala";
+
+export type DjDirectoryQuery = {
+  text: string;
+  sort: DjSort;
+  content?: DjContentFilter;
+  room?: string;
+};
+
+export type DjRoomRef = { id: string; name: string; djIds: readonly string[] };
+
+export type DjDirectoryCounts = {
+  artists: number;
+  withReleases: number;
+  withSessions: number;
+  withRooms: number;
 };
 
 export type DjArtistGroup = {
@@ -67,7 +86,7 @@ export type DjProfileView = {
 };
 
 export type DjScreen =
-  | { kind: "directory"; title: "DJs"; cards: DjDirectoryCard[] }
+  | { kind: "directory"; title: "DJs"; cards: DjDirectoryCard[]; counts: DjDirectoryCounts }
   | { kind: "profile"; profile: DjProfileView }
   | { kind: "missing"; id: string; backHref: typeof DJ_DIRECTORY_HASH };
 
@@ -142,27 +161,66 @@ export function workLabel(dj: DjProfile, sessionCount: number): string | null {
   return parts.length > 0 ? parts.join(" · ") : null;
 }
 
+function roomsFor(djId: string, rooms: readonly DjRoomRef[]): DjRoomRef[] {
+  return rooms.filter((room) => room.djIds.includes(djId));
+}
+
+function directoryCounts(djs: readonly DjProfile[], sessions: readonly SessionRecord[], rooms: readonly DjRoomRef[]): DjDirectoryCounts {
+  return {
+    artists: djs.length,
+    withReleases: djs.filter((dj) => dj.tracks.length > 0).length,
+    withSessions: djs.filter((dj) => sessionsForDj(sessions, dj.id).length > 0).length,
+    withRooms: djs.filter((dj) => roomsFor(dj.id, rooms).length > 0).length,
+  };
+}
+
 export function describeDjScreen(
   focus: string,
   djs: readonly DjProfile[],
   sessions: readonly SessionRecord[],
-  query: { text: string; sort: DjSort },
+  query: DjDirectoryQuery,
+  rooms: readonly DjRoomRef[] = [],
 ): DjScreen {
   if (!focus) {
-    const named = djs.filter((dj) => includesQuery(query.text, [dj.name]));
-    const visible = filterDjs(named, { text: "", year: "", sort: query.sort });
+    const content = query.content ?? "all";
+    const roomId = query.room ?? "";
+    const named = djs.filter((dj) => {
+      const linked = roomsFor(dj.id, rooms);
+      const sessionCount = sessionsForDj(sessions, dj.id).length;
+      if (content === "discografia" && dj.tracks.length === 0) return false;
+      if (content === "sesiones" && sessionCount === 0) return false;
+      if (content === "sala" && linked.length === 0) return false;
+      if (roomId && !linked.some((room) => room.id === roomId)) return false;
+      return includesQuery(query.text, [dj.name, ...linked.map((room) => room.name)]);
+    });
+    const visible = filterDjs(named, { text: "", year: "", sort: query.sort === "records" ? "name" : query.sort });
+    if (query.sort === "records") {
+      visible.sort((a, b) => {
+        const weight = (dj: DjProfile) => dj.tracks.length + sessionsForDj(sessions, dj.id).length;
+        const diff = weight(b) - weight(a);
+        return diff !== 0 ? diff : a.name.localeCompare(b.name, "es");
+      });
+    }
     return {
       kind: "directory",
       title: "DJs",
+      counts: directoryCounts(djs, sessions, rooms),
       cards: visible.map((dj) => {
         const year = yearsLabel(dj);
-        const facts = year ? [year] : [];
+        const sessionCount = sessionsForDj(sessions, dj.id).length;
+        const linked = roomsFor(dj.id, rooms);
+        const marks = [
+          countLabel(dj.tracks.length, "lanzamiento", "lanzamientos"),
+          countLabel(sessionCount, "sesión", "sesiones"),
+          linked.length === 1 ? linked[0].name : linked.length > 1 ? `${linked.length} salas` : null,
+        ].filter((mark): mark is string => Boolean(mark));
         return {
           id: dj.id,
           name: dj.name,
           href: djProfileHash(dj.id),
-          facts,
-          hint: presenceHint(dj.tracks.length, sessionsForDj(sessions, dj.id).length),
+          facts: year ? [year] : [],
+          hint: presenceHint(dj.tracks.length, sessionCount),
+          marks,
           image: portraitImage(dj),
         };
       }),

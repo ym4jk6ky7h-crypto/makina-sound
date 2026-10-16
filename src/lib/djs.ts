@@ -1,7 +1,7 @@
 import { includesQuery } from "./search.ts";
 import { embedUrl, isPublishedDate, isVideoId, videoIdFromUrl } from "./youtube.ts";
 
-export type DjSort = "name" | "date-desc" | "date-asc";
+export type DjSort = "name" | "date-desc" | "date-asc" | "records";
 
 export type DjLink = {
   label: string;
