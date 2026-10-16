@@ -14,10 +14,10 @@
     "djIds": ["dj-skudero", "xavi-metralla", "dj-sonic", "dj-sisu", "nando-dixkontrol", "dj-pastis", "dj-buenri"],
     "sessionIds": ["gWNOt-He3g8"],
     "links": [
-      { "label": "Web oficial", "url": "https://www.pontaeri.es/" },
-      { "label": "La Vanguardia, 5 de agosto de 2012", "url": "https://www.lavanguardia.com/vida/20120805/54334033363/vallgorguina-iva-hunde-discoteca-pont-aeri-cierra.html" },
-      { "label": "El 9 Nou, 28 de diciembre de 2012", "url": "https://el9nou.cat/valles-oriental/actualitat/el-darrer-vol-del-pont-aeri/" },
-      { "label": "CCCB, Nando Dixkontrol", "url": "https://www.cccb.org/ca/w/collectius/nando-dixkontrol" }
+      { "label": "Web oficial", "url": "https://www.pontaeri.es/", "note": "Respalda el origen en 1991 y las etapas de Terrassa, Manresa, Traiguera y Vallgorguina, y el núcleo de cabina de esa última etapa." },
+      { "label": "La Vanguardia, 5 de agosto de 2012", "url": "https://www.lavanguardia.com/vida/20120805/54334033363/vallgorguina-iva-hunde-discoteca-pont-aeri-cierra.html", "note": "Recoge el anuncio de cierre del local de Vallgorguina. La fecha del enlace es la del artículo, no la de la última noche." },
+      { "label": "El 9 Nou, 28 de diciembre de 2012", "url": "https://el9nou.cat/valles-oriental/actualitat/el-darrer-vol-del-pont-aeri/", "note": "Cuenta el cierre de esa sala. No convierte «este sábado» en una fecha calculada aquí." },
+      { "label": "CCCB, Nando Dixkontrol", "url": "https://www.cccb.org/ca/w/collectius/nando-dixkontrol", "note": "Lo incluye entre los residentes de Pont Aeri. No fecha esa etapa." }
     ],
     "checkedAt": "2026-10-16",
     "status": "published"
@@ -37,7 +37,7 @@
     "djIds": ["oskar-mad", "dj-pastis", "dj-sek", "dj-buenri", "dj-sepi", "dj-bull", "fran-bit"],
     "sessionIds": ["ZiVYJdWRF_s"],
     "links": [
-      { "label": "Wikipedia en español", "url": "https://es.wikipedia.org/wiki/Xque" }
+      { "label": "Wikipedia en español", "url": "https://es.wikipedia.org/wiki/Xque", "note": "Respalda las fechas de Palafrugell y Olot y los nombres que esta ficha publica. La cifra de asistencia del cierre no entra: el artículo la marca como pendiente de fuente." }
     ],
     "checkedAt": "2026-10-16",
     "status": "published"
@@ -51,12 +51,65 @@
     "period": "Residencia de Ricardo F: nueve años desde 1993. Apertura y cierre del local, sin fecha publicada aquí.",
     "paragraphs": [
       "La ficha de Ricardo F, apoyada en su entrevista con Makineros, lo presenta como residente de Chasis, en Mataró, durante nueve años desde 1993. En esa conversación habla de una sala que creció y de recopilatorios de la marca. Las cifras de público son su relato, no un aforo comprobado aparte, y no se repiten aquí como dato del edificio.",
-      "En el catálogo hay dos vídeos cuyo título dice «Ricardo F @ Chasis 2000». La fecha que guarda MAKINA SOUND es la de publicación del vídeo, no la de la noche. Scorpia y el Psicódromo no entran en este archivo: no había una ficha con el mismo apoyo de fechas y fuentes."
+      "En el catálogo hay dos vídeos cuyo título dice «Ricardo F @ Chasis 2000». La fecha que guarda MAKINA SOUND es la de publicación del vídeo, no la de la noche."
     ],
     "djIds": ["ricardo-f"],
     "sessionIds": ["BwIWr8hEAY4", "kXoeGh41i4M"],
     "links": [
-      { "label": "Entrevista en Makineros", "url": "https://makineros.com/entrevistamos-a-ricardo-fdj-residente-de-la-sala-chasis-durante-9-anos/" }
+      { "label": "Entrevista en Makineros", "url": "https://makineros.com/entrevistamos-a-ricardo-fdj-residente-de-la-sala-chasis-durante-9-anos/", "note": "Respalda la residencia de Ricardo F, nueve años desde 1993. No fecha la apertura ni el cierre del edificio." }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "scorpia",
+    "name": "Scorpia",
+    "summary": "Sala de Òdena. La Veu de l'Anoia recuerda la ampliación de 1990 y el relevo de 1993 hacia la música electrónica. Esta ficha no fecha el cierre.",
+    "category": "Sala",
+    "location": "Òdena",
+    "period": "Ampliación en junio de 1990 e inauguración en otoño de 1990. Desde la primavera de 1993, Central del Sonido. Cierre, sin fecha publicada aquí.",
+    "paragraphs": [
+      "La Veu de l'Anoia, en un recuerdo publicado el 16 de junio de 2026 de un reportaje suyo en papel de junio de 1990, sitúa las obras de ampliación de Scorpia IV en Òdena. Dice que la inauguración fue en otoño de 1990 y que, entre 1990 y 1993, la programación fue de distinto tipo.",
+      "El mismo texto fecha el relevo en la primavera de 1993: la dirección dejó la sala en manos de Francesc Martínez y Albert Grados, con los nombres Frank Trax y MC Kryger. El local pasó a llamarse Scorpia: Central del Sonido y orientó la música hacia el trance, el hardtrance y lo que entonces empezaba a llamarse música máquina. La crónica no da una fecha de cierre.",
+      "Frank T.R.A.X. entra en esta ficha porque la crónica nombra a Frank Trax en ese relevo y el perfil del archivo ya lo identifica como residente de Scorpia. No hay una sesión del catálogo cuyo título nombre la sala. No se copia ninguna fotografía de las obras: la página no autoriza reproducirla."
+    ],
+    "djIds": ["frank-trax"],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "La Veu de l'Anoia, 16 de junio de 2026",
+        "url": "https://veuanoia.cat/fem-memoria-1990-scorpia-obres-una-de-les-discoteques-mes-grans-catalunya/",
+        "note": "Respalda la ampliación de junio de 1990, la inauguración en otoño de 1990 y el relevo de la primavera de 1993. No fecha el cierre."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "psicodromo",
+    "name": "Psicódromo",
+    "summary": "Sala de Almogàvers 88, en Barcelona. Un reportaje de Vice fecha la apertura en 1989 y el cierre en 1992. El CCCB incluye a Nando Dixkontrol entre sus residentes.",
+    "category": "Sala",
+    "location": "Almogàvers 88, Barcelona",
+    "period": "Del 28 de septiembre de 1989 al 5 de mayo de 1992, según el reportaje de Vice.",
+    "paragraphs": [
+      "El reportaje de Vice «Baila o muere», abierto el 16 de octubre de 2026, sitúa el local en Almogàvers 88, en una antigua fábrica de muebles. Fecha la apertura el 28 de septiembre de 1989, con «What Time Is Love» de KLF, y el cierre el 5 de mayo de 1992.",
+      "Ese texto nombra a Pepebilly como DJ en la obra del local. El CCCB, en la ficha de Nando Dixkontrol actualizada el 12 de abril de 2017, lo incluye entre los residentes de Psicódromo y no fecha esa residencia. Las fichas ya publicadas de DJ Pastis y DJ Buenri dicen que entonces eran clientes, no DJs: no entran aquí como residentes.",
+      "Una crónica de El Periódico del 22 de septiembre de 2019 no se pudo abrir: la petición devolvió 406. No se usa. No se publica una fotografía."
+    ],
+    "djIds": ["nando-dixkontrol", "dj-pepebilly"],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Vice, «Baila o muere»",
+        "url": "https://www.vice.com/es/article/nando-dixkontrol-baila-o-muere-psicodromo/",
+        "note": "Respalda la dirección, la apertura del 28 de septiembre de 1989 y el cierre del 5 de mayo de 1992, y nombra a Pepebilly como DJ."
+      },
+      {
+        "label": "CCCB, Nando Dixkontrol",
+        "url": "https://www.cccb.org/ca/w/collectius/nando-dixkontrol",
+        "note": "Lo incluye entre los residentes. No fecha esa etapa. El crédito de su fotografía no autoriza republicarla."
+      }
     ],
     "checkedAt": "2026-10-16",
     "status": "published"

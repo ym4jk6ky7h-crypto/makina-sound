@@ -187,7 +187,10 @@ function VenueFile({
           <h2>Fuentes</h2>
           <ul>
             {venue.links.map((link) => (
-              <li key={link.url}><a href={link.url} rel="noreferrer">{link.label}</a></li>
+              <li key={link.url}>
+                <a href={link.url} rel="noreferrer">{link.label}</a>
+                {link.note ? <span>{link.note}</span> : null}
+              </li>
             ))}
           </ul>
         </section>

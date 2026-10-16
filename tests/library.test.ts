@@ -28,7 +28,7 @@ describe("catálogos nuevos", () => {
     assert.deepEqual(openVenues([]), []);
     const venues = openVenues(empty);
     const flyers = openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8")));
-    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis"]);
+    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     assert.equal(flyers.every((flyer) => flyer.imageUrl === undefined), true);
     assert.deepEqual(openTutorials(JSON.parse(readFileSync(new URL("../src/data/tutorials.json", import.meta.url), "utf8"))), []);
@@ -130,10 +130,10 @@ describe("fase 22 salas y flyers", () => {
     JSON.parse(readFileSync(new URL("../src/data/sessions.json", import.meta.url), "utf8")),
   ).sessions;
 
-  it("publica tres salas y tres referencias sin imagen", () => {
+  it("publica cinco salas y tres referencias sin imagen", () => {
     const djIds = new Set(djs.map((dj) => dj.id));
     const sessionIds = new Set(sessions.map((session) => session.id));
-    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis"]);
+    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     for (const venue of venues) {
       assert.ok(venue.paragraphs.length > 0);
@@ -164,8 +164,22 @@ describe("fase 22 salas y flyers", () => {
     assert.equal(pont.djs.some((dj) => dj.id === "dj-skudero"), true);
     assert.equal(pont.sessions[0]?.id, "gWNOt-He3g8");
     assert.equal(pont.flyers.length, 3);
-    assert.equal(describeVenue("scorpia", venues, names, titles, flyers).kind, "missing");
+    const scorpia = describeVenue("scorpia", venues, names, titles, flyers);
+    assert.equal(scorpia.kind, "profile");
+    if (scorpia.kind === "profile") {
+      assert.deepEqual(scorpia.djs.map((dj) => dj.id), ["frank-trax"]);
+      assert.equal(scorpia.sessions.length, 0);
+      assert.match(scorpia.venue.links[0]?.note ?? "", /1990/);
+    }
+    const psico = describeVenue("psicodromo", venues, names, titles, flyers);
+    assert.equal(psico.kind, "profile");
+    if (psico.kind === "profile") {
+      assert.deepEqual(psico.djs.map((dj) => dj.id), ["nando-dixkontrol", "dj-pepebilly"]);
+      assert.equal(psico.sessions.length, 0);
+    }
+    assert.equal(describeVenue("sala-inexistente", venues, names, titles, flyers).kind, "missing");
     assert.equal(venuesForDj("ricardo-f", venues)[0]?.id, "chasis");
+    assert.equal(venuesForDj("frank-trax", venues)[0]?.id, "scorpia");
     const paper = describeFlyer("macrorave-2009", flyers, venues, names);
     assert.equal(paper.kind, "profile");
     if (paper.kind === "profile") assert.equal(paper.venue?.id, "pont-aeri");

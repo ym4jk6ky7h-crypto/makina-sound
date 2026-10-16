@@ -180,13 +180,28 @@
 .dj-monogram {
   position: relative;
   display: grid;
-  place-items: center;
+  align-content: center;
+  justify-items: center;
+  gap: 0.12rem;
   background: #141210;
   border: 1px solid rgba(240, 233, 218, 0.22);
   color: var(--paper);
   font-family: var(--display);
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+}
+
+.dj-mono-kicker {
+  color: var(--acid);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.dj-mono-mark {
+  line-height: 0.9;
 }
 
 .dj-monogram::before,
@@ -209,9 +224,13 @@
 }
 
 .dj-monogram.is-large {
-  width: 5.75rem;
+  width: 6.5rem;
   aspect-ratio: 1;
-  font-size: 1.55rem;
+  font-size: 1.7rem;
+}
+
+.dj-monogram.is-large .dj-mono-kicker {
+  font-size: 0.58rem;
 }
 
 .dj-photo {
@@ -511,17 +530,27 @@
 }
 
 .dj-sources ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1rem;
+  display: grid;
+  gap: 0.85rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.dj-sources li {
+  display: grid;
+  gap: 0.15rem;
+  max-width: 42rem;
+}
+
 .dj-sources a {
   color: var(--paper);
   font-weight: 600;
+}
+
+.dj-sources li span {
+  color: rgba(240, 233, 218, 0.78);
+  font-size: 0.92rem;
 }
 
 .dj-card .dj-monogram,

@@ -5,6 +5,7 @@ export type EditorialStatus = "draft" | "review" | "published";
 export type SourceLink = {
   label: string;
   url: string;
+  note?: string;
   affiliate?: boolean;
 };
 
@@ -174,7 +175,9 @@ export function readLinks(value: unknown): SourceLink[] | null {
     const url = text(record.url);
     if (!label || !url || !httpsUrl(url)) return null;
     if (record.affiliate !== undefined && record.affiliate !== true && record.affiliate !== false) return null;
-    links.push({ label, url, affiliate: record.affiliate === true ? true : undefined });
+    const note = record.note === undefined ? undefined : text(record.note);
+    if (record.note !== undefined && !note) return null;
+    links.push({ label, url, note, affiliate: record.affiliate === true ? true : undefined });
   }
   return links;
 }

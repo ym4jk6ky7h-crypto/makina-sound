@@ -30,7 +30,8 @@ export function DjPortrait({
     const missing = shown.label === "Imagen no disponible";
     return (
       <span className={large ? "dj-monogram is-large" : "dj-monogram"}>
-        <span aria-hidden="true">{artistInitials(name)}</span>
+        <span className="dj-mono-kicker" aria-hidden="true">Archivo</span>
+        <span className="dj-mono-mark" aria-hidden="true">{artistInitials(name)}</span>
         <span className="dj-sr">{missing ? "Imagen no disponible" : `Monograma de ${name}`}</span>
       </span>
     );

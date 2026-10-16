@@ -292,6 +292,7 @@ function DjProfilePage({
         {profile.links.length > 0 ? (
           <section className="dj-block dj-sources" aria-labelledby="fuentes-dj">
             <h2 id="fuentes-dj">Fuentes</h2>
+            <p className="dj-quiet">La biografía sale de estas páginas. El enlace no añade un dato que el texto no diga.</p>
             <ul>
               {profile.links.map((link) => (
                 <li key={link.url}>
