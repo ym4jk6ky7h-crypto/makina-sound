@@ -1,0 +1,91 @@
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.status-row .note {
+  margin: 0;
+}
+
+.piece-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.highlights {
+  background: radial-gradient(ellipse at 0% 10%, rgba(231, 255, 66, 0.06), transparent 40%);
+}
+
+.piece {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-width: 0;
+  background: #101010;
+  color: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: inset 4px 0 0 var(--magenta);
+}
+
+.piece-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.95rem 1rem 1.05rem;
+}
+
+.piece-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.reading {
+  max-width: 62ch;
+  padding-top: 0.2rem;
+}
+
+@media (min-width: 720px) {
+  .piece:not(.is-lead) {
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+  }
+
+  .piece:not(.is-lead) .art {
+    height: 100%;
+  }
+
+  .piece:not(.is-lead) .motif {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 960px) {
+  .piece-list.is-spread {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.9fr);
+  }
+
+  .piece-list.is-spread .is-lead {
+    grid-row: span 3;
+  }
+
+  .piece.is-lead .piece-body h3 {
+    font-size: clamp(2.2rem, 3vw, 3.1rem);
+  }
+}
+
+.piece-list.is-single .piece {
+  max-width: 48rem;
+}
+
+.piece-list.is-single .piece-body h3 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}

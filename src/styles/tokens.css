@@ -1,0 +1,15 @@
+:root {
+  --room: #090909;
+  --room-2: #121212;
+  --ink: #171717;
+  --paper: #f0e9da;
+  --sheet: #f3ecdc;
+  --acid: #e7ff42;
+  --magenta: #ff3b8d;
+  --line: rgba(240, 233, 218, 0.16);
+  --display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --text: "Source Sans 3", "Segoe UI", sans-serif;
+  --gutter: clamp(1rem, 4vw, 1.75rem);
+  --page: 1120px;
+  color-scheme: dark;
+}

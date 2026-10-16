@@ -1,0 +1,236 @@
+.featured-session {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.player-frame {
+  position: relative;
+  width: min(100%, 52rem);
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--line);
+}
+
+.player-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.featured-copy {
+  max-width: 46rem;
+}
+
+.featured-copy h2 {
+  margin-bottom: 0.45rem;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.featured-copy p {
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.session-tools {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.session-search {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 28rem;
+}
+
+.session-search label {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.session-search input,
+.session-filters select {
+  min-height: 44px;
+  padding: 0.45rem 0.7rem;
+  border: 2px solid var(--paper);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.session-filters {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.session-filters label {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 28rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 720px) {
+  .session-filters {
+    grid-template-columns: repeat(2, minmax(0, 28rem));
+  }
+}
+
+.era-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.era-filters button {
+  min-height: 44px;
+  padding: 0.35rem 0.8rem;
+  border: 2px solid var(--paper);
+  background: transparent;
+  color: var(--paper);
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.era-filters button.is-selected,
+.era-filters button:hover {
+  background: var(--acid);
+  border-color: var(--acid);
+  color: var(--ink);
+}
+
+.session-grid {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track-links a {
+  color: var(--acid);
+}
+
+.session-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 2px solid var(--sheet);
+  background: var(--sheet);
+  color: var(--ink);
+  box-shadow: 7px 7px 0 rgba(255, 59, 141, 0.9);
+  text-align: left;
+  cursor: pointer;
+}
+
+.session-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--ink);
+}
+
+.cover-fallback {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #171717;
+  color: var(--paper);
+}
+
+.cover-fallback .motif {
+  width: 58%;
+  height: auto;
+}
+
+.cover-fallback span {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 0.45rem;
+  font-family: var(--display);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.session-card.is-selected,
+.session-card:hover {
+  background: var(--acid);
+  border-color: var(--acid);
+  box-shadow: 8px 8px 0 var(--magenta);
+}
+
+.session-copy {
+  display: grid;
+  gap: 0.28rem;
+  padding: 0.85rem 0.9rem 1rem;
+}
+
+.session-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.era {
+  justify-self: start;
+  padding: 0.08rem 0.4rem 0.02rem;
+  background: var(--magenta);
+  color: var(--ink);
+  font-family: var(--display);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .session-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .session-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+a.session-card {
+  text-decoration: none;
+}
+

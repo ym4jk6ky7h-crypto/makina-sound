@@ -1,0 +1,320 @@
+[
+  {
+    "id": "amics-de-la-makina",
+    "displayName": "Amics de la Makina",
+    "youtubeName": "Amics de la Makina",
+    "channelId": "UCb0N2Zw-ieLxHsaQ4e603MQ",
+    "channelUrl": "https://www.youtube.com/@amicsdelamakina7857",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El nombre visible coincide. La descripción del canal habla de música makina."
+  },
+  {
+    "id": "digital-hits-fm",
+    "displayName": "Digital Hits FM",
+    "youtubeName": "Digital Hits FM - La Ràdio Dance N1",
+    "channelId": "UCeApwwOpgvi-LwIZb8WYeXA",
+    "channelUrl": "https://www.youtube.com/@digitalhitsfm",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "Radio dance. El nombre visible añade el lema de la emisora. Las entrevistas no entran en el listado de sesiones."
+  },
+  {
+    "id": "makina-legends",
+    "displayName": "Makina Legends",
+    "youtubeName": "Makina Legends",
+    "channelId": "UCvGM-h6cojxzDBuCTses2rA",
+    "channelUrl": "https://www.youtube.com/@makinalegends",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El nombre visible coincide. La descripción del canal presenta la makina."
+  },
+  {
+    "id": "makina-o-muerte",
+    "displayName": "Makina o Muerte",
+    "youtubeName": "Makina o Muerte || Estilo XQUÈ",
+    "channelId": "UCKnV8-Bi-IW44UF0KcNnyQg",
+    "channelUrl": "https://www.youtube.com/@makinaomuerte",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El nombre visible añade «Estilo XQUÈ». El canal «edu& Laura makina a muerte» es otro."
+  },
+  {
+    "id": "makineros-90",
+    "displayName": "Makineros 90's",
+    "youtubeName": "Makineros 90's",
+    "channelId": "UCyNZKd31zEGicbyAngWinvA",
+    "channelUrl": "https://www.youtube.com/@Makineros90s",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El nombre visible coincide. Makineros Madrid y Makineros Sureños son canales distintos."
+  },
+  {
+    "id": "dc-tv-forever-deejays",
+    "displayName": "DC TV / Forever Deejays",
+    "youtubeName": "DC TV' Forever Deejays",
+    "channelId": "UC9qCGyVP8BWPoqcB0qx_0Qw",
+    "channelUrl": "https://www.youtube.com/@dctvforeverdeejays",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "La descripción habla de sets de makina. El nombre visible usa un apóstrofo."
+  },
+  {
+    "id": "portal-makina",
+    "displayName": "Portal Makina",
+    "youtubeName": "PORTAL MAKINA",
+    "channelId": "UCXXcOc9i3cVwt-vVOWxcsXQ",
+    "channelUrl": "https://www.youtube.com/@portalmakina4759",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El nombre visible coincide. Los vídeos recientes consultados eran temas sueltos y no se han importado."
+  },
+  {
+    "id": "la-nostra-maqkina",
+    "displayName": "La Nostra Maqkina",
+    "youtubeName": "La Nostra Maqkina",
+    "channelId": "UCxN7yvFi-XvB1sS3IehdU5w",
+    "channelUrl": "https://www.youtube.com/@LaNostraMaqkina",
+    "sourceType": "channel",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El nombre visible coincide. Los vídeos recientes consultados eran promociones de temas, no sesiones."
+  },
+  {
+    "id": "sepi-officil-dj",
+    "displayName": "Sepi Officil DJ",
+    "youtubeName": "Sepi Official Dj",
+    "channelId": "UCzTy5oQr6M8us3YR3J7Vh8Q",
+    "channelUrl": "https://www.youtube.com/@sepi_official_dj",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El canal se llama Sepi Official Dj. No apareció otro canal de Sepi."
+  },
+  {
+    "id": "danidjlucena",
+    "displayName": "DaniDJLucena",
+    "youtubeName": "DaniDjLucena",
+    "channelId": "UCJj2LokBYFVuci0qAyNz9Yg",
+    "channelUrl": "https://www.youtube.com/@DaniDjLucena",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "Único resultado. La descripción dice que el canal es de música makina."
+  },
+  {
+    "id": "dj-nau",
+    "displayName": "DJ Nau",
+    "youtubeName": "DJ NAU",
+    "channelId": "UCs-D9kShlMevhsvxVk5ACLQ",
+    "channelUrl": "https://www.youtube.com/@djnaumakina",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "DJ y productor de Sabadell. Otro canal llamado DJ NAU publica canciones tonganas y no es este."
+  },
+  {
+    "id": "lia-jensen-music",
+    "displayName": "Lia Jensen Music",
+    "youtubeName": "Lia Jensen Music",
+    "channelId": "UCIGmItFBKs3ZfGSWzLKKpfg",
+    "channelUrl": "https://www.youtube.com/@LiaJensenMusic",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "El nombre visible coincide. El canal también publica piezas que no son sesiones de makina; esas no entran."
+  },
+  {
+    "id": "sergi-blue",
+    "displayName": "Sergi Blue",
+    "youtubeName": "Sergi Blue",
+    "channelId": "UCycvcIPnIG7iw-cJ78IGzcQ",
+    "channelUrl": "https://www.youtube.com/@djsergiblue",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "Canal con el nombre exacto y el identificador @djsergiblue. El resto de resultados eran otras personas."
+  },
+  {
+    "id": "xquesiano81",
+    "displayName": "Xquesiano81",
+    "youtubeName": "xquesiano81",
+    "channelId": "UCanOOEOSi1_YahruJ183cVA",
+    "channelUrl": "https://www.youtube.com/@xquesiano81",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "La descripción lo presenta como comunidad de música makina. Los últimos vídeos vistos eran temas sueltos."
+  },
+  {
+    "id": "bassaul-dj",
+    "displayName": "Bassaul DJ",
+    "youtubeName": "Bassaul dj",
+    "channelId": "UC1vFqBK82y9jGsht-LDty-Q",
+    "channelUrl": "https://www.youtube.com/@bassauldj",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "Único canal con este nombre entre los resultados."
+  },
+  {
+    "id": "djxory",
+    "displayName": "DJXory",
+    "youtubeName": "DjXory",
+    "channelId": "UChbEuon0JgLd7ifQkp54cFQ",
+    "channelUrl": "https://www.youtube.com/@DjXory",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "La descripción habla de sesiones de makina de los 90 y del siglo XXI."
+  },
+  {
+    "id": "javi-maki",
+    "displayName": "Javi Maki",
+    "youtubeName": "Javi Maki",
+    "channelId": "UChRtiTNp-ovsbjfMgs_Iufg",
+    "channelUrl": "https://www.youtube.com/@JaviMaki",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "La descripción dice que publica sesiones de makina. «Javier maki» es otro canal."
+  },
+  {
+    "id": "adrian-kuyck",
+    "displayName": "Adrian Kuyck",
+    "youtubeName": "Adrian Kuyck",
+    "channelId": "UCcQyQvsCwa4g-Yhf5Bu667w",
+    "channelUrl": "https://www.youtube.com/@Adrian_Kuyckdj",
+    "sourceType": "artist",
+    "enabled": true,
+    "verificationStatus": "verified",
+    "note": "La descripción menciona load_makina. Los vídeos recientes consultados no se han clasificado como sesión."
+  },
+  {
+    "id": "dj-cesk",
+    "displayName": "DJ Cesk",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Aparecen dos canales, Dj Cesk y DJ CesK, sin una descripción que indique cuál es el oficial."
+  },
+  {
+    "id": "dj-lokis",
+    "displayName": "DJ Lokis",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay varios canales con nombres parecidos: Dj Lokis, Dj lokis, DJ LOKI y Loki Dj."
+  },
+  {
+    "id": "note-dj",
+    "displayName": "Note DJ",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay varios canales llamados Note DJ. Uno describe makina, pero no basta para descartar los otros."
+  },
+  {
+    "id": "dj-bonik",
+    "displayName": "DJ Bonik",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay varios canales con ese nombre, algunos ajenos a la makina."
+  },
+  {
+    "id": "julio-posadas",
+    "displayName": "Julio Posadas",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay un canal que se presenta como oficial y otro con el mismo nombre."
+  },
+  {
+    "id": "javi-neurass",
+    "displayName": "Javi Neurass",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "La búsqueda de canales no devolvió un resultado."
+  },
+  {
+    "id": "buenri",
+    "displayName": "Buenri",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Los primeros resultados son canales automáticos de temas y un canal sin descripción que lo confirme."
+  },
+  {
+    "id": "pastis",
+    "displayName": "Pastis",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Los resultados eran canales automáticos de temas, no un canal de artista distinguible."
+  },
+  {
+    "id": "dj-soon",
+    "displayName": "DJ Soon",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Aparecen Dj Sonn, un canal de salsa llamado DJ SOON y otro perfil con el nombre escrito distinto."
+  },
+  {
+    "id": "de-nervio",
+    "displayName": "De Nervio",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay al menos dos canales de DJ Nervio."
+  },
+  {
+    "id": "dj-pitu",
+    "displayName": "DJ Pitu",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay varios canales, y algunos no tienen relación visible con la makina."
+  },
+  {
+    "id": "dj-plus",
+    "displayName": "DJ Plus",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Ningún resultado coincide de forma única con un canal de makina."
+  },
+  {
+    "id": "paco-pil",
+    "displayName": "Paco Pil",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Aparecen Paco Pil TV, un canal VEVO y otro perfil. No se ha elegido uno."
+  },
+  {
+    "id": "dvrk-oktopus",
+    "displayName": "DVRK Oktopus",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay dos canales: Dvrk Oktopus y Dvrk Øktopus."
+  },
+  {
+    "id": "dj-jonyk",
+    "displayName": "DJ Jonyk",
+    "sourceType": "artist",
+    "enabled": false,
+    "verificationStatus": "pending",
+    "note": "Hay dos canales: Dj JonyK OldschooL y Jonyk Dj."
+  }
+]
