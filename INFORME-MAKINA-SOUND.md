@@ -610,7 +610,7 @@ Estado de la fase: **completada**. Se han vuelto a abrir las páginas de los 13 
 
 ## Fase 25 — 16 de octubre de 2026
 
-Estado de la fase: **completada en el código**. `#sesiones` deja de abrir un reproductor al entrar y pasa a ser el archivo. `#sesiones/id` abre la ficha, con el reproductor de youtube-nocookie, la fecha marcada como publicación del vídeo, el DJ y la sala solo si ya constan, y el enlace original de YouTube. La cabecera calcula 150 sesiones, 127 con DJ, 4 con sala y 150 con fecha de publicación. La búsqueda, el DJ, la sala y la época se combinan. El catálogo musical no cambia: 55 perfiles, 618 tarjetas y 150 sesiones.
+Estado de la fase: **completada**. `#sesiones` deja de abrir un reproductor al entrar y pasa a ser el archivo. `#sesiones/id` abre la ficha, con el reproductor de youtube-nocookie, la fecha marcada como publicación del vídeo, el DJ y la sala solo si ya constan, y el enlace original de YouTube. La cabecera calcula 150 sesiones, 127 con DJ, 4 con sala y 150 con fecha de publicación. La búsqueda, el DJ, la sala y la época se combinan. El catálogo musical no cambia: 55 perfiles, 618 tarjetas y 150 sesiones. Pages sirve `assets/index-CCmZzUtc.js` y `assets/index-BC1EX7JV.css`.
 
 `npm test`: 42 pruebas, 0 fallos. La compilación local queda en `assets/index-DmQUzUYL.js` y `assets/index-D2rVgAoB.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-CCmZzUtc.js` y `assets/index-BC1EX7JV.css`. El detalle está en `informes/FASE-25-archivo-sesiones.md`.
 

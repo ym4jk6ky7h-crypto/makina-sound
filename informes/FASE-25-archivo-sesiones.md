@@ -68,7 +68,9 @@ La página `https://www.youtube.com/watch?v=kXoeGh41i4M` respondió 200 y el tí
 
 ## Publicación
 
-Pendiente de confirmar en GitHub Actions. La compilación que debe servir Pages es `assets/index-CCmZzUtc.js` y `assets/index-BC1EX7JV.css`.
+El commit `caa956a` se subió a `main`. El workflow «Publicar MAKINA SOUND» [38871462025](https://github.com/ym4jk6ky7h-crypto/makina-sound/actions/runs/38871462025) terminó en éxito.
+
+https://ym4jk6ky7h-crypto.github.io/makina-sound/ respondió 200. El HTML sirve `assets/index-CCmZzUtc.js` y `assets/index-BC1EX7JV.css`. El JavaScript respondió 200 y contiene «Publicación, más reciente», «Quitar filtros», «no la de la actuación» y «Con fecha de publicación».
 
 ## Limitaciones
 
