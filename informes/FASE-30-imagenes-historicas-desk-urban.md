@@ -58,4 +58,4 @@ Sobre `http://localhost:4182/`, compilación local.
 
 ## Despliegue
 
-La comprobación de GitHub Actions y de la web pública se anota cuando el workflow termine. Hasta entonces no se da la fase por publicada.
+El workflow [38893984629](https://github.com/ym4jk6ky7h-crypto/makina-sound/actions/runs/38893984629) terminó en éxito. La web pública, https://ym4jk6ky7h-crypto.github.io/makina-sound/, responde 200 y sirve `assets/index-Cczm8gar.js` y `assets/index-29UJ0Wtn.css`. El JavaScript contiene «Francesc Fort», «19Tarrestnom65», «Hospitalet de Llobregat» y las rutas de las dos fotografías. `images/venues/barraca.jpg` y `images/venues/puzzle.jpg` responden 200, `image/jpeg`, con 554289 y 665641 bytes.

@@ -640,6 +640,8 @@ Estado de la fase: **completada**. `#salas` pasa de 27 a 32 fichas. Entran Barç
 
 ## Fase 30 — 16 de octubre de 2026
 
-Estado de la fase: en el código, pendiente de comprobar el despliegue. `#salas` pasa de 32 a 33 fichas. Entra Desk, en L'Hospitalet de Llobregat, sin fechas ni calle. Urban no entra. Barraca y Puzzle muestran fotografías CC BY-SA 4.0, de Francesc Fort (2026) y de 19Tarrestnom65 (2022). Los 55 perfiles siguen sin retrato. No cambian las 618 tarjetas ni las 150 sesiones. La compilación local queda en `assets/index-CCrk20bk.js` y `assets/index-BKqj0BqF.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-Cczm8gar.js` y `assets/index-29UJ0Wtn.css`. El detalle está en `informes/FASE-30-imagenes-historicas-desk-urban.md`.
+Estado de la fase: **completada**. `#salas` pasa de 32 a 33 fichas. Entra Desk, en L'Hospitalet de Llobregat, sin fechas ni calle. Urban no entra. Barraca y Puzzle muestran fotografías CC BY-SA 4.0, de Francesc Fort (2026) y de 19Tarrestnom65 (2022). Los 55 perfiles siguen sin retrato. No cambian las 618 tarjetas ni las 150 sesiones. Pages sirve `assets/index-Cczm8gar.js` y `assets/index-29UJ0Wtn.css`.
+
+`npm test`: 48 pruebas, 0 fallos. La compilación local queda en `assets/index-CCrk20bk.js` y `assets/index-BKqj0BqF.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-Cczm8gar.js` y `assets/index-29UJ0Wtn.css`. El detalle está en `informes/FASE-30-imagenes-historicas-desk-urban.md`.
 
 
