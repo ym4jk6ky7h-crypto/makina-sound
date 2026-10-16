@@ -28,7 +28,7 @@ describe("catálogos nuevos", () => {
     assert.deepEqual(openVenues([]), []);
     const venues = openVenues(empty);
     const flyers = openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8")));
-    assert.equal(venues.length, 14);
+    assert.equal(venues.length, 27);
     assert.deepEqual(venues.slice(0, 5).map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     assert.equal(flyers.every((flyer) => flyer.imageUrl === undefined), true);
@@ -134,7 +134,7 @@ describe("fase 22 salas y flyers", () => {
   it("publica las salas documentadas y tres referencias sin imagen", () => {
     const djIds = new Set(djs.map((dj) => dj.id));
     const sessionIds = new Set(sessions.map((session) => session.id));
-    assert.equal(venues.length, 14);
+    assert.equal(venues.length, 27);
     assert.deepEqual(venues.slice(0, 5).map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     for (const venue of venues) {
@@ -244,7 +244,7 @@ describe("fase 27 archivo de salas", () => {
     for (const id of ["gran-velvet", "barraca", "chocolate", "actv", "disco-ocho", "nau-b3", "central-cubelles", "kontrol", "extasis"]) {
       assert.ok(ids.includes(id), id);
     }
-    for (const id of ["area", "area-concor", "area-beethoven", "barcalles", "la-festa", "penelope"]) {
+    for (const id of ["area-beethoven", "barcalles", "penelope", "heaven"]) {
       assert.equal(ids.includes(id), false, id);
     }
     assert.deepEqual(venues.find((venue) => venue.id === "chocolate")?.aliases, ["Chocolate Cream"]);
@@ -252,14 +252,34 @@ describe("fase 27 archivo de salas", () => {
     assert.equal(venues.find((venue) => venue.id === "central-cubelles")?.djIds.includes("frank-trax"), false);
     assert.equal(venues.find((venue) => venue.id === "kontrol")?.id === "chasis", false);
     assert.equal(venues.find((venue) => venue.id === "chocolate")?.sessionIds.length, 0);
-    assert.equal(venues.find((venue) => venue.id === "nau-b3")?.places.length, 0);
+    assert.equal(venues.find((venue) => venue.id === "nau-b3")?.places.includes("Molins de Rei"), true);
   });
 
   it("busca por alias y filtra por la localidad publicada", () => {
     assert.deepEqual(filterVenues(venues, { text: "chocolate cream", place: "" }).map((venue) => venue.id), ["chocolate"]);
-    assert.deepEqual(filterVenues(venues, { text: "central", place: "" }).map((venue) => venue.id), ["central-cubelles", "scorpia"]);
-    assert.deepEqual(filterVenues(venues, { text: "", place: "Mataró" }).map((venue) => venue.id), ["chasis", "kontrol"]);
+    assert.deepEqual(filterVenues(venues, { text: "central", place: "" }).map((venue) => venue.id), ["central-cubelles", "scorpia", "scorpia-manresa"]);
+    assert.deepEqual(filterVenues(venues, { text: "", place: "Mataró" }).map((venue) => venue.id), ["chasis", "kontrol", "megatron"]);
     assert.deepEqual(filterVenues(venues, { text: "velvet", place: "Sueca" }).map((venue) => venue.id), []);
     assert.deepEqual(filterVenues(venues, { text: "", place: "" }).map((venue) => venue.name), [...venues].sort((a, b) => a.name.localeCompare(b.name, "es")).map((venue) => venue.name));
+  });
+});
+
+describe("fase 28 archivo ampliado", () => {
+  const venues = openVenues(JSON.parse(readFileSync(new URL("../src/data/venues.json", import.meta.url), "utf8")));
+
+  it("publica las salas nuevas y mantiene separadas las identidades dudosas", () => {
+    const ids = venues.map((venue) => venue.id);
+    assert.equal(new Set(ids).size, ids.length);
+    for (const id of ["la-festa", "spook-factory", "espiral", "nod", "puzzle", "megatron", "scorpia-manresa", "distorsion-bar", "kodigo", "forum-terrassa", "oggi", "cap-3000", "coliseum-malvarrosa"]) {
+      assert.ok(ids.includes(id), id);
+    }
+    for (const id of ["area", "concor", "area-concor", "area-beethoven"]) {
+      assert.equal(ids.includes(id), false, id);
+    }
+    assert.equal(venues.find((venue) => venue.id === "scorpia-manresa")?.id === "scorpia", false);
+    assert.equal(venues.find((venue) => venue.id === "la-festa")?.places.length, 0);
+    assert.deepEqual(venues.find((venue) => venue.id === "la-festa")?.djIds, ["jordi-beat", "dani-kaos"]);
+    assert.equal(venues.find((venue) => venue.id === "megatron")?.djIds.length, 0);
+    assert.ok(venues.find((venue) => venue.id === "nau-b3")?.places.includes("Molins de Rei"));
   });
 });

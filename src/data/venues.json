@@ -10,7 +10,8 @@
       "La web oficial ordena las etapas así: Terrassa en 1991, Manresa en 2000, Traiguera en 2000 y Vallgorguina en 2002. No es una sola dirección. Es una sucesión de locales con el mismo nombre, y la página consultada en 2026 sigue anunciando reencuentros.",
       "Esa web presenta a Skudero, Xavi Metralla, Sonic y Sisu como el núcleo de una etapa de Vallgorguina, y dice que la cabina empieza antes y reúne a más generaciones. El CCCB incluye a Nando Dixkontrol entre los residentes de Pont Aeri, sin fechar esa etapa en la ficha leída. Las biografías ya publicadas de DJ Pastis y DJ Buenri los sitúan en la sala antes de su paso a Xque.",
       "El 5 de agosto de 2012, La Vanguardia recogió el anuncio de Ramón Escudero: el local de Vallgorguina cerraría a partir de noviembre, después de 21 años, por la subida del IVA del ocio nocturno. El 9 Nou, el 28 de diciembre de 2012, contó el cierre de esa sala. Una sesión del catálogo titulada «Closing Party @ Pont Aeri (Junio 2024)» nombra el nombre en 2024: no es el cierre de 2012, y la fecha guardada es la de publicación del vídeo. Otra sesión, «DJ NAU @ Pont aeri (34 Aniversario cierre Sala Terrassa) Abril 2026», también nombra la sala en el título. Abril de 2026 no se guarda como fecha de la noche ni como fecha de un cierre del local de Terrassa.",
-      "El Español, el 6 de noviembre de 2016, sitúa un episodio de enero de 1995 en Terrassa, el traslado a Manresa y un cierre definitivo en 2010. La Vanguardia, ya citada, anuncia el cierre del local de Vallgorguina en 2012. Esta ficha no sustituye una fecha por la otra."
+      "El Español, el 6 de noviembre de 2016, sitúa un episodio de enero de 1995 en Terrassa, el traslado a Manresa y un cierre definitivo en 2010. La Vanguardia, ya citada, anuncia el cierre del local de Vallgorguina en 2012. Esta ficha no sustituye una fecha por la otra.",
+      "El artículo reproduce un cartel de Pont Aeri en Manresa fechado en 2000. No se publica la imagen: la ficha solo recoge el pie. Tampoco convierte ese año en una fecha de apertura o de cierre."
     ],
     "djIds": [
       "dj-skudero",
@@ -55,6 +56,11 @@
         "label": "El Español, 6 de noviembre de 2016",
         "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
         "note": "Da un cierre definitivo en 2010. No sustituye el anuncio de 2012 de La Vanguardia."
+      },
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "El pie de la figura 6 identifica un cartel de Pont Aeri en Manresa en 2000. No fecha la apertura."
       }
     ],
     "checkedAt": "2026-10-16",
@@ -78,7 +84,8 @@
       "El artículo de la Wikipedia en español describe Xque —también escrito X-Que? o X-Què?— como una discoteca de Palafrugell entre 1992 y 2007, y después de Olot entre 2010 y 2011. Atribuye la inauguración de 1992 a Gin Lemon SL y el giro hacia el hard trance y la mákina a la residencia de Oskar Mad.",
       "El mismo texto fecha el paso de David Álvarez, luego DJ Pastis, en 1995, primero con Oskar Mad y después con DJ Sek, y la llegada de David Pàmies, luego DJ Buenri, en 1996, procedente del Pont Aeri de Terrassa. El cierre de Palafrugell lo sitúa el 21 de julio de 2007, el día del decimoquinto aniversario. La cifra de asistencia que acompaña esa frase lleva en el artículo la marca de cita requerida y no se publica aquí.",
       "Para Olot, la Wikipedia da el 25 de septiembre de 2010 como apertura y marzo de 2011 como cierre, y remite al Diari de Girona. Nombra como residentes a DJ Sepi, DJ Bull y Fran Bit, y la incorporación de DJ Pastis a partir del 25 de diciembre. Esa reapertura no es la sala de Palafrugell. El vídeo del catálogo «Final concurso de dj's del Xque 2004» nombra la sala en el título; la ficha de sesión solo atribuye a quien ya tiene identificador. El vídeo «30 JAVI TRACKER I Intro Sesión Xque 2005/07» también nombra Xque en el título. Los años escritos en el título no se publican como fecha de la actuación, y Javi Tracker no entra como residente.",
-      "El mismo reportaje dice que Xquè la abrieron Pastis y Buenri y que cerró en 2006. La Wikipedia, ya citada, la atribuye a Gin Lemon y fecha Palafrugell entre 1992 y el 21 de julio de 2007. No se convierten en una sola versión y Pastis y Buenri no pasan a fundadores de esta ficha."
+      "El mismo reportaje dice que Xquè la abrieron Pastis y Buenri y que cerró en 2006. La Wikipedia, ya citada, la atribuye a Gin Lemon y fecha Palafrugell entre 1992 y el 21 de julio de 2007. No se convierten en una sola versión y Pastis y Buenri no pasan a fundadores de esta ficha.",
+      "El pie de una ortofoto del mismo artículo escribe ¿XQUE? en Calella de Palafrugell, con la grafía Palafruguell, y fecha la foto en 1995. La ficha de la Wikipedia sigue hablando de Palafrugell. No se funden las dos fórmulas ni se cambia el periodo ya publicado."
     ],
     "djIds": [
       "oskar-mad",
@@ -108,6 +115,11 @@
         "label": "El Español, 6 de noviembre de 2016",
         "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
         "note": "Atribuye la apertura a Pastis y Buenri y un cierre en 2006. No sustituye la ficha de la Wikipedia."
+      },
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "El pie de la figura 7 sitúa una ortofoto de ¿XQUE? en Calella de Palafrugell en 1995. No sustituye el periodo de la Wikipedia."
       }
     ],
     "checkedAt": "2026-10-16",
@@ -118,7 +130,8 @@
     ],
     "places": [
       "Palafrugell",
-      "Olot"
+      "Olot",
+      "Calella de Palafrugell"
     ]
   },
   {
@@ -130,7 +143,8 @@
     "period": "Residencia de Ricardo F: nueve años desde 1993. Apertura y cierre del local, sin fecha publicada aquí.",
     "paragraphs": [
       "La ficha de Ricardo F, apoyada en su entrevista con Makineros, lo presenta como residente de Chasis, en Mataró, durante nueve años desde 1993. En esa conversación habla de una sala que creció y de recopilatorios de la marca. Las cifras de público son su relato, no un aforo comprobado aparte, y no se repiten aquí como dato del edificio.",
-      "En el catálogo, cinco vídeos nombran Chasis en el título publicado por YouTube: las dos partes de «Ricardo F @ Chasis 2000», «Ricardo F live @ CHASIS Fiebre de Abril (Homenaje Ronda Barceló)», «Julio Posadas live @ CHASIS Fiebre de Abril» y «Xavi BCN live @ CHASIS Fiesta Blanca». Esa mención relaciona el vídeo con la sala. No convierte el año 2000 ni «Fiebre de Abril» en la fecha de la noche: la fecha guardada es la de publicación del vídeo. Julio Posadas y Xavi BCN no entran como residentes."
+      "En el catálogo, cinco vídeos nombran Chasis en el título publicado por YouTube: las dos partes de «Ricardo F @ Chasis 2000», «Ricardo F live @ CHASIS Fiebre de Abril (Homenaje Ronda Barceló)», «Julio Posadas live @ CHASIS Fiebre de Abril» y «Xavi BCN live @ CHASIS Fiesta Blanca». Esa mención relaciona el vídeo con la sala. No convierte el año 2000 ni «Fiebre de Abril» en la fecha de la noche: la fecha guardada es la de publicación del vídeo. Julio Posadas y Xavi BCN no entran como residentes.",
+      "La Wikipedia de la mákina habla del cierre de Chasis en la calle Newton, de una reapertura en Argentona después de la marcha de Ricardo F y de que el local había sido antes Megatron. No fecha ese cierre. Ricardo F sigue siendo el único residente enlazado: la frase no convierte en residentes a quienes nombren la reapertura."
     ],
     "djIds": [
       "ricardo-f"
@@ -162,6 +176,11 @@
         "label": "YouTube, Xavi BCN live @ CHASIS Fiesta Blanca",
         "url": "https://www.youtube.com/watch?v=r38U4a2ZHS8",
         "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      },
+      {
+        "label": "Wikipedia en español, Mákina",
+        "url": "https://es.wikipedia.org/wiki/M%C3%A1kina",
+        "note": "Nombra la calle Newton, una reapertura en Argentona y el nombre anterior Megatron. No fecha el cierre ni amplía la residencia."
       }
     ],
     "checkedAt": "2026-10-16",
@@ -214,7 +233,8 @@
       "El reportaje de Vice «Baila o muere», abierto el 16 de octubre de 2026, sitúa el local en Almogàvers 88, en una antigua fábrica de muebles. Fecha la apertura el 28 de septiembre de 1989, con «What Time Is Love» de KLF, y el cierre el 5 de mayo de 1992.",
       "Ese texto nombra a Pepebilly como DJ en la obra del local. El CCCB, en la ficha de Nando Dixkontrol actualizada el 12 de abril de 2017, lo incluye entre los residentes de Psicódromo y no fecha esa residencia. Las fichas ya publicadas de DJ Pastis y DJ Buenri dicen que entonces eran clientes, no DJs: no entran aquí como residentes.",
       "Una crónica de El Periódico del 22 de septiembre de 2019 no se pudo abrir: la petición devolvió 406. No se usa. No se publica una fotografía.",
-      "El Español dice que el Psicódromo cerró en 1994. El reportaje de Vice, ya citado, fecha el cierre el 5 de mayo de 1992. No se elige una de las dos fechas."
+      "El Español dice que el Psicódromo cerró en 1994. El reportaje de Vice, ya citado, fecha el cierre el 5 de mayo de 1992. No se elige una de las dos fechas.",
+      "El mismo artículo describe el Psicódromo como una antigua fábrica de muebles y tresillos en el Poblenou, en Almogàvers 88, y sitúa su cierre en mayo de 1992 por una ordenanza de 500 metros respecto de la zona de descanso olímpica. El reportaje de Vice ya fecha ese cierre el 5 de mayo de 1992. No se sustituye el día."
     ],
     "djIds": [
       "nando-dixkontrol",
@@ -236,6 +256,11 @@
         "label": "El Español, 6 de noviembre de 2016",
         "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
         "note": "Sitúa el cierre en 1994. No sustituye el 5 de mayo de 1992 del reportaje de Vice."
+      },
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "Describe la fábrica del Poblenou y sitúa el cierre en mayo de 1992. No sustituye el 5 de mayo de 1992 del reportaje de Vice."
       }
     ],
     "checkedAt": "2026-10-16",
@@ -355,7 +380,8 @@
     ],
     "paragraphs": [
       "La Wikipedia de la Ruta Destroy dice que ACTV abrió en 1986, creada por Julio Andújar, en la Malvarrosa, dentro de las Termas Victoria, un edificio de 1918. El nombre sale de Actividades Culturales Termas Victoria. Entre los primeros DJs nombra a Fran Lenaers y a Ganimedes, y después a Arturo Roger. Las sesiones de domingo por la tarde fueron una cita de la ruta.",
-      "Las Provincias, el 3 de abril de 2017, repite el origen del nombre en las termas y dice que donde estuvo ACTV se ubica entonces Aquarela. El pie de la Wikipedia escribe Akuarela. Las dos grafías se dejan como están. Ninguna de las dos páginas fecha el cambio de nombre. Las Provincias recuerda la sala por el sonido electrónico más duro y por sesiones de domingo por la tarde."
+      "Las Provincias, el 3 de abril de 2017, repite el origen del nombre en las termas y dice que donde estuvo ACTV se ubica entonces Aquarela. El pie de la Wikipedia escribe Akuarela. Las dos grafías se dejan como están. Ninguna de las dos páginas fecha el cambio de nombre. Las Provincias recuerda la sala por el sonido electrónico más duro y por sesiones de domingo por la tarde.",
+      "El País, el 29 de septiembre de 2017, nombra a Julio Andújar como propietario de Crac, Casablanca, Tropical y ACTV. La Wikipedia ya lo presenta como creador de ACTV. Las otras tres salas no tienen ficha propia en esta fase."
     ],
     "djIds": [],
     "sessionIds": [],
@@ -369,6 +395,11 @@
         "label": "Las Provincias, 3 de abril de 2017",
         "url": "https://www.lasprovincias.es/culturas/musica/201703/31/discotecas-miticas-valencia-20170331170458.html",
         "note": "Dice que en 2017 el sitio es Aquarela. No fecha el cambio de nombre."
+      },
+      {
+        "label": "El País, 29 de septiembre de 2017",
+        "url": "https://elpais.com/elpais/2017/09/29/tentaciones/1506688086_861349.html",
+        "note": "Nombra a Julio Andújar como propietario de ACTV, junto a Crac, Casablanca y Tropical. No fecha ACTV."
       }
     ],
     "checkedAt": "2026-10-16",
@@ -419,11 +450,14 @@
     "aliases": [
       "Nau B3"
     ],
-    "places": [],
+    "places": [
+      "Molins de Rei"
+    ],
     "paragraphs": [
       "El Español, el 6 de noviembre de 2016, dice en el pie de un mapa que algunas salas, como Pont Aeri o Nau B3, tuvieron varias ubicaciones. No enumera esos pueblos.",
       "El mismo reportaje asocia a El Brujo con Nau B3. No hay un perfil de El Brujo en este archivo, así que no se enlaza un DJ. Un pie de foto sitúa a jóvenes bailando en Nau B3 a finales de los 90. Esa fórmula no se convierte en un año de apertura o de cierre.",
-      "Los mensajes de foros que citan Molins de Rei, Argençola u otros pueblos no se han usado."
+      "Los mensajes de foros que citan Molins de Rei, Argençola u otros pueblos no se han usado.",
+      "Javier Marcuello López, en Arte y Ciudad de octubre de 2025, incluye en una figura una fotografía exterior de Nau B-3 en Molins de Rei fechada en 1994. El pie data la foto, no la apertura. El Español sigue diciendo que la sala tuvo varias ubicaciones y no las enumera."
     ],
     "djIds": [],
     "sessionIds": [],
@@ -432,6 +466,11 @@
         "label": "El Español, 6 de noviembre de 2016",
         "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
         "note": "Respalda que Nau B3 tuvo varias ubicaciones y la asocia con El Brujo. No lista los pueblos ni fecha la actividad."
+      },
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "El pie de la figura 4 sitúa una foto de Nau B-3 en Molins de Rei en 1994. No fecha la apertura ni cierra la lista de ubicaciones."
       }
     ],
     "checkedAt": "2026-10-16",
@@ -475,7 +514,8 @@
     ],
     "paragraphs": [
       "La misma frase de El Español del 6 de noviembre de 2016 pone Kontrol en Mataró y Central en Cubelles. No hay fecha ni DJ residente en esa frase.",
-      "Chasis también está documentada en Mataró y conserva su ficha. No se fusionan."
+      "Chasis también está documentada en Mataró y conserva su ficha. No se fusionan.",
+      "La misma página dice que Kontrol Mataró apareció en 2003, con DJ Skryker, en el local que había albergado Chasis y, antes, Megatron. El Español, ya citado, dice que Scorpia abrió Kontrol en Mataró y no nombra ese relevo. Se dejan las dos frases. DJ Skryker no entra como residente enlazado."
     ],
     "djIds": [],
     "sessionIds": [],
@@ -484,6 +524,11 @@
         "label": "El Español, 6 de noviembre de 2016",
         "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
         "note": "Nombra Kontrol como sala de Scorpia en Mataró. No la fecha."
+      },
+      {
+        "label": "Wikipedia en español, Mákina",
+        "url": "https://es.wikipedia.org/wiki/M%C3%A1kina",
+        "note": "Sitúa Kontrol Mataró en 2003 en el local de Chasis y nombra a DJ Skryker. No sustituye la frase de El Español ni crea una residencia en el archivo."
       }
     ],
     "checkedAt": "2026-10-16",
@@ -510,6 +555,362 @@
         "label": "Wikipedia en español, Ruta Destroy",
         "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
         "note": "Nombra Éxtasis en Llombai y dice que su nombre no trascendió como el de las salas principales. No fecha la sala."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "la-festa",
+    "name": "La Festa",
+    "summary": "La Wikipedia de la mákina la fecha entre 1996 y 2001 y nombra a Jordy Beat, Dany Kaos y a Pep Soler. La localidad no se publica: los recuerdos abiertos no coinciden.",
+    "category": "Sala",
+    "period": "De 1996 a 2001, según la Wikipedia de la mákina. Esa página no da la localidad.",
+    "aliases": [],
+    "places": [],
+    "paragraphs": [
+      "La Wikipedia en español de la mákina dice que La Festa existió de 1996 a 2001. Nombra a Jordy Beat y a Dany Kaos como DJs y a Pep Soler como gerente. El archivo ya identifica esas dos grafías con Jordi Beat y Dani Kaos, y por eso enlaza sus fichas. Pep Soler no tiene perfil.",
+      "En la página 30 del hilo de Makina Mania abierto el 16 de octubre de 2026, un mensaje escribe LAFESTA (Vallgorguina) y otro, la festa (Gavà). No se elige una localidad."
+    ],
+    "djIds": [
+      "jordi-beat",
+      "dani-kaos"
+    ],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Mákina",
+        "url": "https://es.wikipedia.org/wiki/M%C3%A1kina",
+        "note": "Fecha La Festa entre 1996 y 2001 y nombra a Jordy Beat, Dany Kaos y Pep Soler. No da localidad."
+      },
+      {
+        "label": "Makina Mania, página 30 del hilo, consulta del 16 de octubre de 2026",
+        "url": "https://www.makinamania.net/index.php?topic=36810.30",
+        "note": "Testimonio de foro. Un mensaje sitúa La Festa en Vallgorguina y otro en Gavà."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "megatron",
+    "name": "Megatron",
+    "summary": "Nombre anterior del local que, según la Wikipedia de la mákina, alojó después a Chasis y en 2003 a Kontrol Mataró. No tiene fechas propias.",
+    "category": "Sala",
+    "location": "Mataró, como nombre anterior del local de Chasis y de Kontrol",
+    "aliases": [
+      "Megatrón"
+    ],
+    "places": [
+      "Mataró"
+    ],
+    "paragraphs": [
+      "La Wikipedia de la mákina dice que Kontrol Mataró ocupó en 2003 el local que durante años había albergado Chasis y que antes se llamaba Megatron. Esta ficha conserva ese nombre y no se fusiona con Chasis ni con Kontrol.",
+      "No hay en esa frase una apertura ni un cierre de Megatron. La grafía del encargo, Megatrón, se guarda como alias."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Mákina",
+        "url": "https://es.wikipedia.org/wiki/M%C3%A1kina",
+        "note": "Presenta Megatron como nombre anterior del local de Chasis que en 2003 ocupa Kontrol Mataró. No fecha Megatron."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "scorpia-manresa",
+    "name": "Scorpia, Central del Sonido",
+    "summary": "Pie de ortofoto de 1996 en Manresa. No es la Scorpia de Òdena ni la Central de Cubelles.",
+    "category": "Sala",
+    "location": "Manresa",
+    "period": "La ortofoto está fechada en 1996. El artículo no dice que ese sea el año de apertura.",
+    "aliases": [],
+    "places": [
+      "Manresa"
+    ],
+    "paragraphs": [
+      "Javier Marcuello López, en Arte y Ciudad de octubre de 2025, rotula una ortofoto como Scorpia, Central del Sonido (Manresa, 1996). El año es el de la foto. Otra ortofoto del mismo cuadro sitúa Scorpia, Central del Sonido en Òdena en 1994.",
+      "La ficha de Scorpia sigue siendo la de Òdena. La Central de Cubelles sale de otra frase de El Español. Buscar Central encuentra las tres y no las une."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "El pie de la figura 7 identifica una ortofoto de Scorpia, Central del Sonido en Manresa en 1996, distinta de la de Òdena."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "distorsion-bar",
+    "name": "Distorsion Bar",
+    "summary": "Local de L'Hospitalet de Llobregat incluido en el collage de exteriores de discotecas de mákina del artículo de Marcuello. La foto está fechada en 1992.",
+    "category": "Sala",
+    "location": "L'Hospitalet de Llobregat",
+    "period": "La fotografía del artículo está fechada en 1992. No se publica una apertura ni un cierre.",
+    "aliases": [],
+    "places": [
+      "L'Hospitalet de Llobregat"
+    ],
+    "paragraphs": [
+      "La figura 4 de Arte y Ciudad, octubre de 2025, incluye una fotografía exterior de Distorsion Bar en L'Hospitalet de Llobregat fechada en 1992. El artículo la presenta entre exteriores de discotecas de mákina."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "El pie de la figura 4 sitúa Distorsion Bar en L'Hospitalet de Llobregat en 1992. No fecha la actividad."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "kodigo",
+    "name": "Kódigo",
+    "summary": "Discoteca de Gavà señalada en una ortofoto de 1994 dentro del estudio de Marcuello sobre los espacios de la mákina.",
+    "category": "Sala",
+    "location": "Gavà",
+    "period": "La ortofoto está fechada en 1994. El artículo no fecha la apertura ni el cierre.",
+    "aliases": [],
+    "places": [
+      "Gavà"
+    ],
+    "paragraphs": [
+      "El pie de la figura 7 de Arte y Ciudad, octubre de 2025, señala el aparcamiento de Kódigo en Gavà en 1994. Es uno de los casos con los que el artículo ilustra las discotecas de mákina fuera del centro de Barcelona."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "El pie de la figura 7 sitúa Kódigo en Gavà en 1994. No fecha la actividad."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "forum-terrassa",
+    "name": "Fòrum",
+    "summary": "Discoteca de Terrassa señalada en una ortofoto de 1994 del mismo estudio. No es Pont Aeri.",
+    "category": "Sala",
+    "location": "Terrassa",
+    "period": "La ortofoto está fechada en 1994. El artículo no fecha la apertura ni el cierre.",
+    "aliases": [],
+    "places": [
+      "Terrassa"
+    ],
+    "paragraphs": [
+      "El pie de la figura 7 de Arte y Ciudad, octubre de 2025, señala el aparcamiento de Fòrum en Terrassa en 1994. Pont Aeri también está documentado en Terrassa y conserva su ficha."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Marcuello López, Arte y Ciudad, octubre de 2025",
+        "url": "https://doi.org/10.22530/ayc.2025.28.775",
+        "note": "El pie de la figura 7 sitúa Fòrum en Terrassa en 1994. No la identifica con Pont Aeri."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "spook-factory",
+    "name": "Spook Factory",
+    "summary": "Sala de la pedanía de Pinedo, en Valencia. La Wikipedia de la Ruta Destroy la sitúa en 1984 y dice que antes se llamaba San Francisco. Pertenece a la ruta valenciana, no a la escena de Pont Aeri.",
+    "category": "Sala",
+    "location": "Pinedo, Valencia",
+    "period": "Aparición en 1984, según la Wikipedia. El artículo no fecha el cierre y dice que no volvió a vaciarse un fin de semana al menos hasta 1995 o 1996.",
+    "aliases": [
+      "San Francisco"
+    ],
+    "places": [
+      "Pinedo"
+    ],
+    "paragraphs": [
+      "La Wikipedia de la Ruta Destroy dice que Spook Factory apareció en 1984 en Pinedo, antes llamada San Francisco. Nombra a Juanito Torpedo en la cabina inicial y después a Fran Lenaers. El contexto es la noche valenciana de los ochenta.",
+      "No hay un perfil de esos DJs en este archivo. La ficha no los enlaza y no convierte la sala en una discoteca mákina catalana."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Sitúa Spook Factory en Pinedo en 1984 y recoge el nombre anterior San Francisco. No fecha el cierre."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "espiral",
+    "name": "Espiral",
+    "summary": "Sala de La Eliana. La Wikipedia dice que abrió a finales de los setenta, que hasta 1983 sonaba a disco y que saltó a la fama ese año. Es una sala de la ruta valenciana.",
+    "category": "Sala",
+    "location": "La Eliana",
+    "period": "Abierta desde finales de los setenta, según la Wikipedia. La reconversión y la desaparición se sitúan en los años noventa, sin un día.",
+    "aliases": [],
+    "places": [
+      "La Eliana"
+    ],
+    "paragraphs": [
+      "La Wikipedia de la Ruta Destroy sitúa Espiral en La Eliana, tierra adentro, abierta desde finales de los setenta y dedicada al disco hasta 1983. En la etapa nueva nombra a Quique y Juanjo Serrano, y a finales de los ochenta a Jesús Brisa.",
+      "Dice que el cierre y la reconversión en una versión más ligera, ya entrados los noventa, precipitaron su desaparición. No da el día. No se enlaza ningún DJ del catálogo."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Sitúa Espiral en La Eliana desde finales de los setenta y la fama en 1983. No fecha el cierre."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "nod",
+    "name": "NOD",
+    "summary": "Sala de las afueras de Ribarroja del Turia, abierta en 1989 según la Wikipedia. Antes, en el mismo relato, el local se llamó Bravatta y Don Julio.",
+    "category": "Sala",
+    "location": "Afueras de Ribarroja del Turia",
+    "period": "El nombre NOD es de 1989. La Wikipedia sitúa Bravatta en 1986 y no fecha el paso a Don Julio.",
+    "aliases": [
+      "Don Julio",
+      "Bravatta"
+    ],
+    "places": [
+      "Ribarroja del Turia"
+    ],
+    "paragraphs": [
+      "La Wikipedia de la Ruta Destroy dice que NOD abrió en 1989 en las afueras de Ribarroja del Turia, como after de Espiral. Nombra a Clemente Martínez como gerente y a Kike Jaén y DJ Nino en cabina.",
+      "El mismo apartado dice que Toni Vidal abrió ese local en 1986 como Bravatta, que cerró a los pocos años y que reabrió como Don Julio antes de invertirse el nombre. Bravatta y Don Julio se guardan como nombres anteriores, no como otras fichas."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Sitúa NOD en Ribarroja del Turia en 1989 y recoge Bravatta (1986) y Don Julio como nombres anteriores del local."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "puzzle",
+    "name": "Puzzle",
+    "summary": "Sala abierta en 1986 por Carlos Simó, a unos 2 km de Barraca, según la Wikipedia. Antes se llamaba New Bunker. Forma parte de la ruta valenciana.",
+    "category": "Sala",
+    "location": "A unos 2 km de Barraca, en la misma carretera",
+    "period": "1986, según la Wikipedia. El artículo no fecha el cierre.",
+    "aliases": [
+      "New Bunker"
+    ],
+    "places": [],
+    "paragraphs": [
+      "La Wikipedia de la Ruta Destroy dice que Puzzle llegó en 1986, antes llamada New Bunker, y que Carlos Simó, ex DJ de Barraca, la abrió como gerente a unos 2 km de Barraca. La suposición de un nombre aún anterior, Bunker, es del artículo y no se publica como alias.",
+      "No se fija el municipio: la frase da la distancia y la carretera, no una calle. El contexto musical que describe es synth pop, technopop y house de los ochenta, no la mákina catalana."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Sitúa Puzzle en 1986, a unos 2 km de Barraca, y recoge el nombre New Bunker. No da el municipio ni el cierre."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "oggi",
+    "name": "Oggi",
+    "summary": "Sala de Valencia que El País sitúa, con Juan Santamaría, en el origen del relato anterior a la Ruta. No se presenta como discoteca mákina.",
+    "category": "Sala",
+    "location": "Valencia",
+    "aliases": [],
+    "places": [
+      "Valencia"
+    ],
+    "paragraphs": [
+      "Eugenio Viñas, en El País del 29 de septiembre de 2017, usa Oggi como la discoteca del capítulo sobre el paso de las guitarras al bakalao. La empareja con Juan Santamaría y con Cap-3000, en Benidorm.",
+      "El artículo habla del origen del movimiento, del rock y del twist. No fecha Oggi ni la mete en la escena catalana."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "El País, 29 de septiembre de 2017",
+        "url": "https://elpais.com/elpais/2017/09/29/tentaciones/1506688086_861349.html",
+        "note": "Nombra Oggi en Valencia como sala del relato de origen, junto a Juan Santamaría. No la fecha."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "cap-3000",
+    "name": "Cap-3000",
+    "summary": "Sala de Benidorm que el mismo artículo de El País señala entre las experiencias de Juan Santamaría. No se presenta como discoteca mákina.",
+    "category": "Sala",
+    "location": "Benidorm",
+    "aliases": [],
+    "places": [
+      "Benidorm"
+    ],
+    "paragraphs": [
+      "El País, el 29 de septiembre de 2017, dice que las experiencias más relevantes de Juan Santamaría en ese capítulo suceden en Cap-3000, en Benidorm, y en Oggi, en Valencia. No fecha la sala."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "El País, 29 de septiembre de 2017",
+        "url": "https://elpais.com/elpais/2017/09/29/tentaciones/1506688086_861349.html",
+        "note": "Sitúa Cap-3000 en Benidorm en el relato de origen de Juan Santamaría. No la fecha."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "coliseum-malvarrosa",
+    "name": "Coliseum",
+    "summary": "Sala de la calle Eugenia Viñes, en la Malvarrosa, que la Wikipedia de la Ruta Destroy sitúa antes de ACTV y cierra alrededor de 1988. No es el Coliseum de Mollet citado en foros.",
+    "category": "Sala",
+    "location": "Calle Eugenia Viñes, Malvarrosa, Valencia",
+    "period": "Cierre alrededor de 1988, según la Wikipedia. No fecha la apertura.",
+    "aliases": [],
+    "places": [
+      "Valencia"
+    ],
+    "paragraphs": [
+      "La Wikipedia de la Ruta Destroy dice que ACTV empezó a la estela de Coliseum, en la misma calle Eugenia Viñes de la Malvarrosa, liderada por Fran Lenaers. Le da importancia durante un par de años y un cierre alrededor de 1988.",
+      "El mismo párrafo dice que Clemente Martínez intentó abrirla como NOD Coliseo. No se crea otra ficha con ese nombre. Los mensajes de foro que hablan de un Coliseum en Mollet no se usan: no se ha comprobado que sea esta sala."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Sitúa Coliseum en la calle Eugenia Viñes de la Malvarrosa y el cierre alrededor de 1988. No la identifica con Mollet."
       }
     ],
     "checkedAt": "2026-10-16",

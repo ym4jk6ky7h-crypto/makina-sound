@@ -85,7 +85,7 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
               ))}
             </ul>
           )}
-          <p className="sheet-note">La placa de cada tarjeta es una composición del archivo, no una fotografía del local. Una sala solo entra si una página abierta sostiene el dato. Area, Area Concor y Area de Beethoven no se han fundido: la identidad sigue sin una fuente suficiente.</p>
+          <p className="sheet-note">La placa de cada tarjeta es una composición del archivo, no una fotografía del local. Area y Concor se distinguen en un foro que solo responde por http, así que no entran. Area de Beethoven sigue sin una página abierta.</p>
         </div>
       </article>
     );
