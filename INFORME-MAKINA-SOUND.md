@@ -598,8 +598,8 @@ Estado de la fase: **completada**. `#salas` pasa de texto editorial a tres ficha
 
 ## Fase 23 — 16 de octubre de 2026
 
-Estado de la fase: **implementada**. `#djs` muestra 55 artistas y las cifras 46 / 25 / 13. La búsqueda acepta el nombre artístico y el de una sala ya ligada. Los filtros de contenido y de sala se combinan con el texto y se pueden quitar. El orden «Con más registros» cuenta lanzamientos y sesiones del archivo; no es un ranking. Las fichas omiten el bloque vacío de producciones y conservan la biografía. No hay retratos nuevos.
+Estado de la fase: **completada**. `#djs` muestra 55 artistas y las cifras 46 / 25 / 13. La búsqueda acepta el nombre artístico y el de una sala ya ligada. Los filtros de contenido y de sala se combinan con el texto y se pueden quitar. El orden «Con más registros» cuenta lanzamientos y sesiones del archivo; no es un ranking. Las fichas omiten el bloque vacío de producciones y conservan la biografía. No hay retratos nuevos.
 
-`npm test`: 42 pruebas, 0 fallos. Compilación local: `dist/assets/index-BJ_XPKAY.js` y `dist/assets/index--xK6cVC5.css`. Con `VITE_BASE=/makina-sound/`: `dist/assets/index-CqQXe88r.js` y `dist/assets/index-qPO6uUeK.css`. La publicación en GitHub Pages queda pendiente de confirmar el flujo. El detalle está en `informes/FASE-23-directorio-djs.md`.
+`npm test`: 42 pruebas, 0 fallos. La compilación de Pages queda en `assets/index-CqQXe88r.js` y `assets/index-qPO6uUeK.css`. El detalle está en `informes/FASE-23-directorio-djs.md`.
 
 

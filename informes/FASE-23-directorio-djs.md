@@ -78,7 +78,7 @@ No se adjuntó un listener de consola antes de la primera carga, así que no se 
 
 ## Publicación
 
-Pendiente de confirmar el flujo de GitHub Actions después de subir estos cambios. La URL pública anterior sigue siendo https://ym4jk6ky7h-crypto.github.io/makina-sound/ y, hasta que ese flujo termine, sirve la fase 22.
+Publicada. El flujo «Publicar MAKINA SOUND» del commit `437fa9d` terminó en éxito (run `38865668406`). https://ym4jk6ky7h-crypto.github.io/makina-sound/ respondió 200 y sirvió `assets/index-CqQXe88r.js` y `assets/index-qPO6uUeK.css`. Ese JavaScript contiene «Quitar filtros», «Con más registros» y «Monograma de».
 
 ## Pendiente
 
