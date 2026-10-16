@@ -616,7 +616,7 @@ Estado de la fase: **completada**. `#sesiones` deja de abrir un reproductor al e
 
 ## Fase 26 — 16 de octubre de 2026
 
-Estado de la fase: **completada en el código**. Cinco sesiones que ya nombraban una sala en el título de YouTube quedan enlazadas: una más en Pont Aeri, una más en Xque y tres más en Chasis. El archivo pasa de 4 a 9 sesiones con sala. No se añaden DJs, residentes ni fechas de actuación. Scorpia y Psicódromo siguen sin sesión. El catálogo musical no cambia: 55 perfiles, 618 tarjetas y 150 sesiones.
+Estado de la fase: **completada**. Cinco sesiones que ya nombraban una sala en el título de YouTube quedan enlazadas: una más en Pont Aeri, una más en Xque y tres más en Chasis. El archivo pasa de 4 a 9 sesiones con sala. No se añaden DJs, residentes ni fechas de actuación. Scorpia y Psicódromo siguen sin sesión. El catálogo musical no cambia: 55 perfiles, 618 tarjetas y 150 sesiones. Pages sirve `assets/index-C8d5upFg.js` y `assets/index-BC1EX7JV.css`.
 
 `npm test`: 43 pruebas, 0 fallos. La compilación local queda en `assets/index-B67SpYgY.js` y `assets/index-D2rVgAoB.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-C8d5upFg.js` y `assets/index-BC1EX7JV.css`. El detalle está en `informes/FASE-26-auditoria-catalogo.md`.
 

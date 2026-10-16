@@ -90,7 +90,9 @@ No se instaló un oyente de consola. No se afirma que la consola estuviera vací
 
 ## Publicación
 
-Pendiente de confirmar en GitHub Actions. La compilación que debe servir Pages es `assets/index-C8d5upFg.js` y `assets/index-BC1EX7JV.css`.
+El commit `9c5550e` se subió a `main`. El workflow «Publicar MAKINA SOUND» [38878463630](https://github.com/ym4jk6ky7h-crypto/makina-sound/actions/runs/38878463630) terminó en éxito.
+
+https://ym4jk6ky7h-crypto.github.io/makina-sound/ respondió 200. El HTML sirve `assets/index-C8d5upFg.js` y `assets/index-BC1EX7JV.css`. El JavaScript respondió 200 y contiene «Xavi BCN live @ CHASIS Fiesta Blanca», `dGN_8ey-jwM` y «Intro Sesión Xque».
 
 ## Limitaciones
 
