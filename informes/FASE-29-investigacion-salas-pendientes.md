@@ -72,6 +72,10 @@ En el navegador, a ancho de escritorio, el directorio muestra 32 salas. Barçall
 
 A 390 px, `innerWidth`, `scrollWidth` y `clientWidth` valen 390. La búsqueda y el filtro quedan en columna. No se afirma que la consola estuviera limpia.
 
+## Publicación
+
+El workflow [38888499921](https://github.com/ym4jk6ky7h-crypto/makina-sound/actions/runs/38888499921) terminó en success. GitHub Pages responde 200 y sirve `assets/index-rjnbesIt.js` y `assets/index-BC1EX7JV.css`. El JavaScript público contiene «Barçalles», «Chivago River», «Distrito Cero» y «El Perellonet».
+
 ## Limitaciones
 
 - Area, Concor y Area Concor siguen separados a propósito. El directorio https da una dirección en Sant Quirze y no una historia.

@@ -634,7 +634,7 @@ Estado de la fase: **completada**. `#salas` pasa de 14 a 27 fichas. Las trece nu
 
 ## Fase 29 — 16 de octubre de 2026
 
-Estado de la fase: **en el código, pendiente de comprobar Pages**. `#salas` pasa de 27 a 32 fichas. Entran Barçalles, Penélope de Benifaió, La Sala del Cel, Distrito Cero y Heaven. Area, Concor, Area Concor y Area de Beethoven siguen fuera. La lista de control se actualiza en `informes/INVENTARIO-HISTORICO-DISCOTECAS.md`. No hay imágenes nuevas ni cambios en los 55 perfiles, las 618 tarjetas ni las 150 sesiones.
+Estado de la fase: **completada**. `#salas` pasa de 27 a 32 fichas. Entran Barçalles, Penélope de Benifaió, La Sala del Cel, Distrito Cero y Heaven. Area, Concor, Area Concor y Area de Beethoven siguen fuera. La lista de control se actualiza en `informes/INVENTARIO-HISTORICO-DISCOTECAS.md`. No hay imágenes nuevas ni cambios en los 55 perfiles, las 618 tarjetas ni las 150 sesiones. Pages sirve `assets/index-rjnbesIt.js` y `assets/index-BC1EX7JV.css`.
 
 `npm test`: 47 pruebas, 0 fallos. La compilación local queda en `assets/index-Dvit9Qjq.js` y `assets/index-D2rVgAoB.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-rjnbesIt.js` y `assets/index-BC1EX7JV.css`. El detalle está en `informes/FASE-29-investigacion-salas-pendientes.md`.
 
