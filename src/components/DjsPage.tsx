@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { readCatalog } from "../data/catalog.ts";
 import { readDjs } from "../data/djsCatalog.ts";
+import { readVenues } from "../data/library.ts";
+import { venuesForDj } from "../lib/places.ts";
 import type { DjSort } from "../lib/djs.ts";
 import { describeDjScreen, mediaPlayer } from "../lib/djView.ts";
 import type { DjProfileView, PlayableMedia } from "../lib/djView.ts";
@@ -157,6 +159,7 @@ function DjProfilePage({
   playingKey: string | null;
   onPlay: (key: string) => void;
 }) {
+  const rooms = venuesForDj(profile.id, readVenues());
   const playing = playingSource(profile, playingKey);
   const player = mediaPlayer(playing);
   const [lead, ...rest] = profile.biography;
@@ -225,6 +228,16 @@ function DjProfilePage({
             <SessionBlock sessions={profile.sessions} playingKey={playingKey} onPlay={onPlay} />
           )}
         </section>
+        {rooms.length > 0 ? (
+          <section className="dj-block" aria-labelledby="salas-dj">
+            <h2 id="salas-dj">Salas</h2>
+            <ul className="dj-link-list">
+              {rooms.map((room) => (
+                <li key={room.id}><a href={`#salas/${room.id}`}>{room.name}</a></li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
         {profile.links.length > 0 ? (
           <section className="dj-block dj-sources" aria-labelledby="fuentes-dj">
             <h2 id="fuentes-dj">Fuentes</h2>

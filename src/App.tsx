@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Highlights } from "./components/Highlights";
 import { NightInside } from "./components/NightInside";
+import { PlacesPage } from "./components/PlacesPage";
 import { ArchivePage, DoorPage, ExplorePage, ProjectPage } from "./components/Pages";
 import { DjsPage } from "./components/DjsPage";
 import { EquipoPage, RinconPage } from "./components/LibraryPages";
@@ -89,7 +90,7 @@ export default function App() {
   }
 
   const doorSection =
-    section === "discos" || section === "salas" || section === "flyers" ? section : null;
+    section === "discos" ? section : null;
 
   return (
     <>
@@ -136,6 +137,7 @@ export default function App() {
         {section === "proyecto" ? <ProjectPage /> : null}
         {section === "djs" ? <DjsPage /> : null}
         {section === "sesiones" ? <SessionsPage /> : null}
+        {section === "salas" || section === "flyers" ? <PlacesPage kind={section} /> : null}
         {section === "rincon" ? <RinconPage /> : null}
         {section === "equipo" ? <EquipoPage /> : null}
         {doorSection ? <DoorPage id={doorSection} /> : null}

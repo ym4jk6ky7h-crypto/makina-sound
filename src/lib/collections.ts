@@ -14,6 +14,10 @@ export type VenueRecord = {
   summary: string;
   category: string;
   location?: string;
+  period?: string;
+  paragraphs: string[];
+  djIds: string[];
+  sessionIds: string[];
   links: SourceLink[];
   checkedAt?: string;
 };
@@ -25,8 +29,12 @@ export type FlyerRecord = {
   quality: "verificada" | "parcial";
   eventDate?: string;
   venueName?: string;
+  venueId?: string;
+  djIds: string[];
   credit?: string;
   imageUrl?: string;
+  license?: string;
+  licenseUrl?: string;
   links: SourceLink[];
   checkedAt?: string;
 };
@@ -194,6 +202,23 @@ function isPublished(record: Record<string, unknown>): boolean {
   return record.status === "published";
 }
 
+function idList(value: unknown, pattern: RegExp): string[] | null {
+  if (value === undefined) return [];
+  if (!Array.isArray(value)) return null;
+  const ids: string[] = [];
+  for (const item of value) {
+    const id = text(item);
+    if (!id || !pattern.test(id) || ids.includes(id)) return null;
+    ids.push(id);
+  }
+  return ids;
+}
+
+function paragraphsOf(value: unknown): string[] | null {
+  if (value === undefined) return [];
+  return stringList(value, true);
+}
+
 export function openVenues(value: unknown): VenueRecord[] {
   if (!Array.isArray(value)) return [];
   const seen = new Set<string>();
@@ -207,12 +232,30 @@ export function openVenues(value: unknown): VenueRecord[] {
     const summary = text(record.summary);
     const category = text(record.category);
     const location = text(record.location);
+    const period = text(record.period);
+    const paragraphs = paragraphsOf(record.paragraphs);
+    const djIds = idList(record.djIds, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    const sessionIds = idList(record.sessionIds, /^[A-Za-z0-9_-]{11}$/);
     const links = readLinks(record.links);
     const checked = checkedAt(record);
     if (!id || !slug(id) || seen.has(id) || !name || !summary || !category || !links || checked === null) continue;
     if (record.location !== undefined && !location) continue;
+    if (record.period !== undefined && !period) continue;
+    if (!paragraphs || !djIds || !sessionIds) continue;
     seen.add(id);
-    venues.push({ id, name, summary, category, location, links, checkedAt: checked ?? undefined });
+    venues.push({
+      id,
+      name,
+      summary,
+      category,
+      location,
+      period,
+      paragraphs,
+      djIds,
+      sessionIds,
+      links,
+      checkedAt: checked ?? undefined,
+    });
   }
   return venues;
 }
@@ -231,9 +274,15 @@ export function openFlyers(value: unknown): FlyerRecord[] {
     const quality = record.quality === "verificada" || record.quality === "parcial" ? record.quality : undefined;
     const links = readLinks(record.links);
     const imageUrl = text(record.imageUrl);
+    const license = text(record.license);
+    const licenseUrl = text(record.licenseUrl);
+    const venueId = text(record.venueId);
+    const djIds = idList(record.djIds, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     const checked = checkedAt(record);
-    if (!id || !slug(id) || seen.has(id) || !title || !summary || !quality || !links || checked === null) continue;
+    if (!id || !slug(id) || seen.has(id) || !title || !summary || !quality || !links || checked === null || !djIds) continue;
     if (record.imageUrl !== undefined && (!imageUrl || !httpsUrl(imageUrl))) continue;
+    if (imageUrl && (!license || !licenseUrl || !httpsUrl(licenseUrl))) continue;
+    if (record.venueId !== undefined && (!venueId || !slug(venueId))) continue;
     const eventDate = text(record.eventDate);
     if (record.eventDate !== undefined && (!eventDate || !isPublishedDate(eventDate))) continue;
     const venueName = text(record.venueName);
@@ -248,8 +297,12 @@ export function openFlyers(value: unknown): FlyerRecord[] {
       quality,
       eventDate,
       venueName,
+      venueId,
+      djIds,
       credit,
       imageUrl,
+      license,
+      licenseUrl,
       links,
       checkedAt: checked ?? undefined,
     });

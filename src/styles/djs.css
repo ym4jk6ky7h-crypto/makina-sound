@@ -241,6 +241,46 @@
   color: var(--paper);
 }
 
+.room-plate {
+  display: grid;
+  place-items: end start;
+  min-height: 4.5rem;
+  padding: 0.7rem 0.8rem;
+  background:
+    linear-gradient(180deg, transparent 0 70%, rgba(231, 255, 66, 0.85) 70% 72%, transparent 72%),
+    #171410;
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.room-plate.is-large {
+  min-height: 8rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.flyer-grid .room-plate {
+  place-items: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+}
+
+.dj-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.8rem;
+  padding: 0;
+  list-style: none;
+}
+
+.dj-link-list a {
+  color: var(--acid);
+}
+
 .dj-sr {
   position: absolute;
   width: 1px;

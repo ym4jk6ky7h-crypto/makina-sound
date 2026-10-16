@@ -2,6 +2,9 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { openComparisons, openFlyers, openGear, openTutorials, openVenues } from "../src/lib/collections.ts";
+import { openDjs } from "../src/lib/djs.ts";
+import { describeFlyer, describeVenue, venuesForDj } from "../src/lib/places.ts";
+import { openCatalog } from "../src/lib/sessions.ts";
 
 const empty = JSON.parse(readFileSync(new URL("../src/data/venues.json", import.meta.url), "utf8"));
 
@@ -22,8 +25,12 @@ const tutorial = {
 
 describe("catálogos nuevos", () => {
   it("no publica los archivos vacíos", () => {
-    assert.deepEqual(openVenues(empty), []);
-    assert.deepEqual(openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8"))), []);
+    assert.deepEqual(openVenues([]), []);
+    const venues = openVenues(empty);
+    const flyers = openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8")));
+    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis"]);
+    assert.equal(flyers.length, 3);
+    assert.equal(flyers.every((flyer) => flyer.imageUrl === undefined), true);
     assert.deepEqual(openTutorials(JSON.parse(readFileSync(new URL("../src/data/tutorials.json", import.meta.url), "utf8"))), []);
     assert.deepEqual(openGear(JSON.parse(readFileSync(new URL("../src/data/gear.json", import.meta.url), "utf8"))), []);
     assert.deepEqual(openComparisons(JSON.parse(readFileSync(new URL("../src/data/comparisons.json", import.meta.url), "utf8")), []), []);
@@ -111,5 +118,56 @@ describe("catálogos nuevos", () => {
       ).length,
       0,
     );
+  });
+});
+
+describe("fase 22 salas y flyers", () => {
+  const venues = openVenues(JSON.parse(readFileSync(new URL("../src/data/venues.json", import.meta.url), "utf8")));
+  const flyers = openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8")));
+  const djs = openDjs(JSON.parse(readFileSync(new URL("../src/data/djs.json", import.meta.url), "utf8")));
+  const sessions = openCatalog(
+    JSON.parse(readFileSync(new URL("../src/data/sources.json", import.meta.url), "utf8")),
+    JSON.parse(readFileSync(new URL("../src/data/sessions.json", import.meta.url), "utf8")),
+  ).sessions;
+
+  it("publica tres salas y tres referencias sin imagen", () => {
+    const djIds = new Set(djs.map((dj) => dj.id));
+    const sessionIds = new Set(sessions.map((session) => session.id));
+    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis"]);
+    assert.equal(flyers.length, 3);
+    for (const venue of venues) {
+      assert.ok(venue.paragraphs.length > 0);
+      for (const id of venue.djIds) assert.ok(djIds.has(id), id);
+      for (const id of venue.sessionIds) assert.ok(sessionIds.has(id), id);
+    }
+    assert.equal(flyers.every((flyer) => flyer.imageUrl === undefined), true);
+    assert.equal(
+      openFlyers([{
+        id: "sin-licencia",
+        title: "Cartel",
+        summary: "Una imagen https no basta.",
+        quality: "verificada",
+        imageUrl: "https://example.com/cartel.jpg",
+        links: [{ label: "Fuente", url: "https://example.com/cartel" }],
+        status: "published",
+      }]).length,
+      0,
+    );
+  });
+
+  it("abre la ficha y no inventa una sala ausente", () => {
+    const names = djs.map((dj) => ({ id: dj.id, name: dj.name }));
+    const titles = sessions.map((session) => ({ id: session.id, title: session.title }));
+    const pont = describeVenue("pont-aeri", venues, names, titles, flyers);
+    assert.equal(pont.kind, "profile");
+    if (pont.kind !== "profile") return;
+    assert.equal(pont.djs.some((dj) => dj.id === "dj-skudero"), true);
+    assert.equal(pont.sessions[0]?.id, "gWNOt-He3g8");
+    assert.equal(pont.flyers.length, 3);
+    assert.equal(describeVenue("scorpia", venues, names, titles, flyers).kind, "missing");
+    assert.equal(venuesForDj("ricardo-f", venues)[0]?.id, "chasis");
+    const paper = describeFlyer("macrorave-2009", flyers, venues, names);
+    assert.equal(paper.kind, "profile");
+    if (paper.kind === "profile") assert.equal(paper.venue?.id, "pont-aeri");
   });
 });

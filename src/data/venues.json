@@ -1,1 +1,64 @@
-[]
+[
+  {
+    "id": "pont-aeri",
+    "name": "Pont Aeri",
+    "summary": "Nombre de la mákina catalana con varias etapas de sala. La web oficial fecha el origen en 1991, en Terrassa. El local de Vallgorguina anunció el cierre en 2012 y el nombre sigue en cartel.",
+    "category": "Sala",
+    "location": "Terrassa, Manresa, Traiguera y Vallgorguina",
+    "period": "Desde 1991. El anuncio de cierre del local de Vallgorguina es de 2012.",
+    "paragraphs": [
+      "La web oficial ordena las etapas así: Terrassa en 1991, Manresa en 2000, Traiguera en 2000 y Vallgorguina en 2002. No es una sola dirección. Es una sucesión de locales con el mismo nombre, y la página consultada en 2026 sigue anunciando reencuentros.",
+      "Esa web presenta a Skudero, Xavi Metralla, Sonic y Sisu como el núcleo de una etapa de Vallgorguina, y dice que la cabina empieza antes y reúne a más generaciones. El CCCB incluye a Nando Dixkontrol entre los residentes de Pont Aeri, sin fechar esa etapa en la ficha leída. Las biografías ya publicadas de DJ Pastis y DJ Buenri los sitúan en la sala antes de su paso a Xque.",
+      "El 5 de agosto de 2012, La Vanguardia recogió el anuncio de Ramón Escudero: el local de Vallgorguina cerraría a partir de noviembre, después de 21 años, por la subida del IVA del ocio nocturno. El 9 Nou, el 28 de diciembre de 2012, contó el cierre de esa sala. Una sesión del catálogo titulada «Closing Party @ Pont Aeri (Junio 2024)» nombra el nombre en 2024: no es el cierre de 2012, y la fecha guardada es la de publicación del vídeo."
+    ],
+    "djIds": ["dj-skudero", "xavi-metralla", "dj-sonic", "dj-sisu", "nando-dixkontrol", "dj-pastis", "dj-buenri"],
+    "sessionIds": ["gWNOt-He3g8"],
+    "links": [
+      { "label": "Web oficial", "url": "https://www.pontaeri.es/" },
+      { "label": "La Vanguardia, 5 de agosto de 2012", "url": "https://www.lavanguardia.com/vida/20120805/54334033363/vallgorguina-iva-hunde-discoteca-pont-aeri-cierra.html" },
+      { "label": "El 9 Nou, 28 de diciembre de 2012", "url": "https://el9nou.cat/valles-oriental/actualitat/el-darrer-vol-del-pont-aeri/" },
+      { "label": "CCCB, Nando Dixkontrol", "url": "https://www.cccb.org/ca/w/collectius/nando-dixkontrol" }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "xque",
+    "name": "Xque",
+    "summary": "Discoteca de Palafrugell asociada a la mákina y, más tarde, a una reapertura breve en Olot. La ficha sigue la Wikipedia en español y deja fuera la cifra de cierre que ese artículo marca como pendiente de fuente.",
+    "category": "Sala",
+    "location": "Palafrugell y Olot",
+    "period": "Palafrugell, 1992–2007. Olot, 2010–2011, según la Wikipedia.",
+    "paragraphs": [
+      "El artículo de la Wikipedia en español describe Xque —también escrito X-Que? o X-Què?— como una discoteca de Palafrugell entre 1992 y 2007, y después de Olot entre 2010 y 2011. Atribuye la inauguración de 1992 a Gin Lemon SL y el giro hacia el hard trance y la mákina a la residencia de Oskar Mad.",
+      "El mismo texto fecha el paso de David Álvarez, luego DJ Pastis, en 1995, primero con Oskar Mad y después con DJ Sek, y la llegada de David Pàmies, luego DJ Buenri, en 1996, procedente del Pont Aeri de Terrassa. El cierre de Palafrugell lo sitúa el 21 de julio de 2007, el día del decimoquinto aniversario. La cifra de asistencia que acompaña esa frase lleva en el artículo la marca de cita requerida y no se publica aquí.",
+      "Para Olot, la Wikipedia da el 25 de septiembre de 2010 como apertura y marzo de 2011 como cierre, y remite al Diari de Girona. Nombra como residentes a DJ Sepi, DJ Bull y Fran Bit, y la incorporación de DJ Pastis a partir del 25 de diciembre. Esa reapertura no es la sala de Palafrugell. El vídeo del catálogo «Final concurso de dj's del Xque 2004» nombra la sala en el título; la ficha de sesión solo atribuye a quien ya tiene identificador."
+    ],
+    "djIds": ["oskar-mad", "dj-pastis", "dj-sek", "dj-buenri", "dj-sepi", "dj-bull", "fran-bit"],
+    "sessionIds": ["ZiVYJdWRF_s"],
+    "links": [
+      { "label": "Wikipedia en español", "url": "https://es.wikipedia.org/wiki/Xque" }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "chasis",
+    "name": "Chasis",
+    "summary": "Sala de Mataró ligada a la residencia de Ricardo F. Esta ficha no fecha la apertura ni el cierre del local: solo publica lo que él cuenta en Makineros y lo que el catálogo ya tenía firmado.",
+    "category": "Sala",
+    "location": "Mataró",
+    "period": "Residencia de Ricardo F: nueve años desde 1993. Apertura y cierre del local, sin fecha publicada aquí.",
+    "paragraphs": [
+      "La ficha de Ricardo F, apoyada en su entrevista con Makineros, lo presenta como residente de Chasis, en Mataró, durante nueve años desde 1993. En esa conversación habla de una sala que creció y de recopilatorios de la marca. Las cifras de público son su relato, no un aforo comprobado aparte, y no se repiten aquí como dato del edificio.",
+      "En el catálogo hay dos vídeos cuyo título dice «Ricardo F @ Chasis 2000». La fecha que guarda MAKINA SOUND es la de publicación del vídeo, no la de la noche. Scorpia y el Psicódromo no entran en este archivo: no había una ficha con el mismo apoyo de fechas y fuentes."
+    ],
+    "djIds": ["ricardo-f"],
+    "sessionIds": ["BwIWr8hEAY4", "kXoeGh41i4M"],
+    "links": [
+      { "label": "Entrevista en Makineros", "url": "https://makineros.com/entrevistamos-a-ricardo-fdj-residente-de-la-sala-chasis-durante-9-anos/" }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  }
+]

@@ -181,7 +181,7 @@ export const doorCopy: Record<"discos" | "djs" | "sesiones" | "salas" | "flyers"
     kicker: "04",
     label: "El cuarto",
     title: "Salas",
-    lead: "Esta parte cuenta la historia de las salas: el cuarto, la costumbre de volver y lo que convertía un local en sitio de la gente. No hay un mapa ni fichas de discotecas. Los flyers están en la sección de al lado.",
+    lead: "Tres salas con fuente que se puede abrir: Pont Aeri, Xque y Chasis. La ficha dice de dónde sale cada fecha. Donde la fuente no alcanza, el dato no se publica.",
     essays: [
       {
         heading: "Anatomía de la sala",
@@ -212,13 +212,13 @@ export const doorCopy: Record<"discos" | "djs" | "sesiones" | "salas" | "flyers"
         ],
       },
     ],
-    note: "Texto editorial. Esta sección no ficha locales ni publica un mapa de salas.",
+    note: "Las fichas de arriba son el archivo. El texto que sigue es editorial y no añade locales.",
   },
   flyers: {
     kicker: "05",
     label: "El papel",
     title: "Flyers",
-    lead: "Aquí va el documento gráfico: el cartel, la cinta y lo que se podía guardar al salir. Los dibujos de esta web son ilustraciones editoriales, no flyers auténticos. La historia de las salas está en la sección anterior.",
+    lead: "Referencias de carteles citados por una fuente identificable. Ninguna imagen se publica hasta que la licencia permita copiarla. Los dibujos de esta web siguen siendo ilustraciones.",
     essays: [
       {
         heading: "Qué cabía en el flyer",

@@ -7,7 +7,9 @@ Este archivo describe la web tal como está en el código ahora. No es un plan. 
 
 ## Estado vigente — 16 de octubre de 2026
 
-Fases 01 a 21 cerradas. La fase 21 publica la web en GitHub Pages. La dirección comprobada es https://ym4jk6ky7h-crypto.github.io/makina-sound/ y el directorio está en https://ym4jk6ky7h-crypto.github.io/makina-sound/#djs. Sigue sin haber un retrato autorizado: 0 verificados, 13 pendientes y 42 sin candidato. El catálogo no cambia: 55 fichas, 618 tarjetas y 150 sesiones. El detalle está en `informes/FASE-21-publicacion-y-retratos.md`.
+Fases 01 a 22 cerradas. La fase 22 abre el archivo de salas en `#salas` y las referencias de carteles en `#flyers`. Hay 3 fichas de sala (Pont Aeri, Xque y Chasis) y 3 carteles citados sin imagen. El catálogo musical no cambia: 55 fichas, 618 tarjetas y 150 sesiones. Siguen 0 retratos verificados. El detalle está en `informes/FASE-22-salas-y-flyers.md`.
+
+La fase 21 publica la web en GitHub Pages: https://ym4jk6ky7h-crypto.github.io/makina-sound/. El detalle está en `informes/FASE-21-publicacion-y-retratos.md`.
 
 La fase 20 volvió a abrir los 13 candidatos y no publicó ninguna fotografía. El detalle está en `informes/FASE-20-retratos-y-acceso.md`.
 
@@ -83,7 +85,7 @@ Discografías publicadas. El número es de tarjetas de release con el crédito c
 
 El número es de tarjetas de release, no de cada corte del tracklist. De esas tarjetas, nueve son los mismos releases del dúo y están en las dos fichas de Pastis y de Buenri. Hide Away y Try están en DJ Cesk y en DJ Pitu. Las ocho de Xavi BCN salen de fichas ya abiertas en la fase 10; no son su discografía entera. Un cero significa que no hay ningún release publicado, no que el DJ no tenga música.
 
-El detalle está en `informes/FASE-01-discografia.md`, `informes/FASE-02-discografias.md`, `informes/FASE-05-discografias.md`, `informes/FASE-06-discografias.md`, `informes/FASE-07-interfaz-djs.md`, `informes/FASE-08-fotografias-djs.md`, `informes/FASE-09-pastis-buenri-directorio.md`, `informes/FASE-10-discografias-pastis-buenri.md`, `informes/FASE-11-biografias-pastis-buenri.md`, `informes/FASE-12-ampliacion-djs.md`, `informes/FASE-13-segunda-ampliacion-djs.md`, `informes/FASE-14-ampliacion-masiva-catalogo.md`, `informes/AUDITORIA-calidad-directorio-djs.md`, `informes/FASE-15-ampliacion-djs-hasta-50.md`, `informes/FASE-16-rediseño-editorial-djs.md`, `informes/FASE-17-refinamiento-visual-djs.md`, `informes/FASE-18-retratos-y-rediseño-premium-djs.md`, `informes/FASE-19-sistema-retratos.md`, `informes/FASE-20-retratos-y-acceso.md` y `informes/FASE-21-publicacion-y-retratos.md`. Lo que sigue, hasta el apartado de la fase 01, es la foto del 14 de octubre. Varias frases de esa foto ya no describen el código: las sesiones ya no se copian dentro de la ficha, el archivo también busca DJs y sesiones, hay Rincón y Equipo, `#djs` ya no abre una ficha por defecto, y las discografías de arriba ya no son las muestras cortas de aquel día.
+El detalle está en `informes/FASE-01-discografia.md`, `informes/FASE-02-discografias.md`, `informes/FASE-05-discografias.md`, `informes/FASE-06-discografias.md`, `informes/FASE-07-interfaz-djs.md`, `informes/FASE-08-fotografias-djs.md`, `informes/FASE-09-pastis-buenri-directorio.md`, `informes/FASE-10-discografias-pastis-buenri.md`, `informes/FASE-11-biografias-pastis-buenri.md`, `informes/FASE-12-ampliacion-djs.md`, `informes/FASE-13-segunda-ampliacion-djs.md`, `informes/FASE-14-ampliacion-masiva-catalogo.md`, `informes/AUDITORIA-calidad-directorio-djs.md`, `informes/FASE-15-ampliacion-djs-hasta-50.md`, `informes/FASE-16-rediseño-editorial-djs.md`, `informes/FASE-17-refinamiento-visual-djs.md`, `informes/FASE-18-retratos-y-rediseño-premium-djs.md`, `informes/FASE-19-sistema-retratos.md`, `informes/FASE-20-retratos-y-acceso.md`, `informes/FASE-21-publicacion-y-retratos.md` y `informes/FASE-22-salas-y-flyers.md`. Lo que sigue, hasta el apartado de la fase 01, es la foto del 14 de octubre. Varias frases de esa foto ya no describen el código: las sesiones ya no se copian dentro de la ficha, el archivo también busca DJs y sesiones, hay Rincón y Equipo, `#djs` ya no abre una ficha por defecto, y las discografías de arriba ya no son las muestras cortas de aquel día.
 
 ## Histórico — foto del 14 de octubre de 2026
 
@@ -587,5 +589,11 @@ Estado de la fase: **completada** sin fotografías nuevas. Se releyeron las pág
 Estado de la fase: **completada**. La web queda publicada en GitHub Pages, en https://ym4jk6ky7h-crypto.github.io/makina-sound/. El repositorio público es https://github.com/ym4jk6ky7h-crypto/makina-sound. No se ha usado `makina-hub`, que es otro proyecto. No hay retratos nuevos: 0 autorizados, 13 pendientes y 42 sin candidato.
 
 `npm test`: 39 pruebas, 0 fallos. La compilación de Pages sirve `assets/index-pFJ8C9aa.js` y `assets/index-ChtpcYJz.css`. El detalle está en `informes/FASE-21-publicacion-y-retratos.md`.
+
+## Fase 22 — 16 de octubre de 2026
+
+Estado de la fase: **completada**. `#salas` pasa de texto editorial a tres fichas: Pont Aeri, Xque y Chasis. `#flyers` cita tres carteles de la web de Pont Aeri y no reproduce ninguna imagen. Scorpia y el Psicódromo quedan fuera. Las fichas de DJ enlazan la sala cuando el archivo las relaciona. El catálogo musical sigue en 55 perfiles, 618 tarjetas y 150 sesiones.
+
+`npm test`: 41 pruebas, 0 fallos. La compilación de Pages queda en `assets/index-D90E7Cd2.js` y `assets/index-FcP9tNcP.css`. El detalle está en `informes/FASE-22-salas-y-flyers.md`.
 
 

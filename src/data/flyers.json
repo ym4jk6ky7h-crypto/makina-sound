@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "macrorave-2009",
+    "title": "Macrorave 2009",
+    "summary": "La web de Pont Aeri fecha este cartel el 23 de junio de 2009 en Vallgorguina y cita Last.fm como procedencia. La imagen no se reproduce: esa página no trae una licencia para copiarla.",
+    "quality": "parcial",
+    "eventDate": "2009-06-23",
+    "venueName": "Pont Aeri, Vallgorguina",
+    "venueId": "pont-aeri",
+    "djIds": [],
+    "credit": "Procedencia citada por Pont Aeri: Last.fm. Autorización de reproducción: pendiente.",
+    "links": [
+      { "label": "Pont Aeri, carteles", "url": "https://www.pontaeri.es/" }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "masters-of-hardcore-2011",
+    "title": "Masters of Hardcore 2011",
+    "summary": "La web de Pont Aeri fecha este cartel el 17 de septiembre de 2011 en Vallgorguina y cita Partyflock como procedencia. La imagen no se reproduce.",
+    "quality": "parcial",
+    "eventDate": "2011-09-17",
+    "venueName": "Pont Aeri, Vallgorguina",
+    "venueId": "pont-aeri",
+    "djIds": [],
+    "credit": "Procedencia citada por Pont Aeri: Partyflock. Autorización de reproducción: pendiente.",
+    "links": [
+      { "label": "Pont Aeri, carteles", "url": "https://www.pontaeri.es/" }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "vallgorguina-4ever-2025",
+    "title": "Vallgorguina 4ever",
+    "summary": "La web de Pont Aeri fecha este cartel el 29 de noviembre de 2025 en Terminal, Sabadell, y cita Wololo Sound como procedencia. Es un reencuentro, no un cartel del local cerrado en 2012. La imagen no se reproduce.",
+    "quality": "parcial",
+    "eventDate": "2025-11-29",
+    "venueName": "Terminal, Sabadell",
+    "venueId": "pont-aeri",
+    "djIds": [],
+    "credit": "Procedencia citada por Pont Aeri: Wololo Sound. Autorización de reproducción: pendiente.",
+    "links": [
+      { "label": "Pont Aeri, carteles", "url": "https://www.pontaeri.es/" }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  }
+]
