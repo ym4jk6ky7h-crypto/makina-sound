@@ -85,7 +85,7 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
               ))}
             </ul>
           )}
-          <p className="sheet-note">La placa de cada tarjeta es una composición del archivo, no una fotografía del local. Area y Concor se distinguen en un foro que solo responde por http, así que no entran. Area de Beethoven sigue sin una página abierta.</p>
+          <p className="sheet-note">La placa de cada tarjeta es una composición del archivo, no una fotografía del local. Area y Concor siguen fuera: el foro que las separa solo responde por http y el directorio https no fecha esa historia. Area de Beethoven solo aparece en un recuerdo de foro.</p>
         </div>
       </article>
     );

@@ -915,5 +915,164 @@
     ],
     "checkedAt": "2026-10-16",
     "status": "published"
+  },
+  {
+    "id": "barcalles",
+    "name": "Barçalles",
+    "summary": "Macrodiscoteca del barrio de la Sagrada Família, en Barcelona, abierta en 1990 en el antiguo cine Versalles. Barcelofília fecha el periodo en 1990-1997.",
+    "category": "Sala",
+    "location": "Cruce de Mallorca y Castillejos, Sagrada Família, Barcelona",
+    "period": "1990-1997, según el título de Barcelofília. El texto dice que duró siete años y no publica el mes del cierre.",
+    "aliases": [],
+    "places": [
+      "Barcelona"
+    ],
+    "paragraphs": [
+      "Barcelofília, el 24 de marzo de 2011, sitúa Barçalles en la Sagrada Família, sobre el local del antiguo cine Versalles. La fecha de apertura que da es 1990. El aforo que escribe es de mil quinientas personas. Dice que la abrieron los mismos propietarios de Fibra Òptica y de la Atlántida de Sitges. Esas dos salas no tienen ficha propia.",
+      "El mismo texto explica el conflicto con los vecinos de la esquina de Mallorca con Castillejos y dice que la historia duró siete años. El título del artículo cierra el periodo en 1997. No se publica noviembre: esa precisión solo aparece en recuerdos de foro.",
+      "La Disco de tu Vida nombra a quien pasó por la cabina, entre ellos Nando Dixkontrol, Pepe Billy y Julio Posadas. No distingue una residencia de una sesión suelta, así que ninguno entra en los enlaces de esta ficha."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Barcelofília, 24 de marzo de 2011",
+        "url": "https://barcelofilia.blogspot.com/2011/03/barcalles-discoteca-1990-1997.html",
+        "note": "Sitúa la sala en la Sagrada Família, da 1990 como apertura, un aforo de 1.500 personas y un periodo de siete años. El título cierra en 1997."
+      },
+      {
+        "label": "La Disco de tu Vida",
+        "url": "https://ladiscodetuvida.com/discoteca-barcalles/",
+        "note": "Repite 1990-1997 y una lista de DJs. No se usa como residencia."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "penelope",
+    "name": "Penélope",
+    "summary": "Último nombre del local de la carretera de Catadau a Benifaió que antes fue Chivago River y Fontana. No es una sala de mákina catalana ni la Penélope de Barcelona.",
+    "category": "Sala",
+    "location": "CV-520, km 9, carretera de Catadau a Benifaió, límite con Alfarp",
+    "period": "El artículo fecha el cierre de la etapa Penélope en 2008. No fecha su apertura: dice que el nombre llegó a principios de los 2000.",
+    "aliases": [
+      "Chivago River",
+      "Fontana"
+    ],
+    "places": [
+      "Benifaió"
+    ],
+    "paragraphs": [
+      "Valencia Bonita, en el artículo abierto el 16 de octubre de 2026, describe un solo local en la CV-520, kilómetro 9, en la carretera de Catadau a Benifaió y en el límite de término con Alfarp. El orden de nombres que escribe el texto es Chivago River, luego Fontana a finales de los noventa, y después Penélope.",
+      "El cierre de Penélope que da el artículo es 2008. La frase de que se inauguró en 2001 va introducida con «cuentan», así que no se publica como fecha. Tampoco se publica el 18 de diciembre de 1999: sale de un comentario en la misma página, no del cuerpo del artículo.",
+      "Levante-EMV volvió a responder 406. No se usa su titular. La Penélope del Poble Espanyol, en Barcelona, no se ha abierto y no es esta sala. Los nombres de cabina que cita la página no tienen perfil en el archivo."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Valencia Bonita, Chivago River, Fontana y Penélope",
+        "url": "https://www.valenciabonita.es/2022/01/13/chivago-river-fontana-penelope/",
+        "note": "Identifica el local, el orden de nombres y el cierre de 2008. No se adoptan las fechas que solo aparecen como comentario."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "sala-del-cel",
+    "name": "La Sala del Cel",
+    "summary": "Sala de Girona en la que DJ Pastis dice que empezó, primero con espectáculos y después poniendo discos. La entrevista no la fecha con un año de apertura.",
+    "category": "Sala",
+    "location": "Girona",
+    "period": "Pastis habla de unos tres años, sin calendario. En diciembre de 2022 la sala seguía acogiendo su aniversario.",
+    "aliases": [
+      "Sala del Cel"
+    ],
+    "places": [
+      "Girona"
+    ],
+    "paragraphs": [
+      "Andreu Pujol Mas entrevista a DJ Pastis en La República el 9 de enero de 2023. Pastis dice que conoció a David Fussió, hijo de la discoteca, y que en La Sala del Cel empezó haciendo espectáculos. Después Fussió le propuso poner discos. Calcula unos tres años allí, antes de un verano en Distrito Cero, en Canet de Mar, y del paso al Pont Aeri.",
+      "La pregunta sitúa en Girona la sesión de diciembre anterior, la del trigésimo primer aniversario de su carrera, y Pastis responde que fue donde nació, creció y empezó. No se convierte ese aniversario en fecha de apertura de la sala.",
+      "No se publica una residencia de 1992 a 1994: esa horquilla sale de una ficha de foro que no se ha usado. La anécdota de que la sala le pidió cambiar de música sigue en la biografía de Pastis y no se reescribe aquí como causa del final."
+    ],
+    "djIds": [
+      "dj-pastis"
+    ],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "La República, 9 de enero de 2023",
+        "url": "https://www.larepublica.cat/altres-categories/cultura/entrevista-dj-pastis-el-meu-deure-es-fer-felic-a-les-persones-i-fer-les-ballar/",
+        "note": "Pastis sitúa el inicio de su trabajo en La Sala del Cel, en el relato de Girona, durante unos tres años. No da un año de apertura."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "distrito-cero",
+    "name": "Distrito Cero",
+    "summary": "Sala de Canet de Mar en la que Pastis dice que trabajó un verano, entre La Sala del Cel y el Pont Aeri. No se alarga esa etapa.",
+    "category": "Sala",
+    "location": "Canet de Mar",
+    "period": "Un verano, según Pastis. La entrevista no da el año.",
+    "aliases": [],
+    "places": [
+      "Canet de Mar"
+    ],
+    "paragraphs": [
+      "En la entrevista de La República del 9 de enero de 2023, Pastis dice que después de unos tres años en La Sala del Cel trabajó en Distrito Cero, en Canet de Mar, y que fue un verano rápido. Luego pasó al Pont Aeri.",
+      "Una ficha de foro escribe Distrito Mías para ese verano. No se ha abierto como fuente y no se publica como alias."
+    ],
+    "djIds": [
+      "dj-pastis"
+    ],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "La República, 9 de enero de 2023",
+        "url": "https://www.larepublica.cat/altres-categories/cultura/entrevista-dj-pastis-el-meu-deure-es-fer-felic-a-les-persones-i-fer-les-ballar/",
+        "note": "Pastis nombra Distrito Cero en Canet de Mar como un verano de trabajo, no como una residencia larga."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "heaven",
+    "name": "Heaven",
+    "summary": "After de los domingos en el Perellonet, dentro de la Ruta Destroy. Las Provincias fecha la apertura en 1991 y no la presenta como sala mákina.",
+    "category": "Sala",
+    "location": "Avenida de las Gaviotas, Perellonet, CV-500",
+    "period": "Abierta en 1991, según Las Provincias. En 2022 el artículo dice que el local seguía en uso con el nombre She.",
+    "aliases": [
+      "She"
+    ],
+    "places": [
+      "El Perellonet"
+    ],
+    "paragraphs": [
+      "Álex Serrano, en Las Provincias del 30 de enero de 2022, sitúa Heaven en el Perellonet, en la CV-500, que allí se llama avenida de las Gaviotas. Fecha la apertura en 1991. Describe las sesiones de los domingos desde las seis de la mañana y dice que en 2022 el local seguía activo con el nombre She.",
+      "Valencia Bonita escribe 1989 y un cierre en 1996, y la sitúa en El Perelló. Vicente Bresó, en un blog de la Universitat de València, la llama antes Pomelo y también escribe El Perelló. Esas dos versiones no sustituyen a Las Provincias: no se publican el cierre de 1996 ni el alias Pomelo."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Las Provincias, 30 de enero de 2022",
+        "url": "https://www.lasprovincias.es/valencia-ciudad/heaven-domingos-eternos-20220130182059-nt.html",
+        "note": "Sitúa Heaven en el Perellonet, fecha la apertura en 1991 y dice que en 2022 se llamaba She. No fecha un cierre."
+      },
+      {
+        "label": "Vicente Bresó, Universitat de València",
+        "url": "https://breso.blogs.uv.es/discoteca-heaven/",
+        "note": "La llama antes Pomelo y la sitúa en El Perelló. No se adopta frente a Las Provincias."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
   }
 ]
