@@ -283,6 +283,47 @@
   font-size: clamp(1.8rem, 4vw, 2.6rem);
 }
 
+.venue-photo {
+  margin: 0;
+  background: #141210;
+}
+
+.venue-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.venue-photo.is-large img {
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #0c0b09;
+}
+
+.venue-photo figcaption {
+  margin-top: 0.45rem;
+  color: var(--paper);
+  font-size: 0.9rem;
+}
+
+.venue-photo figcaption a {
+  color: var(--acid);
+}
+
+.venue-photo figcaption span {
+  display: block;
+}
+
+.dj-file-head:has(.venue-photo) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.dj-file-head .venue-photo {
+  max-width: 42rem;
+}
+
 .flyer-grid .room-plate {
   place-items: center;
   font-size: 0.95rem;
@@ -645,6 +686,11 @@
   .dj-file-head {
     align-items: start;
     column-gap: 1.25rem;
+  }
+
+  .dj-file-head:has(.venue-photo) {
+    grid-template-columns: minmax(0, 36rem) minmax(14rem, 1fr);
+    align-items: end;
   }
 
   .dj-mast {

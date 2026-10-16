@@ -311,10 +311,24 @@
     ],
     "paragraphs": [
       "La Wikipedia en español, abierta el 16 de octubre de 2026, sitúa Barraca en Les Palmeres, municipio de Sueca, cerca de la playa. Fecha la inauguración el 6 de diciembre de 1965 y el relevo de cabina de Juan Santamaría por Carlos Simó en 1982. Describe la sala como precursora de la Ruta Destroy y llama «música barraquera» al sonido que se le asoció.",
+      "La fotografía de la ficha es de Francesc Fort, tomada el 26 de julio de 2026 y publicada en Wikimedia Commons con licencia CC BY-SA 4.0. Muestra el rótulo Barraca de noche. El pie de Commons también nombra Villa Adelina. No es una imagen de la inauguración de 1965 ni de la etapa de la Ruta Destroy.",
       "Las Provincias, el 3 de abril de 2017, la llama Barraca de Les Palmeretes, junto a Sueca, y dice que abrió en los años sesenta como sala de música lenta y flamenco antes del cambio de los ochenta. En 2017 la presenta todavía abierta. La Wikipedia leída en 2026 también la describe en actividad. No se publica un cierre."
     ],
     "djIds": [],
     "sessionIds": [],
+    "images": [
+      {
+        "url": "/images/venues/barraca.jpg",
+        "alt": "Fachada de noche de la discoteca Barraca, con el rótulo iluminado y el logotipo en la puerta.",
+        "caption": "26 de julio de 2026, Les Palmeres. El pie original de Commons dice «Barraca i Villa Adelina». En esta toma se lee el rótulo Barraca. No documenta la inauguración de 1965.",
+        "author": "Francesc Fort",
+        "takenAt": "2026-07-26",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceName": "Wikimedia Commons, Barraca MMXXVI",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barraca_MMXXVI.jpg"
+      }
+    ],
     "links": [
       {
         "label": "Wikipedia en español, Barraca",
@@ -824,10 +838,24 @@
     "places": [],
     "paragraphs": [
       "La Wikipedia de la Ruta Destroy dice que Puzzle llegó en 1986, antes llamada New Bunker, y que Carlos Simó, ex DJ de Barraca, la abrió como gerente a unos 2 km de Barraca. La suposición de un nombre aún anterior, Bunker, es del artículo y no se publica como alias.",
-      "No se fija el municipio: la frase da la distancia y la carretera, no una calle. El contexto musical que describe es synth pop, technopop y house de los ochenta, no la mákina catalana."
+      "No se fija el municipio: la frase da la distancia y la carretera, no una calle. El contexto musical que describe es synth pop, technopop y house de los ochenta, no la mákina catalana.",
+      "La fotografía es de 19Tarrestnom65. El sello de la cámara dice 9 de abril de 2022 y la ficha de Commons fecha la subida el 26 de noviembre de 2022. El rótulo del edificio dice Puzzle Superclub. El pie de Commons habla de fotos diversas de El Perelló, en Sueca, y el archivo se usa en el artículo de ese pueblo. Esa frase no se adopta como localidad de la ficha: la Wikipedia de la Ruta Destroy no nombra el municipio."
     ],
     "djIds": [],
     "sessionIds": [],
+    "images": [
+      {
+        "url": "/images/venues/puzzle.jpg",
+        "alt": "Edificio con el rótulo Puzzle Superclub, visto desde un campo, con bloques de viviendas detrás.",
+        "caption": "9 de abril de 2022, según el sello de la cámara. El rótulo dice Puzzle Superclub. Commons describe el archivo como fotos diversas de El Perelló, en Sueca, y lo usa en ese artículo. La ficha no adopta ese pueblo: la Wikipedia de la Ruta Destroy no da municipio.",
+        "author": "19Tarrestnom65",
+        "takenAt": "2022-04-09",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceName": "Wikimedia Commons, Discoteca Puzzle",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Discoteca_Puzzle.jpg"
+      }
+    ],
     "links": [
       {
         "label": "Wikipedia en español, Ruta Destroy",
@@ -1070,6 +1098,32 @@
         "label": "Vicente Bresó, Universitat de València",
         "url": "https://breso.blogs.uv.es/discoteca-heaven/",
         "note": "La llama antes Pomelo y la sitúa en El Perelló. No se adopta frente a Las Provincias."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "desk",
+    "name": "Desk",
+    "summary": "Sala de L'Hospitalet de Llobregat. La Wikipedia nombra a Al-fredo y Javi Traker como residentes y, en otro pasaje, fiestas puntuales.",
+    "category": "Sala",
+    "location": "L'Hospitalet de Llobregat",
+    "aliases": [],
+    "places": [
+      "L'Hospitalet de Llobregat"
+    ],
+    "paragraphs": [
+      "El artículo de la Wikipedia en español sobre la música mákina, abierto el 16 de octubre de 2026, nombra a Al-fredo y Javi Traker como discjockeys residentes de la sala Desk en Hospitalet de Llobregat. La frase está en el pasaje de Other Side, hacia 2005-2007, y no lleva una nota que date la residencia. El mismo artículo, en el apartado posterior a 2011, dice que la sala Desk va haciendo fiestas puntuales. No se publica una apertura, un cierre ni una dirección.",
+      "El perfil del archivo escribe Javi Tracker; la Wikipedia escribe Javi Traker. La biografía de ese perfil cita una ficha de Beatport que llama a Desk sala de Barcelona. Esa página no se ha vuelto a abrir en esta fase, así que el desacuerdo entre Barcelona y L'Hospitalet queda señalado y no se resuelve. No se publica una sesión concreta en Desk. Un hilo de foro sitúa un Urban de L'Hospitalet detrás del antiguo Desk. Es un testimonio, no una dirección, y no identifica la misma sala: Urban queda fuera."
+    ],
+    "djIds": ["dj-al-fredo", "javi-tracker"],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Mákina",
+        "url": "https://es.wikipedia.org/wiki/M%C3%A1kina",
+        "note": "Nombra Desk en Hospitalet de Llobregat, a Al-fredo y Javi Traker como residentes, y unas fiestas puntuales posteriores. No da calle ni fechas de apertura o cierre."
       }
     ],
     "checkedAt": "2026-10-16",

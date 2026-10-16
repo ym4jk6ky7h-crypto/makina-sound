@@ -22,7 +22,20 @@ export type VenueRecord = {
   djIds: string[];
   sessionIds: string[];
   links: SourceLink[];
+  images: VenueImage[];
   checkedAt?: string;
+};
+
+export type VenueImage = {
+  url: string;
+  alt: string;
+  caption: string;
+  author: string;
+  takenAt?: string;
+  license: string;
+  licenseUrl: string;
+  sourceName: string;
+  sourceUrl: string;
 };
 
 export type FlyerRecord = {
@@ -224,6 +237,48 @@ function paragraphsOf(value: unknown): string[] | null {
   return stringList(value, true);
 }
 
+const VENUE_IMAGE = /^\/images\/venues\/[a-z0-9]+(?:-[a-z0-9]+)*\.(?:jpg|jpeg|png|webp)$/;
+
+function readVenueImages(value: unknown, venueId: string): VenueImage[] | null {
+  if (value === undefined) return [];
+  if (!Array.isArray(value)) return null;
+  const images: VenueImage[] = [];
+  for (const item of value) {
+    if (!item || typeof item !== "object") return null;
+    const record = item as Record<string, unknown>;
+    const url = text(record.url);
+    const alt = text(record.alt);
+    const caption = text(record.caption);
+    const author = text(record.author);
+    const license = text(record.license);
+    const licenseUrl = text(record.licenseUrl);
+    const sourceName = text(record.sourceName);
+    const sourceUrl = text(record.sourceUrl);
+    const takenAt = text(record.takenAt);
+    if (!url || !alt || !caption || !author || !license || !licenseUrl || !sourceName || !sourceUrl) return null;
+    if (!httpsUrl(licenseUrl) || !httpsUrl(sourceUrl)) return null;
+    if (record.takenAt !== undefined && (!takenAt || !isPublishedDate(takenAt))) return null;
+    const local = VENUE_IMAGE.test(url);
+    if (!local && !httpsUrl(url)) return null;
+    if (local) {
+      const stem = url.slice(url.lastIndexOf("/") + 1).replace(/\.[^.]+$/, "");
+      if (stem !== venueId && !stem.startsWith(`${venueId}-`)) return null;
+    }
+    images.push({
+      url,
+      alt,
+      caption,
+      author,
+      license,
+      licenseUrl,
+      sourceName,
+      sourceUrl,
+      takenAt,
+    });
+  }
+  return images;
+}
+
 export function openVenues(value: unknown): VenueRecord[] {
   if (!Array.isArray(value)) return [];
   const seen = new Set<string>();
@@ -248,7 +303,8 @@ export function openVenues(value: unknown): VenueRecord[] {
     if (!id || !slug(id) || seen.has(id) || !name || !summary || !category || !links || checked === null) continue;
     if (record.location !== undefined && !location) continue;
     if (record.period !== undefined && !period) continue;
-    if (!aliases || !places || !paragraphs || !djIds || !sessionIds) continue;
+    const images = readVenueImages(record.images, id);
+    if (!aliases || !places || !paragraphs || !djIds || !sessionIds || !images) continue;
     seen.add(id);
     venues.push({
       id,
@@ -263,6 +319,7 @@ export function openVenues(value: unknown): VenueRecord[] {
       djIds,
       sessionIds,
       links,
+      images,
       checkedAt: checked ?? undefined,
     });
   }

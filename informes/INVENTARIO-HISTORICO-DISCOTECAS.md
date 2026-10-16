@@ -15,6 +15,8 @@ Consulta de esta fase, con la página abierta:
 
 No se abrió Levante-EMV: respondió 406. No se usa el titular de búsqueda sobre Penélope. No se descargó el cartel de Pont Aeri en Manresa que el artículo académico atribuye a Luis en el Bosque.
 
+Consulta de la fase 30, el 16 de octubre de 2026. El inventario de imágenes está en `informes/INVENTARIO-IMAGENES-HISTORICAS.md`. Se reabrió [Wikipedia, Mákina](https://es.wikipedia.org/wiki/M%C3%A1kina). Se abrieron las fichas de Commons de Barraca MMXXVI, Discoteca Puzzle, Discoteca Akuarela, Heaven entrance, Chocolatediscoteca, Pont Aeri Blanc, Vale Music Fundacion, Peret con Miquel Rubió, DJ Luna-C y Xavi Alcaraz. El hilo de Makina Mania sobre el Urban de Cornellà no se abrió: solo apareció en resultados de búsqueda.
+
 Consulta de la fase 29, el 16 de octubre de 2026, con la página abierta:
 
 - [Barcelofília, Barçalles, 24 de marzo de 2011](https://barcelofilia.blogspot.com/2011/03/barcalles-discoteca-1990-1997.html).
@@ -43,7 +45,7 @@ Consulta de la fase 29, el 16 de octubre de 2026, con la página abierta:
 | Nau B-3 | Nau B-3 | Nau B3 | Molins de Rei en una foto de 1994 | Mákina catalana, varias ubicaciones | Identificada, pendiente de completar | El Español; Marcuello 2025 | La foto no cierra la lista de pueblos. | Los foros citan Olesa, Castellbisbal y Argençola. No se han usado. |
 | Central de Cubelles | Central | — | Cubelles | Apertura atribuida a Scorpia | Documentada | El Español | Sigue sin Frank T.R.A.X. | Un foro dice que después se llamó Cybertrack. Solo es testimonio. |
 | Chocolate | Chocolate | Chocolate Cream | Entorno de Barraca, Sueca | Ruta Destroy | Documentada | Wikipedia; Las Provincias | 1998 y 2007 siguen como dos frases. | — |
-| Barraca | Barraca | — | Les Palmeres, Sueca | Ruta Destroy | Documentada | Wikipedia; Las Provincias | Sin cambios. | — |
+| Barraca | Barraca | — | Les Palmeres, Sueca | Ruta Destroy | Documentada | Wikipedia; Las Provincias; Commons, Francesc Fort, 26 de julio de 2026, CC BY-SA 4.0 | La foto de la ficha es de 2026 y el pie de Commons también nombra Villa Adelina. No documenta 1965. | No usar las otras dos fotos de Villa Adelina como si fueran solo Barraca. |
 | ACTV | ACTV | Actividades Culturales Termas Victoria | Malvarrosa, Valencia | Ruta Destroy | Documentada | Wikipedia; Las Provincias; El País 2017 | El País nombra a Julio Andújar como propietario, junto a Crac, Casablanca y Tropical. | Aquarela y Akuarela siguen sin unificarse. |
 | Kontrol | Kontrol | — | Mataró | Mákina | Documentada | El Español; Wikipedia, Mákina | El Español habla de una apertura de Scorpia. La Wikipedia dice que en 2003 ocupó el local de Chasis, con DJ Skryker. Skryker no está enlazado. | Hace falta prensa que elija o precise el relevo. |
 
@@ -60,7 +62,7 @@ Consulta de la fase 29, el 16 de octubre de 2026, con la página abierta:
 | Spook Factory | Spook Factory | San Francisco | Pinedo, Valencia | Ruta Destroy | Documentada | Wikipedia, Ruta Destroy | 1984. Juanito Torpedo y luego Fran Lenaers. No es mákina catalana. | El cierre no está fechado. El artículo dice que no se vació un fin de semana al menos hasta 1995 o 1996. |
 | Espiral | Espiral | — | La Eliana | Ruta Destroy | Documentada | Wikipedia, Ruta Destroy | Desde finales de los setenta; fama en 1983. | La desaparición queda en los noventa, sin día. |
 | NOD | NOD | Don Julio, Bravatta | Ribarroja del Turia | Ruta Destroy | Documentada | Wikipedia, Ruta Destroy | NOD en 1989. Bravatta en 1986. Don Julio, entre medias, sin fecha. | No separar Bravatta en otra ficha. |
-| Puzzle | Puzzle | New Bunker | A unos 2 km de Barraca; municipio no dicho | Ruta valenciana, synth pop y house | Documentada | Wikipedia, Ruta Destroy | 1986. Carlos Simó. | Bunker es una suposición del artículo y no es alias. |
+| Puzzle | Puzzle | New Bunker | A unos 2 km de Barraca; municipio no dicho | Ruta valenciana, synth pop y house | Documentada | Wikipedia, Ruta Destroy; Commons, 19Tarrestnom65, CC BY-SA 4.0 | 1986. Carlos Simó. La foto de 2022 muestra el rótulo Puzzle Superclub. | Bunker no es alias. El pie de Commons habla de El Perelló y no se publica como localidad. |
 | Coliseum de la Malvarrosa | Coliseum | — | Calle Eugenia Viñes, Malvarrosa | Ruta valenciana | Documentada | Wikipedia, Ruta Destroy | Cierre alrededor de 1988. Fran Lenaers. Intento posterior como NOD Coliseo. | No unir con el Coliseum de Mollet del foro. |
 | Oggi | Oggi | — | Valencia | Origen anterior a la Ruta | Documentada | El País, 2017 | Sala del relato de Juan Santamaría. | Sin fechas. No llamarla mákina. |
 | Cap-3000 | Cap-3000 | — | Benidorm | Origen anterior a la Ruta | Documentada | El País, 2017 | La otra sala del mismo relato. | Sin fechas. |
@@ -80,13 +82,13 @@ Consulta de la fase 29, el 16 de octubre de 2026, con la página abierta:
 
 ## Candidatos catalanes sin ficha
 
-La Wikipedia de la mákina los nombra en una sola lista, sin localidad ni fechas: Verdi, By Pass, Anonim, Nivel 2, El Gat, Level, RK-3, Qu4ttro, Nuclear Station, Orbital, Central Rock, Odeon, Compliche, Apocalipse, Fibra Óptica, Revival, Desk, B-Side y Psicosis. Estado: pendiente de fuentes, salvo la nota de cada fila. El hilo de Makina Mania añade recuerdos sueltos y a veces contradictorios. No se convierten en localidad. En la fase 29 no apareció una página propia de Verdi, By Pass, Nivel 2, El Gat, RK-3, Qu4ttro, Nuclear Station, Orbital, Central Rock, Odeon, Compliche, Apocalipse, Revival ni B-Side.
+La Wikipedia de la mákina los nombra en una sola lista, sin localidad ni fechas: Verdi, By Pass, Anonim, Nivel 2, El Gat, Level, RK-3, Qu4ttro, Nuclear Station, Orbital, Central Rock, Odeon, Compliche, Apocalipse, Fibra Óptica, Revival, Desk, B-Side y Psicosis. Estado: pendiente de fuentes, salvo la nota de cada fila. Desk sale de esa lista con una ficha mínima: el mismo artículo da el municipio y dos nombres de cabina, y no tiene página propia. El hilo de Makina Mania añade recuerdos sueltos y a veces contradictorios. No se convierten en localidad. En la fase 29 no apareció una página propia de Verdi, By Pass, Nivel 2, El Gat, RK-3, Qu4ttro, Nuclear Station, Orbital, Central Rock, Odeon, Compliche, Apocalipse, Revival ni B-Side.
 
 | Nombre | Pista de foro, no publicada | Duda |
 | --- | --- | --- |
 | Anonim | Un mensaje escribe Anonim (Montcada). Pastis, en La República, dice L'Anònim junto a Ocho, La Sala del Cel y La Festa, hacia 1994, sin pueblo | Sigue sin ficha. No se publica Montcada. |
 | Level | Un mensaje escribe Level (La Pineda) | Puede no ser la Level de la lista. |
-| Desk | La Wikipedia dice residentes Al-fredo y Javi Traker en Hospitalet. Un mensaje del hilo 72800 dice «el urban de LH (detras de antiguo desk)» | Sigue sin ficha. El mensaje no fija el municipio por sí solo. |
+| Desk | La Wikipedia, artículo Mákina, nombra a Al-fredo y Javi Traker como residentes en Hospitalet de Llobregat, en el pasaje de Other Side, y más adelante dice que hace fiestas puntuales. Ficha `desk` | No hay calle, apertura ni cierre. La biografía de Javi Tracker cita Beatport y dice Barcelona; esa página no se reabrió. Urban no forma parte de la ficha. |
 | Orbital | La biografía de Frank T.R.A.X. dice que Discogs lo da como residente de Orbital Barcelona | Hace falta abrir esa ficha de Discogs. También nombra Xperience y Gloobal. |
 | Central Rock | Solo el nombre en la lista y en el foro | No es Central de Cubelles ni Central de Manresa. |
 | Psicosis | La biografía de Javi Maki habla de una residencia 2010-2014 | Reabrir Lloret Gaceta antes de ficharla. |
@@ -98,10 +100,13 @@ La Wikipedia de la mákina los nombra en una sola lista, sin localidad ni fechas
 | --- | --- | --- | --- |
 | Heaven | Documentada. Ficha `heaven` | Las Provincias, 30 de enero de 2022: Perellonet, avenida de las Gaviotas, apertura en 1991, nombre posterior She. Valencia Bonita escribe 1989, cierre en 1996 y El Perelló. Bresó escribe Pomelo y El Perelló. | No se publican 1996 ni Pomelo. She sí, porque lo dice la prensa. |
 | Crac, Casablanca | Identificadas, pendientes | El País las nombra como locales de Julio Andújar, junto a ACTV. | No son la escena de Pont Aeri. Hace falta una página de cada sala. |
-| Tropical | Identificada, pendiente de completar | El País la nombra con ACTV. Valencia Bonita, artículo de 2016 abierto, dice que ACTV sustituyó a locales como Tropical y el pie de una foto la pone donde estuvo ACTV. | No hay ficha: la frase no fecha Tropical y no se ha abierto una página solo de esa sala. |
+| Tropical | Identificada, pendiente de completar | El País la nombra con ACTV. Valencia Bonita, artículo de 2016 abierto, dice que ACTV sustituyó a locales como Tropical y el pie de una foto la pone donde estuvo ACTV. Commons, File:Discoteca Akuarela.jpg, Francesc Fort, 11 de agosto de 2019, CC BY-SA 4.0, abierta el 16 de octubre de 2026: el pie dice Akuarela Playa, antigua ACTV, y cita también Tropical y Luna Rossa. El rótulo visible es el nombre posterior. | No hay ficha de Tropical ni de Akuarela. La foto no se publica en la ficha de ACTV. |
 | Coliseum de Mollet | Posible duplicado de nombre | Solo el foro. | No unir con la Malvarrosa. |
 | Triplex de Cullera | Pendiente de fuentes | La Wikipedia la nombra como sala de paso de Luis Bonías. | No hay ficha. |
 | Activa de Mataró | Identificada, pendiente | La Wikipedia de la mákina y la biografía de Xque hablan de una etapa posterior de la marca. La República repite el paso de Pastis a Activa después de 2007, sin abrir una página de la sala. | Abrir una página de la sala antes de ficharla. |
 | Distrito Cero | Documentada. Ficha `distrito-cero` | La República, 9 de enero de 2023: Canet de Mar, un verano de Pastis entre La Sala del Cel y el Pont Aeri. | No se aliasa con Distrito Mías: esa grafía sigue en una ficha de foro no usada. |
 | Fibra Òptica | Pendiente de fuentes | Barcelofília dice que sus propietarios abrieron también Barçalles y la Atlántida de Sitges. No da localidad ni años. | No hay ficha. |
 | Atlántida de Sitges | Pendiente de fuentes | La misma frase de Barcelofília. | No hay ficha. No es la escena de Pont Aeri por el solo hecho de compartir propietarios con Barçalles. |
+| Desk | Documentada. Ficha `desk` | Wikipedia, Mákina, abierta el 16 de octubre de 2026: Hospitalet de Llobregat, Al-fredo y Javi Traker como residentes en el pasaje de Other Side, y fiestas puntuales en el apartado posterior a 2011. | Sin calle ni fechas. No se resuelve el «Barcelona» de la biografía de Javi Tracker. |
+| Urban de L'Hospitalet | Hipótesis de foro, sin ficha | Hilo 72800: «el urban de LH (detras de antiguo desk)». La página 45 del hilo 36810 escribe «Urban (Hospitalet)» en una lista distinta de Desk y de «Summa (Cornellà)». | No es una dirección. No se funde con el Urban de Cornellà ni con Desk. |
+| Urban de Cornellà | Hipótesis de foro, sin ficha | Resultados de búsqueda de Makina Mania, tema 55265, «Sobre discoteca Urban de Cornella». No se abrió la página del hilo en esta fase. El resultado habla de nombres anteriores y de DJs; eso no se publica. | Hace falta abrir el hilo y una fuente que no sea un comentario. No es el Urban de L'Hospitalet. |

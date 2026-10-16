@@ -3,7 +3,8 @@ import { readCatalog } from "../data/catalog.ts";
 import { readDjs } from "../data/djsCatalog.ts";
 import { readFlyers, readVenues } from "../data/library.ts";
 import { doorCopy } from "../data/pages.ts";
-import type { FlyerRecord, VenueRecord } from "../lib/collections.ts";
+import type { FlyerRecord, VenueImage, VenueRecord } from "../lib/collections.ts";
+import { publicAsset } from "../lib/djView.ts";
 import { describeFlyer, describeVenue, filterVenues, venuePlaces } from "../lib/places.ts";
 import { includesQuery } from "../lib/search.ts";
 import { readFocus } from "../lib/section.ts";
@@ -73,7 +74,7 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
               {visible.map((venue) => (
                 <li key={venue.id}>
                   <a className="dj-card" href={`#salas/${venue.id}`}>
-                    <Plate label={`Composición editorial, no es una fotografía de ${venue.name}`}>{venue.name}</Plate>
+                    {venue.images[0] ? <VenuePhoto image={venue.images[0]} /> : <Plate label={`Composición editorial, no es una fotografía de ${venue.name}`}>{venue.name}</Plate>}
                     <span className="dj-card-copy">
                       <strong>{venue.name}</strong>
                       {venue.aliases.length > 0 ? <span>{venue.aliases.join(" · ")}</span> : null}
@@ -85,7 +86,7 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
               ))}
             </ul>
           )}
-          <p className="sheet-note">La placa de cada tarjeta es una composición del archivo, no una fotografía del local. Area y Concor siguen fuera: el foro que las separa solo responde por http y el directorio https no fecha esa historia. Area de Beethoven solo aparece en un recuerdo de foro.</p>
+          <p className="sheet-note">Barraca y Puzzle muestran fotografías con licencia comprobada. El resto de las placas son composiciones del archivo, no fotografías del local. Area y Concor siguen fuera: el foro que las separa solo responde por http y el directorio https no fecha esa historia. Area de Beethoven solo aparece en un recuerdo de foro.</p>
         </div>
       </article>
     );
@@ -154,7 +155,7 @@ function VenueFile({
       <div className="wrap">
         <p className="back"><a href="#salas">Volver a Salas</a></p>
         <header className="dj-file-head">
-          <Plate large label={`Composición editorial, no es una fotografía de ${venue.name}`}>{venue.name}</Plate>
+          {venue.images.length > 0 ? venue.images.map((image) => <VenuePhoto key={image.url} image={image} large />) : <Plate large label={`Composición editorial, no es una fotografía de ${venue.name}`}>{venue.name}</Plate>}
           <div className="dj-file-title">
             <p className="dj-kicker">Ficha</p>
             <h1>{venue.name}</h1>
@@ -254,6 +255,21 @@ function FlyerFile({
         </section>
       </div>
     </article>
+  );
+}
+
+function VenuePhoto({ image, large }: { image: VenueImage; large?: boolean }) {
+  return (
+    <figure className={large ? "venue-photo is-large" : "venue-photo"}>
+      <img src={publicAsset(image.url)} alt={image.alt} loading="lazy" decoding="async" />
+      {large ? (
+        <figcaption>
+          <a href={image.sourceUrl} rel="noreferrer">{image.sourceName}</a>
+          <span>{image.author}. {image.license}.</span>
+          <span>{image.caption}</span>
+        </figcaption>
+      ) : null}
+    </figure>
   );
 }
 

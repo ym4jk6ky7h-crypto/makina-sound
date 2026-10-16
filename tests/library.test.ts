@@ -28,7 +28,7 @@ describe("catálogos nuevos", () => {
     assert.deepEqual(openVenues([]), []);
     const venues = openVenues(empty);
     const flyers = openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8")));
-    assert.equal(venues.length, 32);
+    assert.equal(venues.length, 33);
     assert.deepEqual(venues.slice(0, 5).map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     assert.equal(flyers.every((flyer) => flyer.imageUrl === undefined), true);
@@ -54,6 +54,20 @@ describe("catálogos nuevos", () => {
     assert.equal(openVenues([venue, { ...venue, id: "sala-prueba" }]).length, 1);
     assert.equal(openVenues([{ ...venue, links: [] }]).length, 0);
     assert.equal(openVenues([{ ...venue, status: "draft" }]).length, 0);
+    assert.equal(openVenues([{
+      ...venue,
+      id: "barraca",
+      images: [{
+        url: "/images/venues/otra-sala.jpg",
+        alt: "Otra sala",
+        caption: "No corresponde.",
+        author: "Alguien",
+        license: "CC BY-SA 4.0",
+        licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+        sourceName: "Fuente",
+        sourceUrl: "https://example.com/foto",
+      }],
+    }]).length, 0);
 
     assert.equal(
       openFlyers([
@@ -134,7 +148,7 @@ describe("fase 22 salas y flyers", () => {
   it("publica las salas documentadas y tres referencias sin imagen", () => {
     const djIds = new Set(djs.map((dj) => dj.id));
     const sessionIds = new Set(sessions.map((session) => session.id));
-    assert.equal(venues.length, 32);
+    assert.equal(venues.length, 33);
     assert.deepEqual(venues.slice(0, 5).map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     for (const venue of venues) {
@@ -306,5 +320,35 @@ describe("fase 29 salas pendientes", () => {
     assert.deepEqual(filterVenues(venues, { text: "concor", place: "" }).map((venue) => venue.id), []);
     assert.deepEqual(filterVenues(venues, { text: "barçalles", place: "" }).map((venue) => venue.id), ["barcalles"]);
     assert.deepEqual(filterVenues(venues, { text: "", place: "Girona" }).map((venue) => venue.id), ["sala-del-cel"]);
+  });
+});
+
+describe("fase 30 desk y fotografia", () => {
+  const venues = openVenues(JSON.parse(readFileSync(new URL("../src/data/venues.json", import.meta.url), "utf8")));
+
+  it("publica Desk, deja Urban fuera y solo muestra la foto de Barraca", () => {
+    const desk = venues.find((venue) => venue.id === "desk");
+    assert.ok(desk);
+    assert.equal(desk.location, "L'Hospitalet de Llobregat");
+    assert.equal(desk.period, undefined);
+    assert.deepEqual(desk.djIds, ["dj-al-fredo", "javi-tracker"]);
+    assert.equal(desk.images.length, 0);
+    assert.equal(venues.some((venue) => venue.id === "urban" || venue.name.toLowerCase().includes("urban")), false);
+    assert.deepEqual(filterVenues(venues, { text: "desk", place: "" }).map((venue) => venue.id), ["desk"]);
+    assert.deepEqual(filterVenues(venues, { text: "urban", place: "" }).map((venue) => venue.id), []);
+    const barraca = venues.find((venue) => venue.id === "barraca");
+    assert.equal(barraca?.images.length, 1);
+    assert.equal(barraca?.images[0]?.url, "/images/venues/barraca.jpg");
+    assert.equal(barraca?.images[0]?.author, "Francesc Fort");
+    assert.equal(barraca?.images[0]?.license, "CC BY-SA 4.0");
+    assert.equal(barraca?.images[0]?.takenAt, "2026-07-26");
+    assert.ok(readFileSync(new URL("../public/images/venues/barraca.jpg", import.meta.url)).length > 1000);
+    const pictured = venues.filter((venue) => venue.images.length > 0).map((venue) => venue.id);
+    assert.deepEqual(pictured, ["barraca", "puzzle"]);
+    const puzzle = venues.find((venue) => venue.id === "puzzle");
+    assert.equal(puzzle?.images[0]?.author, "19Tarrestnom65");
+    assert.equal(puzzle?.images[0]?.url, "/images/venues/puzzle.jpg");
+    assert.equal(puzzle?.places.length, 0);
+    assert.ok(readFileSync(new URL("../public/images/venues/puzzle.jpg", import.meta.url)).length > 1000);
   });
 });
