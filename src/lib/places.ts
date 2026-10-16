@@ -1,4 +1,5 @@
 import type { FlyerRecord, VenueRecord } from "./collections.ts";
+import { includesQuery } from "./search.ts";
 
 export type NamedRef = { id: string; name: string };
 export type SessionRef = { id: string; title: string };
@@ -60,6 +61,23 @@ export function describeFlyer(
       return dj ? [dj] : [];
     }),
   };
+}
+
+export function filterVenues(
+  venues: readonly VenueRecord[],
+  query: { text: string; place: string },
+): VenueRecord[] {
+  const place = query.place.trim();
+  return venues
+    .filter((venue) => {
+      if (place && !venue.places.includes(place)) return false;
+      return includesQuery(query.text, [venue.name, ...venue.aliases, venue.location ?? "", venue.summary]);
+    })
+    .sort((a, b) => a.name.localeCompare(b.name, "es"));
+}
+
+export function venuePlaces(venues: readonly VenueRecord[]): string[] {
+  return [...new Set(venues.flatMap((venue) => venue.places))].sort((a, b) => a.localeCompare(b, "es"));
 }
 
 export function venuesForDj(djId: string, venues: VenueRecord[]): VenueRecord[] {

@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { openComparisons, openFlyers, openGear, openTutorials, openVenues } from "../src/lib/collections.ts";
 import { openDjs } from "../src/lib/djs.ts";
-import { describeFlyer, describeVenue, venuesForDj } from "../src/lib/places.ts";
+import { describeFlyer, describeVenue, filterVenues, venuesForDj } from "../src/lib/places.ts";
 import { openCatalog } from "../src/lib/sessions.ts";
 
 const empty = JSON.parse(readFileSync(new URL("../src/data/venues.json", import.meta.url), "utf8"));
@@ -28,7 +28,8 @@ describe("catálogos nuevos", () => {
     assert.deepEqual(openVenues([]), []);
     const venues = openVenues(empty);
     const flyers = openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8")));
-    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
+    assert.equal(venues.length, 14);
+    assert.deepEqual(venues.slice(0, 5).map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     assert.equal(flyers.every((flyer) => flyer.imageUrl === undefined), true);
     assert.deepEqual(openTutorials(JSON.parse(readFileSync(new URL("../src/data/tutorials.json", import.meta.url), "utf8"))), []);
@@ -130,10 +131,11 @@ describe("fase 22 salas y flyers", () => {
     JSON.parse(readFileSync(new URL("../src/data/sessions.json", import.meta.url), "utf8")),
   ).sessions;
 
-  it("publica cinco salas y tres referencias sin imagen", () => {
+  it("publica las salas documentadas y tres referencias sin imagen", () => {
     const djIds = new Set(djs.map((dj) => dj.id));
     const sessionIds = new Set(sessions.map((session) => session.id));
-    assert.deepEqual(venues.map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
+    assert.equal(venues.length, 14);
+    assert.deepEqual(venues.slice(0, 5).map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     for (const venue of venues) {
       assert.ok(venue.paragraphs.length > 0);
@@ -231,5 +233,33 @@ describe("fase 26 relaciones de sesión", () => {
       assert.deepEqual(screen.djs.map((dj) => dj.id), ["ricardo-f"]);
     }
     assert.equal(describeVenue("sala-inexistente", venues, names, titles, []).kind, "missing");
+  });
+});
+
+describe("fase 27 archivo de salas", () => {
+  const venues = openVenues(JSON.parse(readFileSync(new URL("../src/data/venues.json", import.meta.url), "utf8")));
+
+  it("separa las salas nuevas y no publica las que siguen sin fuente", () => {
+    const ids = venues.map((venue) => venue.id);
+    for (const id of ["gran-velvet", "barraca", "chocolate", "actv", "disco-ocho", "nau-b3", "central-cubelles", "kontrol", "extasis"]) {
+      assert.ok(ids.includes(id), id);
+    }
+    for (const id of ["area", "area-concor", "area-beethoven", "barcalles", "la-festa", "penelope"]) {
+      assert.equal(ids.includes(id), false, id);
+    }
+    assert.deepEqual(venues.find((venue) => venue.id === "chocolate")?.aliases, ["Chocolate Cream"]);
+    assert.deepEqual(venues.find((venue) => venue.id === "disco-ocho")?.djIds, ["dj-pepebilly"]);
+    assert.equal(venues.find((venue) => venue.id === "central-cubelles")?.djIds.includes("frank-trax"), false);
+    assert.equal(venues.find((venue) => venue.id === "kontrol")?.id === "chasis", false);
+    assert.equal(venues.find((venue) => venue.id === "chocolate")?.sessionIds.length, 0);
+    assert.equal(venues.find((venue) => venue.id === "nau-b3")?.places.length, 0);
+  });
+
+  it("busca por alias y filtra por la localidad publicada", () => {
+    assert.deepEqual(filterVenues(venues, { text: "chocolate cream", place: "" }).map((venue) => venue.id), ["chocolate"]);
+    assert.deepEqual(filterVenues(venues, { text: "central", place: "" }).map((venue) => venue.id), ["central-cubelles", "scorpia"]);
+    assert.deepEqual(filterVenues(venues, { text: "", place: "Mataró" }).map((venue) => venue.id), ["chasis", "kontrol"]);
+    assert.deepEqual(filterVenues(venues, { text: "velvet", place: "Sueca" }).map((venue) => venue.id), []);
+    assert.deepEqual(filterVenues(venues, { text: "", place: "" }).map((venue) => venue.name), [...venues].sort((a, b) => a.name.localeCompare(b.name, "es")).map((venue) => venue.name));
   });
 });

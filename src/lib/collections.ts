@@ -16,6 +16,8 @@ export type VenueRecord = {
   category: string;
   location?: string;
   period?: string;
+  aliases: string[];
+  places: string[];
   paragraphs: string[];
   djIds: string[];
   sessionIds: string[];
@@ -236,6 +238,8 @@ export function openVenues(value: unknown): VenueRecord[] {
     const category = text(record.category);
     const location = text(record.location);
     const period = text(record.period);
+    const aliases = record.aliases === undefined ? [] : stringList(record.aliases, true);
+    const places = record.places === undefined ? [] : stringList(record.places, true);
     const paragraphs = paragraphsOf(record.paragraphs);
     const djIds = idList(record.djIds, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     const sessionIds = idList(record.sessionIds, /^[A-Za-z0-9_-]{11}$/);
@@ -244,7 +248,7 @@ export function openVenues(value: unknown): VenueRecord[] {
     if (!id || !slug(id) || seen.has(id) || !name || !summary || !category || !links || checked === null) continue;
     if (record.location !== undefined && !location) continue;
     if (record.period !== undefined && !period) continue;
-    if (!paragraphs || !djIds || !sessionIds) continue;
+    if (!aliases || !places || !paragraphs || !djIds || !sessionIds) continue;
     seen.add(id);
     venues.push({
       id,
@@ -253,6 +257,8 @@ export function openVenues(value: unknown): VenueRecord[] {
       category,
       location,
       period,
+      aliases,
+      places,
       paragraphs,
       djIds,
       sessionIds,

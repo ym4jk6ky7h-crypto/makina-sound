@@ -181,7 +181,7 @@ export const doorCopy: Record<"discos" | "djs" | "sesiones" | "salas" | "flyers"
     kicker: "04",
     label: "El cuarto",
     title: "Salas",
-    lead: "Cinco salas con fuente que se puede abrir: Pont Aeri, Xque, Chasis, Scorpia y Psicódromo. La ficha dice de dónde sale cada fecha. Donde la fuente no alcanza, el dato no se publica.",
+    lead: "Cada ficha publica solo lo que una fuente abierta permite afirmar. Se puede buscar el nombre, el alias y la localidad. Donde la fuente no alcanza, el dato no se publica.",
     essays: [
       {
         heading: "Anatomía de la sala",

@@ -4,7 +4,7 @@ import { readDjs } from "../data/djsCatalog.ts";
 import { readFlyers, readVenues } from "../data/library.ts";
 import { doorCopy } from "../data/pages.ts";
 import type { FlyerRecord, VenueRecord } from "../lib/collections.ts";
-import { describeFlyer, describeVenue } from "../lib/places.ts";
+import { describeFlyer, describeVenue, filterVenues, venuePlaces } from "../lib/places.ts";
 import { includesQuery } from "../lib/search.ts";
 import { readFocus } from "../lib/section.ts";
 
@@ -18,6 +18,7 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
   );
   const [focus, setFocus] = useState(() => readFocus());
   const [text, setText] = useState("");
+  const [place, setPlace] = useState("");
   const page = doorCopy[kind];
 
   useEffect(() => {
@@ -36,9 +37,9 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
     const screen = describeVenue(focus, venues, djs, sessions, flyers);
     if (screen.kind === "profile") return <VenueFile venue={screen.venue} djs={screen.djs} sessions={screen.sessions} flyers={screen.flyers} />;
     if (screen.kind === "missing") return <Missing label="Sala no encontrada" back="#salas" />;
-    const visible = screen.venues.filter((venue) =>
-      includesQuery(text, [venue.name, venue.location ?? "", venue.summary, venue.period ?? ""]),
-    );
+    const visible = filterVenues(screen.venues, { text, place });
+    const places = venuePlaces(screen.venues);
+    const filtered = text.trim().length > 0 || place !== "";
     return (
       <article className="sheet dj-archive">
         <div className="wrap">
@@ -49,14 +50,24 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
               <h1>{page.title}</h1>
               <p className="dj-lead">{page.lead}</p>
             </div>
-            <p className="dj-count" aria-label={`${visible.length} salas`}>
-              <span className="dj-count-num">{visible.length}</span>
-              <span className="dj-count-label">{text.trim() ? `de ${venues.length}` : "salas en el archivo"}</span>
+            <p className="dj-count" aria-label={visible.length === screen.venues.length ? `${screen.venues.length} salas en el archivo` : `${visible.length} de ${screen.venues.length} salas`}>
+              <span className="dj-count-num">{visible.length === screen.venues.length ? screen.venues.length : visible.length}</span>
+              <span className="dj-count-label">{visible.length === screen.venues.length ? "salas en el archivo" : `de ${screen.venues.length}`}</span>
             </p>
           </header>
-          <Search id="buscar-salas" text={text} onText={setText} placeholder="Nombre de la sala" />
+          <section className="session-tools" aria-label="Buscar y filtrar salas">
+            <Search id="buscar-salas" text={text} onText={setText} placeholder="Nombre, alias o localidad" />
+            <label className="session-filters">
+              Localidad
+              <select value={place} onChange={(event) => setPlace(event.target.value)}>
+                <option value="">Todas</option>
+                {places.map((item) => <option key={item} value={item}>{item}</option>)}
+              </select>
+            </label>
+            {filtered ? <button className="dj-clear" type="button" onClick={() => { setText(""); setPlace(""); }}>Quitar filtros</button> : null}
+          </section>
           {visible.length === 0 ? (
-            <p className="note" role="status">Ninguna sala coincide. Prueba con otro nombre.</p>
+            <p className="dj-empty" role="status">Ninguna sala coincide. Prueba con otro nombre o quita los filtros.</p>
           ) : (
             <ul className="dj-gallery">
               {visible.map((venue) => (
@@ -65,15 +76,16 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
                     <Plate label={`Composición editorial, no es una fotografía de ${venue.name}`}>{venue.name}</Plate>
                     <span className="dj-card-copy">
                       <strong>{venue.name}</strong>
-                      <span>{venue.location}</span>
-                      <span>{venue.period}</span>
+                      {venue.aliases.length > 0 ? <span>{venue.aliases.join(" · ")}</span> : null}
+                      {venue.location ? <span>{venue.location}</span> : null}
+                      {venue.period ? <span>{venue.period}</span> : null}
                     </span>
                   </a>
                 </li>
               ))}
             </ul>
           )}
-          <p className="sheet-note">Scorpia y el Psicódromo no tienen ficha. Faltaba una fuente con el mismo peso. Las ilustraciones de la portada no son fotografías de estos locales.</p>
+          <p className="sheet-note">La placa de cada tarjeta es una composición del archivo, no una fotografía del local. Una sala solo entra si una página abierta sostiene el dato. Area, Area Concor y Area de Beethoven no se han fundido: la identidad sigue sin una fuente suficiente.</p>
         </div>
       </article>
     );
@@ -146,6 +158,7 @@ function VenueFile({
           <div className="dj-file-title">
             <p className="dj-kicker">Ficha</p>
             <h1>{venue.name}</h1>
+            {venue.aliases.length > 0 ? <p className="dj-quiet">También escrito: {venue.aliases.join(", ")}</p> : null}
             {venue.location ? <p className="dj-count">{venue.location}</p> : null}
             {venue.period ? <p className="dj-quiet">{venue.period}</p> : null}
           </div>

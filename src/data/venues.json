@@ -9,7 +9,8 @@
     "paragraphs": [
       "La web oficial ordena las etapas así: Terrassa en 1991, Manresa en 2000, Traiguera en 2000 y Vallgorguina en 2002. No es una sola dirección. Es una sucesión de locales con el mismo nombre, y la página consultada en 2026 sigue anunciando reencuentros.",
       "Esa web presenta a Skudero, Xavi Metralla, Sonic y Sisu como el núcleo de una etapa de Vallgorguina, y dice que la cabina empieza antes y reúne a más generaciones. El CCCB incluye a Nando Dixkontrol entre los residentes de Pont Aeri, sin fechar esa etapa en la ficha leída. Las biografías ya publicadas de DJ Pastis y DJ Buenri los sitúan en la sala antes de su paso a Xque.",
-      "El 5 de agosto de 2012, La Vanguardia recogió el anuncio de Ramón Escudero: el local de Vallgorguina cerraría a partir de noviembre, después de 21 años, por la subida del IVA del ocio nocturno. El 9 Nou, el 28 de diciembre de 2012, contó el cierre de esa sala. Una sesión del catálogo titulada «Closing Party @ Pont Aeri (Junio 2024)» nombra el nombre en 2024: no es el cierre de 2012, y la fecha guardada es la de publicación del vídeo. Otra sesión, «DJ NAU @ Pont aeri (34 Aniversario cierre Sala Terrassa) Abril 2026», también nombra la sala en el título. Abril de 2026 no se guarda como fecha de la noche ni como fecha de un cierre del local de Terrassa."
+      "El 5 de agosto de 2012, La Vanguardia recogió el anuncio de Ramón Escudero: el local de Vallgorguina cerraría a partir de noviembre, después de 21 años, por la subida del IVA del ocio nocturno. El 9 Nou, el 28 de diciembre de 2012, contó el cierre de esa sala. Una sesión del catálogo titulada «Closing Party @ Pont Aeri (Junio 2024)» nombra el nombre en 2024: no es el cierre de 2012, y la fecha guardada es la de publicación del vídeo. Otra sesión, «DJ NAU @ Pont aeri (34 Aniversario cierre Sala Terrassa) Abril 2026», también nombra la sala en el título. Abril de 2026 no se guarda como fecha de la noche ni como fecha de un cierre del local de Terrassa.",
+      "El Español, el 6 de noviembre de 2016, sitúa un episodio de enero de 1995 en Terrassa, el traslado a Manresa y un cierre definitivo en 2010. La Vanguardia, ya citada, anuncia el cierre del local de Vallgorguina en 2012. Esta ficha no sustituye una fecha por la otra."
     ],
     "djIds": [
       "dj-skudero",
@@ -49,10 +50,22 @@
         "label": "YouTube, DJ NAU @ Pont aeri (34 Aniversario cierre Sala Terrassa) Abril 2026",
         "url": "https://www.youtube.com/watch?v=dGN_8ey-jwM",
         "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      },
+      {
+        "label": "El Español, 6 de noviembre de 2016",
+        "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
+        "note": "Da un cierre definitivo en 2010. No sustituye el anuncio de 2012 de La Vanguardia."
       }
     ],
     "checkedAt": "2026-10-16",
-    "status": "published"
+    "status": "published",
+    "aliases": [],
+    "places": [
+      "Terrassa",
+      "Manresa",
+      "Traiguera",
+      "Vallgorguina"
+    ]
   },
   {
     "id": "xque",
@@ -64,7 +77,8 @@
     "paragraphs": [
       "El artículo de la Wikipedia en español describe Xque —también escrito X-Que? o X-Què?— como una discoteca de Palafrugell entre 1992 y 2007, y después de Olot entre 2010 y 2011. Atribuye la inauguración de 1992 a Gin Lemon SL y el giro hacia el hard trance y la mákina a la residencia de Oskar Mad.",
       "El mismo texto fecha el paso de David Álvarez, luego DJ Pastis, en 1995, primero con Oskar Mad y después con DJ Sek, y la llegada de David Pàmies, luego DJ Buenri, en 1996, procedente del Pont Aeri de Terrassa. El cierre de Palafrugell lo sitúa el 21 de julio de 2007, el día del decimoquinto aniversario. La cifra de asistencia que acompaña esa frase lleva en el artículo la marca de cita requerida y no se publica aquí.",
-      "Para Olot, la Wikipedia da el 25 de septiembre de 2010 como apertura y marzo de 2011 como cierre, y remite al Diari de Girona. Nombra como residentes a DJ Sepi, DJ Bull y Fran Bit, y la incorporación de DJ Pastis a partir del 25 de diciembre. Esa reapertura no es la sala de Palafrugell. El vídeo del catálogo «Final concurso de dj's del Xque 2004» nombra la sala en el título; la ficha de sesión solo atribuye a quien ya tiene identificador. El vídeo «30 JAVI TRACKER I Intro Sesión Xque 2005/07» también nombra Xque en el título. Los años escritos en el título no se publican como fecha de la actuación, y Javi Tracker no entra como residente."
+      "Para Olot, la Wikipedia da el 25 de septiembre de 2010 como apertura y marzo de 2011 como cierre, y remite al Diari de Girona. Nombra como residentes a DJ Sepi, DJ Bull y Fran Bit, y la incorporación de DJ Pastis a partir del 25 de diciembre. Esa reapertura no es la sala de Palafrugell. El vídeo del catálogo «Final concurso de dj's del Xque 2004» nombra la sala en el título; la ficha de sesión solo atribuye a quien ya tiene identificador. El vídeo «30 JAVI TRACKER I Intro Sesión Xque 2005/07» también nombra Xque en el título. Los años escritos en el título no se publican como fecha de la actuación, y Javi Tracker no entra como residente.",
+      "El mismo reportaje dice que Xquè la abrieron Pastis y Buenri y que cerró en 2006. La Wikipedia, ya citada, la atribuye a Gin Lemon y fecha Palafrugell entre 1992 y el 21 de julio de 2007. No se convierten en una sola versión y Pastis y Buenri no pasan a fundadores de esta ficha."
     ],
     "djIds": [
       "oskar-mad",
@@ -89,10 +103,23 @@
         "label": "YouTube, 30 JAVI TRACKER I Intro Sesión Xque 2005/07",
         "url": "https://www.youtube.com/watch?v=Pj40ivKMZig",
         "note": "El título publicado por YouTube nombra esta sala. La fecha del catálogo sigue siendo la de publicación del vídeo, no la de la noche."
+      },
+      {
+        "label": "El Español, 6 de noviembre de 2016",
+        "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
+        "note": "Atribuye la apertura a Pastis y Buenri y un cierre en 2006. No sustituye la ficha de la Wikipedia."
       }
     ],
     "checkedAt": "2026-10-16",
-    "status": "published"
+    "status": "published",
+    "aliases": [
+      "X-Que",
+      "X-Què"
+    ],
+    "places": [
+      "Palafrugell",
+      "Olot"
+    ]
   },
   {
     "id": "chasis",
@@ -138,7 +165,11 @@
       }
     ],
     "checkedAt": "2026-10-16",
-    "status": "published"
+    "status": "published",
+    "aliases": [],
+    "places": [
+      "Mataró"
+    ]
   },
   {
     "id": "scorpia",
@@ -164,7 +195,13 @@
       }
     ],
     "checkedAt": "2026-10-16",
-    "status": "published"
+    "status": "published",
+    "aliases": [
+      "Central del Sonido"
+    ],
+    "places": [
+      "Òdena"
+    ]
   },
   {
     "id": "psicodromo",
@@ -176,7 +213,8 @@
     "paragraphs": [
       "El reportaje de Vice «Baila o muere», abierto el 16 de octubre de 2026, sitúa el local en Almogàvers 88, en una antigua fábrica de muebles. Fecha la apertura el 28 de septiembre de 1989, con «What Time Is Love» de KLF, y el cierre el 5 de mayo de 1992.",
       "Ese texto nombra a Pepebilly como DJ en la obra del local. El CCCB, en la ficha de Nando Dixkontrol actualizada el 12 de abril de 2017, lo incluye entre los residentes de Psicódromo y no fecha esa residencia. Las fichas ya publicadas de DJ Pastis y DJ Buenri dicen que entonces eran clientes, no DJs: no entran aquí como residentes.",
-      "Una crónica de El Periódico del 22 de septiembre de 2019 no se pudo abrir: la petición devolvió 406. No se usa. No se publica una fotografía."
+      "Una crónica de El Periódico del 22 de septiembre de 2019 no se pudo abrir: la petición devolvió 406. No se usa. No se publica una fotografía.",
+      "El Español dice que el Psicódromo cerró en 1994. El reportaje de Vice, ya citado, fecha el cierre el 5 de mayo de 1992. No se elige una de las dos fechas."
     ],
     "djIds": [
       "nando-dixkontrol",
@@ -193,6 +231,285 @@
         "label": "CCCB, Nando Dixkontrol",
         "url": "https://www.cccb.org/ca/w/collectius/nando-dixkontrol",
         "note": "Lo incluye entre los residentes. No fecha esa etapa. El crédito de su fotografía no autoriza republicarla."
+      },
+      {
+        "label": "El Español, 6 de noviembre de 2016",
+        "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
+        "note": "Sitúa el cierre en 1994. No sustituye el 5 de mayo de 1992 del reportaje de Vice."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published",
+    "aliases": [],
+    "places": [
+      "Barcelona"
+    ]
+  },
+  {
+    "id": "gran-velvet",
+    "name": "Gran Velvet",
+    "summary": "Macrodiscoteca de Badalona. El artículo de Applehead la sitúa en Montigalà y recoge el apodo, el cierre y el derribo.",
+    "category": "Sala",
+    "location": "Montigalà, Badalona",
+    "period": "Cierre en 1997, cierre definitivo en 1999 y derribo en 2010, según Applehead. Esa página no fecha la inauguración.",
+    "aliases": [],
+    "places": [
+      "Badalona"
+    ],
+    "paragraphs": [
+      "Santiago Alonso, en Applehead el 13 de abril de 2023, cita un texto de Monty Padura publicado en Primera Línea en 1994. De ahí salen el apodo «el lugar más excitante del mundo», Paco Pil junto a Tony Aguilar, el arquitecto Alfredo Arribas y el empresario Damián García Puig.",
+      "El mismo artículo dice que la sala cerró en 1997, que reabrió pocos meses después con otros nombres y otros responsables, que el cierre definitivo se certificó en 1999 y que el edificio se derribó en 2010. Esta lectura no enumera esos nombres posteriores, así que no se publican.",
+      "El Punt Avui no se pudo abrir: la página pidió un captcha. No se usa. No hay una sesión del catálogo cuyo título nombre Gran Velvet."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Applehead, 13 de abril de 2023",
+        "url": "https://appleheadteam.com/el-lugar-mas-excitante-del-mundo/",
+        "note": "Respalda Montigalà, el apodo, Pil y Aguilar, Arribas, el cierre de 1997, el cierre definitivo de 1999 y el derribo de 2010. No fecha la inauguración ni lista los nombres posteriores."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "barraca",
+    "name": "Barraca",
+    "summary": "Discoteca de Les Palmeres, en Sueca. La Wikipedia la inaugura en 1965 y la sitúa en el auge de la Ruta Destroy.",
+    "category": "Sala",
+    "location": "Les Palmeres, Sueca",
+    "period": "Inaugurada el 6 de diciembre de 1965, según la Wikipedia en español. Las fuentes abiertas no dan una fecha de cierre.",
+    "aliases": [],
+    "places": [
+      "Sueca"
+    ],
+    "paragraphs": [
+      "La Wikipedia en español, abierta el 16 de octubre de 2026, sitúa Barraca en Les Palmeres, municipio de Sueca, cerca de la playa. Fecha la inauguración el 6 de diciembre de 1965 y el relevo de cabina de Juan Santamaría por Carlos Simó en 1982. Describe la sala como precursora de la Ruta Destroy y llama «música barraquera» al sonido que se le asoció.",
+      "Las Provincias, el 3 de abril de 2017, la llama Barraca de Les Palmeretes, junto a Sueca, y dice que abrió en los años sesenta como sala de música lenta y flamenco antes del cambio de los ochenta. En 2017 la presenta todavía abierta. La Wikipedia leída en 2026 también la describe en actividad. No se publica un cierre."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Barraca",
+        "url": "https://es.wikipedia.org/wiki/Barraca_(discoteca)",
+        "note": "Respalda Sueca, el 6 de diciembre de 1965 y el relevo de cabina de 1982. No fecha un cierre."
+      },
+      {
+        "label": "Las Provincias, 3 de abril de 2017",
+        "url": "https://www.lasprovincias.es/culturas/musica/201703/31/discotecas-miticas-valencia-20170331170458.html",
+        "note": "La sitúa junto a Sueca y dice que en 2017 seguía abierta, cincuenta años después de inaugurada."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "chocolate",
+    "name": "Chocolate",
+    "summary": "Sala a unos 200 metros de Barraca. Antes se llamó Chocolate Cream y, según Las Provincias, cerró en 2007.",
+    "category": "Sala",
+    "location": "A unos 200 metros de Barraca, en el entorno de Sueca",
+    "period": "Las Provincias fecha el nacimiento en 1980 y el cierre en 2007. La Wikipedia no repite esos años y sí documenta el nombre anterior.",
+    "aliases": [
+      "Chocolate Cream"
+    ],
+    "places": [
+      "Sueca"
+    ],
+    "paragraphs": [
+      "La Wikipedia de la Ruta Destroy, abierta el 16 de octubre de 2026, sitúa Chocolate a unos 200 metros de Barraca. Dice que antes se llamó Chocolate Cream y que, aún antes, el local fue una nave donde se almacenaba arroz. Nombra a Toni Vidal, Toni el Gitano, como responsable musical de los primeros años, y el relevo de José Conca en 1986. Llama a 1998 el último gran año de la sala y no lo presenta como fecha de cierre.",
+      "Las Provincias, el 3 de abril de 2017, dice que nació en 1980 cerca de Barraca, que cerró en 2007 y que después, con el nombre Qoqoa, abría una vez al mes hasta un cierre posterior que el artículo no fecha. El 2007 y el «último gran año» de 1998 se dejan como dos afirmaciones distintas.",
+      "El vídeo del catálogo «Intro Chocolate + Sesión Pastis & Buenri» no se vincula: el título no dice que sea esta sala."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Respalda la distancia a Barraca, el nombre Chocolate Cream, el almacén de arroz y el relevo de 1986. No fecha la apertura ni el cierre."
+      },
+      {
+        "label": "Las Provincias, 3 de abril de 2017",
+        "url": "https://www.lasprovincias.es/culturas/musica/201703/31/discotecas-miticas-valencia-20170331170458.html",
+        "note": "Fecha 1980 y el cierre de 2007, y nombra la etapa posterior como Qoqoa sin fechar su cierre."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "actv",
+    "name": "ACTV",
+    "summary": "Sala de la Malvarrosa, en el edificio de las Termas Victoria. La Wikipedia la abre en 1986. En 2017 Las Provincias dice que el sitio es Aquarela.",
+    "category": "Sala",
+    "location": "Playa de la Malvarrosa, Valencia",
+    "period": "Abierta en 1986, según la Wikipedia. El cambio al nombre Aquarela no tiene fecha en las fuentes abiertas.",
+    "aliases": [
+      "Actividades Culturales Termas Victoria"
+    ],
+    "places": [
+      "Valencia"
+    ],
+    "paragraphs": [
+      "La Wikipedia de la Ruta Destroy dice que ACTV abrió en 1986, creada por Julio Andújar, en la Malvarrosa, dentro de las Termas Victoria, un edificio de 1918. El nombre sale de Actividades Culturales Termas Victoria. Entre los primeros DJs nombra a Fran Lenaers y a Ganimedes, y después a Arturo Roger. Las sesiones de domingo por la tarde fueron una cita de la ruta.",
+      "Las Provincias, el 3 de abril de 2017, repite el origen del nombre en las termas y dice que donde estuvo ACTV se ubica entonces Aquarela. El pie de la Wikipedia escribe Akuarela. Las dos grafías se dejan como están. Ninguna de las dos páginas fecha el cambio de nombre. Las Provincias recuerda la sala por el sonido electrónico más duro y por sesiones de domingo por la tarde."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Respalda 1986, la Malvarrosa, las Termas Victoria y el significado del nombre."
+      },
+      {
+        "label": "Las Provincias, 3 de abril de 2017",
+        "url": "https://www.lasprovincias.es/culturas/musica/201703/31/discotecas-miticas-valencia-20170331170458.html",
+        "note": "Dice que en 2017 el sitio es Aquarela. No fecha el cambio de nombre."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "disco-ocho",
+    "name": "Disco Ocho",
+    "summary": "Discoteca de Cornellà de Llobregat. Las páginas abiertas escriben Disco 8, Disco Ocho y Ocho. Ninguna de las dos usa la grafía El 8.",
+    "category": "Sala",
+    "location": "Cornellà de Llobregat",
+    "period": "Entre 1992 y 1999, según la ficha de Intertapes. El Español no fecha la etapa de Pepebilly.",
+    "aliases": [
+      "Disco 8",
+      "Ocho"
+    ],
+    "places": [
+      "Cornellà de Llobregat"
+    ],
+    "paragraphs": [
+      "Intertapes, en la ficha de una cinta grabada en 1994, dice que Disco 8, también escrito Disco Ocho, funcionó entre 1992 y 1999 en Cornellà de Llobregat. La relaciona con la escena mákina, junto a Psicódromo y Megatron. Esa página no nombra residentes.",
+      "El Español, el 6 de noviembre de 2016, empareja a Pepebilly con Ocho en la misma frase en la que asocia a otros DJs con una sala. El perfil ya publicado de Pepebilly enlaza esta ficha por esa frase. No se fecha su etapa y no se copian residencias leídas solo en foros."
+    ],
+    "djIds": [
+      "dj-pepebilly"
+    ],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Intertapes, Disco 8",
+        "url": "https://intertapes.net/ocho",
+        "note": "Respalda Cornellà de Llobregat, los nombres Disco 8 y Disco Ocho, y el periodo 1992-1999."
+      },
+      {
+        "label": "El Español, 6 de noviembre de 2016",
+        "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
+        "note": "Empareja a Pepebilly con Ocho. No fecha esa etapa."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "nau-b3",
+    "name": "Nau B-3",
+    "summary": "Marca de sala que, según El Español, tuvo varias ubicaciones y se asocia con El Brujo. Esta ficha no fija un pueblo ni una fecha.",
+    "category": "Sala",
+    "aliases": [
+      "Nau B3"
+    ],
+    "places": [],
+    "paragraphs": [
+      "El Español, el 6 de noviembre de 2016, dice en el pie de un mapa que algunas salas, como Pont Aeri o Nau B3, tuvieron varias ubicaciones. No enumera esos pueblos.",
+      "El mismo reportaje asocia a El Brujo con Nau B3. No hay un perfil de El Brujo en este archivo, así que no se enlaza un DJ. Un pie de foto sitúa a jóvenes bailando en Nau B3 a finales de los 90. Esa fórmula no se convierte en un año de apertura o de cierre.",
+      "Los mensajes de foros que citan Molins de Rei, Argençola u otros pueblos no se han usado."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "El Español, 6 de noviembre de 2016",
+        "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
+        "note": "Respalda que Nau B3 tuvo varias ubicaciones y la asocia con El Brujo. No lista los pueblos ni fecha la actividad."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "central-cubelles",
+    "name": "Central",
+    "summary": "Sala que El Español atribuye a una apertura de Scorpia en Cubelles. No es el nombre posterior de la Scorpia de Òdena.",
+    "category": "Sala",
+    "location": "Cubelles",
+    "aliases": [],
+    "places": [
+      "Cubelles"
+    ],
+    "paragraphs": [
+      "El Español, el 6 de noviembre de 2016, dice que Scorpia abrió discotecas en Mataró y Cubelles con los nombres Kontrol y Central. No fecha esas aperturas ni nombra un residente de la sala de Cubelles.",
+      "La ficha de Scorpia, apoyada en La Veu de l'Anoia, llama «Scorpia: Central del Sonido» al relevo de 1993 en Òdena. Es otra localidad. Las dos fichas se mantienen separadas."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "El Español, 6 de noviembre de 2016",
+        "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
+        "note": "Nombra Central como sala de Scorpia en Cubelles. No la fecha."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "kontrol",
+    "name": "Kontrol",
+    "summary": "Sala que El Español atribuye a una apertura de Scorpia en Mataró. No es Chasis.",
+    "category": "Sala",
+    "location": "Mataró",
+    "aliases": [],
+    "places": [
+      "Mataró"
+    ],
+    "paragraphs": [
+      "La misma frase de El Español del 6 de noviembre de 2016 pone Kontrol en Mataró y Central en Cubelles. No hay fecha ni DJ residente en esa frase.",
+      "Chasis también está documentada en Mataró y conserva su ficha. No se fusionan."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "El Español, 6 de noviembre de 2016",
+        "url": "https://www.elespanol.com/reportajes/grandes-historias/20161105/168483417_0.html",
+        "note": "Nombra Kontrol como sala de Scorpia en Mataró. No la fecha."
+      }
+    ],
+    "checkedAt": "2026-10-16",
+    "status": "published"
+  },
+  {
+    "id": "extasis",
+    "name": "Éxtasis",
+    "summary": "Sala de Llombai nombrada por la Wikipedia de la Ruta Destroy. La página no fecha su actividad ni le atribuye un DJ.",
+    "category": "Sala",
+    "location": "Llombai",
+    "aliases": [],
+    "places": [
+      "Llombai"
+    ],
+    "paragraphs": [
+      "En el apartado de Espiral, la Wikipedia de la Ruta Destroy agrupa «Éxtasis en Llombai» con otras salas cuyo nombre no alcanzó la fama de las principales. No da apertura, cierre ni residentes.",
+      "El reportaje de El Español usa la palabra éxtasis para la pastilla, no para este local. No se mezclan."
+    ],
+    "djIds": [],
+    "sessionIds": [],
+    "links": [
+      {
+        "label": "Wikipedia en español, Ruta Destroy",
+        "url": "https://es.wikipedia.org/wiki/Ruta_Destroy",
+        "note": "Nombra Éxtasis en Llombai y dice que su nombre no trascendió como el de las salas principales. No fecha la sala."
       }
     ],
     "checkedAt": "2026-10-16",
