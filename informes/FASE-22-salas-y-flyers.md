@@ -1,7 +1,7 @@
 # Fase 22 — salas y flyers
 
 Fecha: 16 de octubre de 2026.
-Estado: completada. El archivo de salas y las referencias de carteles están en el código. La publicación en GitHub Pages se comprueba al cerrar la fase.
+Estado: completada y publicada. El flujo de GitHub Pages terminó en éxito. https://ym4jk6ky7h-crypto.github.io/makina-sound/ respondió 200 y sirvió `assets/index-D90E7Cd2.js`, que ya contiene Pont Aeri y Macrorave 2009.
 
 ## Estado inicial
 
@@ -57,7 +57,7 @@ Desde la ficha de un DJ, la sección Salas aparece solo si alguna sala lo nombra
 
 Compilación con `VITE_BASE=/makina-sound/`, la que usa GitHub Pages: `assets/index-D90E7Cd2.js` (807,14 kB; gzip 196,55 kB) y `assets/index-FcP9tNcP.css`.
 
-Comprobado en local, en http://127.0.0.1:4173/?v=fase22#salas, la ficha de Pont Aeri, Flyers y la ficha de Ricardo F.
+Comprobado en local, en http://127.0.0.1:4173/?v=fase22#salas, la ficha de Pont Aeri, Flyers y la ficha de Ricardo F. En público, el mismo archivo está en https://ym4jk6ky7h-crypto.github.io/makina-sound/#salas y https://ym4jk6ky7h-crypto.github.io/makina-sound/#flyers.
 
 ## Pendiente
 
