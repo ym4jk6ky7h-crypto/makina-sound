@@ -173,6 +173,17 @@ describe("sesiones", () => {
       [20, 0, 0],
     );
     assert.equal(filterSessions(catalog.sessions, { ...query, sort: "name" })[0].title, "Makina de ahora");
+    const named = new Map([["dj-nau", "Arnau de prueba"]]);
+    const target = catalog.sessions.find((item) => item.youtubeVideoId === "bbbbbbbbbbb");
+    assert.ok(target);
+    const withIds = catalog.sessions.map((item) => item.id === target.id ? { ...item, djIds: ["dj-nau"] } : item);
+    assert.equal(filterSessions(withIds, { ...query, text: "ricardo" }, named).length, 0);
+    assert.equal(filterSessions(withIds, { ...query, text: "arnau" }, named).length, 1);
+    assert.equal(filterSessions(catalog.sessions, { ...query, text: "arnau" }, named).length, 0);
+    assert.equal(filterSessions(withIds, { ...query, djId: "dj-nau" }, named).length, 1);
+    assert.equal(filterSessions(withIds, { ...query, venueSessionIds: [target.id] }, named).length, 1);
+    assert.equal(filterSessions(withIds, { ...query, venueSessionIds: [] }, named).length, 0);
+    assert.equal(filterSessions(withIds, { ...query, text: "nada", djId: "dj-nau" }, named).length, 0);
   });
 
   it("une los DJs de una sesión repetida y rechaza identificadores inválidos", () => {

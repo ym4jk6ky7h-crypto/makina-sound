@@ -144,7 +144,7 @@ export const doorCopy: Record<"discos" | "djs" | "sesiones" | "salas" | "flyers"
     kicker: "03",
     label: "La cabina",
     title: "Sesiones",
-    lead: "Descubre sesiones Makina publicadas por DJs y canales de la escena. Desde el remember hasta las mezclas actuales, encuentra tu próxima sesión y escúchala aquí mismo.",
+    lead: "Sesiones y mezclas publicadas en YouTube. El archivo enlaza el DJ y la sala cuando esa relación ya está documentada. La fecha de cada ficha es la de publicación del vídeo, no la de la noche.",
     essays: [
       {
         heading: "La cabina no era un escenario",

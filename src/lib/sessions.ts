@@ -33,6 +33,8 @@ export type SessionQuery = {
   text: string;
   era: EraFilter;
   sort: SessionSort;
+  djId?: string;
+  venueSessionIds?: readonly string[];
 };
 
 const ERAS = new Set<SessionEra>(["remember", "current", "unknown"]);
@@ -198,9 +200,22 @@ function compareByCount(
   return compareByDate(a, b, 1);
 }
 
-export function filterSessions(sessions: readonly SessionRecord[], query: SessionQuery): SessionRecord[] {
+export function filterSessions(
+  sessions: readonly SessionRecord[],
+  query: SessionQuery,
+  names?: ReadonlyMap<string, string>,
+): SessionRecord[] {
+  const venueIds = query.venueSessionIds ? new Set(query.venueSessionIds) : null;
   const byEra = query.era === "all" ? sessions : sessions.filter((session) => session.era === query.era);
-  const matched = byEra.filter((session) => includesQuery(query.text, [session.title, session.djName ?? ""]));
+  const matched = byEra.filter((session) => {
+    if (query.djId && !session.djIds?.includes(query.djId)) return false;
+    if (venueIds && !venueIds.has(session.id)) return false;
+    const linkedNames = (session.djIds ?? []).flatMap((id) => {
+      const name = names?.get(id);
+      return name ? [name] : [];
+    });
+    return includesQuery(query.text, [session.title, session.djName ?? "", ...linkedNames]);
+  });
   const sorted = [...matched];
   if (query.sort === "date-asc") sorted.sort((a, b) => compareByDate(a, b, -1));
   else if (query.sort === "name") {
