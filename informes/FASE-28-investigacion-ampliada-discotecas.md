@@ -109,6 +109,10 @@ En el navegador, a ancho de escritorio, el directorio muestra 27 salas en orden 
 
 A 390 px, `innerWidth`, `scrollWidth` y `clientWidth` valen 390. La búsqueda y el filtro quedan en columna y la primera tarjeta se lee entera. No se afirma que la consola estuviera limpia.
 
+## Publicación
+
+El workflow [38883595713](https://github.com/ym4jk6ky7h-crypto/makina-sound/actions/runs/38883595713) terminó en success. GitHub Pages responde 200 y sirve `assets/index-bEDqwBEQ.js` y `assets/index-BC1EX7JV.css`. El JavaScript público contiene «Scorpia, Central del Sonido», «Eugenia Viñes», «La Festa» y la nota que deja Area y Concor fuera porque el foro solo responde por http.
+
 ## Limitaciones
 
 - Area y Concor están distinguidas, pero el único hilo abierto es http.

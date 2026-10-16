@@ -628,7 +628,7 @@ Estado de la fase: **completada**. `#salas` pasa de 5 a 14 fichas. Las nueve nue
 
 ## Fase 28 — 16 de octubre de 2026
 
-Estado de la fase: **en el código, pendiente de comprobar Pages**. `#salas` pasa de 14 a 27 fichas. Las trece nuevas se apoyan en páginas abiertas. Area y Concor se distinguen en un foro http y no entran. Area de Beethoven, Barçalles y Penélope siguen sin ficha. La lista de control queda en `informes/INVENTARIO-HISTORICO-DISCOTECAS.md`. No hay imágenes nuevas ni cambios en los 55 perfiles, las 618 tarjetas ni las 150 sesiones.
+Estado de la fase: **completada**. `#salas` pasa de 14 a 27 fichas. Las trece nuevas se apoyan en páginas abiertas. Area y Concor se distinguen en un foro http y no entran. Area de Beethoven, Barçalles y Penélope siguen sin ficha. La lista de control queda en `informes/INVENTARIO-HISTORICO-DISCOTECAS.md`. No hay imágenes nuevas ni cambios en los 55 perfiles, las 618 tarjetas ni las 150 sesiones. Pages sirve `assets/index-bEDqwBEQ.js` y `assets/index-BC1EX7JV.css`.
 
 `npm test`: 46 pruebas, 0 fallos. La compilación local queda en `assets/index-BWQ8SESL.js` y `assets/index-D2rVgAoB.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-bEDqwBEQ.js` y `assets/index-BC1EX7JV.css`. El detalle está en `informes/FASE-28-investigacion-ampliada-discotecas.md`.
 
