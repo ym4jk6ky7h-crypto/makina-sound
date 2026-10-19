@@ -16,7 +16,7 @@ export const exploreCopy = {
   kicker: "01",
   label: "Ahora",
   title: "Makina actual",
-  lead: "Aquí entra lo que ya está documentado de la makina de ahora. Una fecha de vídeo no convierte una sesión en actual: hace falta que el título lo diga, o que el DJ tenga ficha y un vídeo publicado.",
+  lead: "Sección cerrada. Una sesión entra aquí solo cuando su título dice makina actual. Debajo están esas sesiones y los DJs con ficha que salen en ellas. La fecha del vídeo no cambia la marca.",
 };
 
 export const archiveCopy = {
@@ -30,14 +30,14 @@ export const rinconCopy = {
   kicker: "06",
   label: "Taller",
   title: "El rincón del DJ",
-  lead: "Guías de bricolaje para la cabina y el cuarto de trabajo: muebles, soportes, acústica, luz, cableado, montaje y mantenimiento. Solo se publica una guía cuando los pasos y las fuentes están escritos.",
+  lead: "Sección cerrada. Una guía entra cuando una página abierta escribe los pasos. Hay dos: la colocación de monitores de Genelec y el cuidado de la aguja Concorde de Ortofon. El resto de categorías sigue vacío.",
 };
 
 export const equipoCopy = {
   kicker: "07",
   label: "Material",
   title: "Equipo DJ",
-  lead: "Fichas y comparativas de material. Cada dato tiene que salir de una fuente. Un precio o una especificación sin comprobar se queda vacío.",
+  lead: "Sección cerrada. Cada cifra sale de la página del fabricante abierta el 19 de octubre de 2026. No hay precios de tienda ni enlaces de afiliado.",
 };
 
 export const projectCopy: PageCopy = {
@@ -218,7 +218,7 @@ export const doorCopy: Record<"discos" | "djs" | "sesiones" | "salas" | "flyers"
     kicker: "05",
     label: "El papel",
     title: "Flyers",
-    lead: "Referencias de carteles citados por una fuente identificable. Ninguna imagen se publica hasta que la licencia permita copiarla. Los dibujos de esta web siguen siendo ilustraciones.",
+    lead: "Sección cerrada. Entran los carteles que la portada de Pont Aeri nombra en «Carteles que hicieron historia», después de abrir la página de procedencia cuando esa página responde. La imagen no se copia: ninguna de esas páginas cede la reproducción.",
     essays: [
       {
         heading: "Qué cabía en el flyer",
@@ -242,10 +242,10 @@ export const doorCopy: Record<"discos" | "djs" | "sesiones" | "salas" | "flyers"
         ],
       },
       {
-        heading: "Cómo se mostrarán",
+        heading: "Cómo se muestran",
         paragraphs: [
-          "Un flyer del archivo se enseñará como objeto: qué noche anuncia, qué se lee de verdad, quién lo conserva. Si falta un dato, se dirá que falta.",
-          "Los carteles que ves en MAKINA SOUND son ilustraciones originales. Un dibujo nuestro no sustituye a un papel de entonces.",
+          "Cada ficha dice qué noche anuncia, qué página lo sostiene y qué dato no se pudo leer. La imagen se queda fuera.",
+          "Los carteles dibujados en MAKINA SOUND son ilustraciones originales. Un dibujo nuestro no sustituye a un papel de entonces.",
         ],
       },
     ],

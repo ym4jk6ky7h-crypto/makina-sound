@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
+import { readCatalog } from "../src/data/catalog.ts";
+import { exploreCopy } from "../src/data/pages.ts";
 import { prepareSources } from "../src/lib/sources.ts";
 import { filterSessions, openCatalog, publishSessions } from "../src/lib/sessions.ts";
 import { embedUrl, videoIdFromUrl } from "../src/lib/youtube.ts";
@@ -198,5 +200,19 @@ describe("sesiones", () => {
     assert.equal(publishSessions([session({ djIds: ["DJ Nau"] })], sources).length, 0);
     assert.equal(publishSessions([session({ djIds: ["dj-nau", "dj-nau"] })], sources).length, 0);
     assert.equal(publishSessions([session({ djIds: [] })], sources).length, 0);
+  });
+});
+
+describe("makina actual", () => {
+  it("cierra la sección en las sesiones cuyo título lo dice", () => {
+    const current = readCatalog().sessions.filter((session) => session.era === "current");
+    assert.ok(current.length > 0);
+    for (const session of current) {
+      assert.match(session.title, /makina actual/i);
+    }
+    const marked = readCatalog().sessions.filter((session) => /makina actual/i.test(session.title));
+    assert.equal(marked.length, current.length);
+    assert.match(exploreCopy.lead, /Sección cerrada/);
+    assert.doesNotMatch(exploreCopy.lead, /va a reunir|Aún sin fichas/);
   });
 });

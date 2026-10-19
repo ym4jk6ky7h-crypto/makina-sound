@@ -77,7 +77,10 @@ export function EquipoPage() {
     return includesQuery(text, [product.manufacturer, product.model, product.summary, gearCategoryLabels[product.category]]);
   });
   const visibleComparisons = comparisons.filter((comparison) => {
-    if (category !== "all" && comparison.category !== category) return false;
+    const touches =
+      comparison.category === category ||
+      comparison.items.some((item) => products.find((product) => product.id === item.productId)?.category === category);
+    if (category !== "all" && !touches) return false;
     return includesQuery(text, [comparison.title, comparison.question]);
   });
   const page = equipoCopy;
@@ -97,9 +100,8 @@ export function EquipoPage() {
           <p className="section-intro">{page.lead}</p>
         </header>
         <p className="note">
-          Un monitor de estudio y un altavoz de PA no se cambian el uno por el otro: el primero se
-          escucha de cerca y el segundo tiene que llenar una sala. No hay un ganador único. Si más
-          adelante hay un enlace de afiliado, se marcará como tal.
+          Un monitor de estudio y un altavoz de PA no se cambian el uno por el otro. La comparativa
+          de abajo lo dice con las dos fichas abiertas. No hay precios ni enlaces de afiliado.
         </p>
         <LibraryTools
           label="Buscar equipo"
@@ -256,6 +258,14 @@ function TutorialCard({ tutorial }: { tutorial: TutorialRecord }) {
             <li key={step}>{step}</li>
           ))}
         </ol>
+        {tutorial.tools.length > 0 ? <p>Herramientas: {tutorial.tools.join(", ")}</p> : null}
+        {tutorial.warnings.length > 0 ? (
+          <ul>
+            {tutorial.warnings.map((warning) => (
+              <li key={warning}>{warning}</li>
+            ))}
+          </ul>
+        ) : null}
         <SourceLinks links={tutorial.links} />
       </div>
     </article>
@@ -279,6 +289,13 @@ function GearCard({ product }: { product: GearRecord }) {
               <li key={name}>
                 {name}: {value}
               </li>
+            ))}
+          </ul>
+        ) : null}
+        {product.limits.length > 0 ? (
+          <ul>
+            {product.limits.map((limit) => (
+              <li key={limit}>{limit}</li>
             ))}
           </ul>
         ) : null}

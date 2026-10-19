@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "colocar-monitores-genelec",
+    "title": "Colocar una pareja de monitores",
+    "summary": "Genelec describe cómo situar los monitores y el punto de escucha. La guía no trata anclajes, tornillos ni la red eléctrica.",
+    "category": "soportes",
+    "difficulty": "inicial",
+    "steps": [
+      "Divide la sala en tres zonas iguales: delante, centro y detrás. Para producción musical, Genelec sitúa la escucha en la zona delantera.",
+      "El ángulo entre el monitor izquierdo y el derecho tiene que ser de 60 grados, con quien escucha en el vértice de un triángulo equilátero. Cada monitor apunta a ese punto.",
+      "Separa el punto de escucha al menos un metro de las paredes y no lo pongas en el centro exacto de la sala.",
+      "Coloca la escucha y los monitores sobre el eje de simetría izquierda-derecha de la sala.",
+      "Evita una posición en la que la pared lateral, el techo o el suelo reflejen el sonido hacia quien escucha.",
+      "Mantén la misma distancia a la pared lateral más cercana y a la pared de detrás en los dos monitores, y la misma altura.",
+      "El eje acústico va a la altura del oído. Genelec lo sitúa, como ideal, entre 1,2 y 1,4 metros del suelo.",
+      "Si subes los monitores e inclinas, no pases de 15 grados. Evita dejarlos a media altura de la sala. Siguen apuntando a quien escucha."
+    ],
+    "safety": "Esta página no dice cómo colgar un monitor ni cómo conectarlo a la red. Un anclaje a pared o a techo queda fuera de la guía y lo tiene que resolver el manual de ese soporte.",
+    "tools": [],
+    "materials": [],
+    "warnings": [
+      "No sitúes la escucha en el centro exacto de la sala.",
+      "No inclines el monitor más de 15 grados."
+    ],
+    "links": [
+      { "label": "Genelec, colocación de monitores", "url": "https://www.genelec.com/monitor-placement" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "cuidar-aguja-concorde",
+    "title": "Montar y limpiar una Concorde",
+    "summary": "La guía universal de la Concorde MKII dice cómo se monta en el brazo y cómo se limpia la aguja. No da un número de fuerza único para todos los modelos.",
+    "category": "mantenimiento",
+    "difficulty": "inicial",
+    "steps": [
+      "Deja el protector de la aguja puesto mientras montas o desmontas la cápsula.",
+      "La Concorde se monta directa en el brazo. La guía dice que no hace falta alinearla.",
+      "Ajusta la fuerza de apoyo al valor recomendado del modelo y no salgas del rango de fuerza de apoyo: fuera de ese rango puede saltar, sonar peor o gastar el disco.",
+      "Antes de cada uso, quita el polvo del disco con un cepillo antiestático fino.",
+      "No uses disolventes ni en el disco ni en la aguja.",
+      "Limpia la aguja con un cepillo de aguja, unas pasadas a lo largo del cantilever, desde atrás de la cápsula hacia la punta. Nunca al revés y nunca de lado a lado.",
+      "Quita el polvo de la punta de diamante antes y después de cada disco."
+    ],
+    "safety": "La guía advierte que la cápsula solo se monta en un brazo y no sirve para otro uso. El protector tiene que estar puesto al montarla o desmontarla.",
+    "tools": ["Cepillo antiestático fino", "Cepillo de aguja"],
+    "materials": [],
+    "warnings": [
+      "No uses disolventes en el disco ni en la aguja.",
+      "No cepilles la aguja desde la punta hacia atrás ni de lado a lado."
+    ],
+    "links": [
+      {
+        "label": "Ortofon, guía universal Concorde MKII",
+        "url": "https://ortofon.com/cdn/shop/files/concordemkiiuniversaluserguide_2021.pdf?v=3209048256960289538"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  }
+]

@@ -238,7 +238,7 @@ function Home({
           index="06"
           kicker="Taller"
           title="Rincón y equipo"
-          intro="El bricolaje de la cabina y el material de pinchar. Las dos secciones están preparadas y, de momento, sin fichas publicadas."
+          intro="Dos guías con pasos citados y nueve fichas de fabricante. No hay precios ni un ganador único."
         />
       ) : null}
       <NightInside />

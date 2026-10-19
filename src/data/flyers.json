@@ -2,49 +2,56 @@
   {
     "id": "macrorave-2009",
     "title": "Macrorave 2009",
-    "summary": "La web de Pont Aeri fecha este cartel el 23 de junio de 2009 en Vallgorguina y cita Last.fm como procedencia. La imagen no se reproduce: esa página no trae una licencia para copiarla.",
+    "summary": "La portada de Pont Aeri, abierta el 19 de octubre de 2026, fecha este cartel el 23 de junio de 2009 en Pont Aeri, Vallgorguina, dentro del bloque «Carteles que hicieron historia», y enlaza Last.fm. Esa página de Last.fm respondió con un reto de cliente y no se leyó: de ella no se toma ningún dato. El archivo gráfico de pontaeri.es no se reproduce.",
     "quality": "parcial",
     "eventDate": "2009-06-23",
     "venueName": "Pont Aeri, Vallgorguina",
     "venueId": "pont-aeri",
     "djIds": [],
-    "credit": "Procedencia citada por Pont Aeri: Last.fm. Autorización de reproducción: pendiente.",
+    "credit": "Fecha y lugar: pontaeri.es. El enlace de Last.fm es el que publica esa portada. Autorización de reproducción: no consta.",
     "links": [
-      { "label": "Pont Aeri, carteles", "url": "https://www.pontaeri.es/" }
+      { "label": "Pont Aeri, carteles", "url": "https://www.pontaeri.es/" },
+      {
+        "label": "Last.fm, enlace publicado por Pont Aeri",
+        "url": "https://www.last.fm/es/festival/1094025+Macrorave+2009",
+        "note": "No se abrió: la página devolvió un reto de cliente."
+      }
     ],
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-19",
     "status": "published"
   },
   {
     "id": "masters-of-hardcore-2011",
     "title": "Masters of Hardcore 2011",
-    "summary": "La web de Pont Aeri fecha este cartel el 17 de septiembre de 2011 en Vallgorguina y cita Partyflock como procedencia. La imagen no se reproduce.",
+    "summary": "Partyflock fecha Masters of Hardcore el sábado 17 de septiembre de 2011, de las 21:00 a las 06:00 del domingo, en Pont Aeri (interior), polígono industrial El Molinot, Vallgorguina, y lo organiza Pont Aeri Events. La página dice que la alineación no está completa. Esta ficha enlaza a Skudero, Xavi Metralla, Sisu y Sonic, que tienen perfil y salen en ese listado. La imagen de Partyflock no se reproduce.",
     "quality": "parcial",
     "eventDate": "2011-09-17",
     "venueName": "Pont Aeri, Vallgorguina",
     "venueId": "pont-aeri",
-    "djIds": [],
-    "credit": "Procedencia citada por Pont Aeri: Partyflock. Autorización de reproducción: pendiente.",
+    "djIds": ["dj-skudero", "xavi-metralla", "dj-sisu", "dj-sonic"],
+    "credit": "Partyflock, ficha del evento. Pont Aeri cita esa procedencia en «Carteles que hicieron historia». Autorización de reproducción: no consta.",
     "links": [
+      { "label": "Partyflock, Masters of Hardcore", "url": "https://partyflock.nl/party/207429:Masters-Of-Hardcore" },
       { "label": "Pont Aeri, carteles", "url": "https://www.pontaeri.es/" }
     ],
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-19",
     "status": "published"
   },
   {
     "id": "vallgorguina-4ever-2025",
     "title": "Vallgorguina 4ever",
-    "summary": "La web de Pont Aeri fecha este cartel el 29 de noviembre de 2025 en Terminal, Sabadell, y cita Wololo Sound como procedencia. Es un reencuentro, no un cartel del local cerrado en 2012. La imagen no se reproduce.",
+    "summary": "Wololo Sound, Helena Barragán Vert, 10 de diciembre de 2025, cuenta el Vallgorguina 4ever del sábado 29 de noviembre de 2025 en Terminal Sabadell como homenaje a la sala de Vallgorguina, no como un cartel del local cerrado en 2012. Nombra en cabina a DJ Sisu, DJ Sonic, Xavi Metralla y DJ Skudero, y el calentamiento de Cool Jumpers, que no tiene ficha. La imagen no se reproduce.",
     "quality": "parcial",
     "eventDate": "2025-11-29",
     "venueName": "Terminal, Sabadell",
     "venueId": "pont-aeri",
-    "djIds": [],
-    "credit": "Procedencia citada por Pont Aeri: Wololo Sound. Autorización de reproducción: pendiente.",
+    "djIds": ["dj-sisu", "dj-sonic", "xavi-metralla", "dj-skudero"],
+    "credit": "Wololo Sound. Pont Aeri cita esa crónica en «Carteles que hicieron historia». Autorización de reproducción: no consta.",
     "links": [
+      { "label": "Wololo Sound, homenaje a Vallgorguina", "url": "https://wololosound.com/cronicas/pont-aeri-homenaje-vallgorguina/" },
       { "label": "Pont Aeri, carteles", "url": "https://www.pontaeri.es/" }
     ],
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-19",
     "status": "published"
   }
 ]

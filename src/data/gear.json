@@ -1,1 +1,289 @@
-[]
+[
+  {
+    "id": "genelec-8030c",
+    "manufacturer": "Genelec",
+    "model": "8030C",
+    "category": "monitores",
+    "summary": "Monitor de estudio activo de dos vías. La ficha de Genelec lo presenta para escucha de referencia, con interruptores de compensación de sala en el panel trasero. No es un altavoz de PA.",
+    "suitedFor": "Escucha de cerca, en pareja, con el eje acústico hacia quien mezcla.",
+    "specs": {
+      "SPL de pico": "≥110 dB por pareja a 1 m, con material musical",
+      "SPL a corto plazo": "≥104 dB, seno en el eje, semiespacio, media de 100 Hz a 3 kHz a 1 m",
+      "SPL a largo plazo": "≥96 dB en las mismas condiciones, ruido IEC, limitado por la protección",
+      "Ruido propio": "≤5 dB SPL, campo libre, a 1 m en el eje, ponderación A",
+      "Respuesta": "47 Hz–25 kHz a −6 dB",
+      "Precisión": "±2 dB de 54 Hz a 20 kHz",
+      "Amplificación": "50 W en graves, clase D, y 50 W en agudos, clase D",
+      "Vías": "Cono de 130 mm y cúpula metálica de 19 mm",
+      "Cruce": "3000 Hz",
+      "Entrada": "XLR hembra balanceada, 10 kOhm",
+      "Medidas con Iso-Pod": "299 × 189 × 178 mm",
+      "Peso": "5 kg"
+    },
+    "strengths": [
+      "La ficha da un SPL a corto plazo de al menos 104 dB a 1 m y un peso de 5 kg.",
+      "La entrada es XLR balanceada y el recinto trae Iso-Pod."
+    ],
+    "limits": [
+      "Genelec lo describe como monitor de estudio, no como PA de sala.",
+      "La página no publica un precio. Esta ficha tampoco."
+    ],
+    "links": [
+      { "label": "Genelec, 8030C", "url": "https://www.genelec.com/8030c" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "qsc-k12-2",
+    "manufacturer": "QSC",
+    "model": "K12.2",
+    "category": "pa",
+    "summary": "Altavoz activo de dos vías. QSC dice que puede ir como PA principal o como monitor de suelo. La página también anuncia un módulo de 2000 W en clase D y, en la tabla, picos de 1800 W en graves y 225 W en agudos.",
+    "suitedFor": "Llenar una zona de escucha o usarse como monitor de suelo, no como referencia de campo cercano.",
+    "specs": {
+      "Configuración": "Altavoz activo multifunción de dos vías",
+      "Graves": "Cono de 305 mm",
+      "Agudos": "Motor de compresión con diafragma de titanio de 35,6 mm",
+      "Respuesta a −6 dB": "50 Hz–20 kHz",
+      "Rango a −10 dB": "45 Hz–20 kHz",
+      "Cobertura": "75° axisimétrica",
+      "SPL de pico": "132 dB a 1 m",
+      "SPL continuo": "126 dB a 1 m",
+      "Caja": "ABS resistente al impacto",
+      "Medidas": "602 × 356 × 350 mm",
+      "Peso neto": "17,7 kg"
+    },
+    "strengths": [
+      "La página lo admite como PA principal y como monitor de suelo.",
+      "La tabla da 132 dB de pico a 1 m."
+    ],
+    "limits": [
+      "Pesa 17,7 kg y no está descrito como monitor de estudio de cerca.",
+      "La página no publica un precio. Esta ficha tampoco."
+    ],
+    "links": [
+      { "label": "QSC, K12.2", "url": "https://www.qsc.com/solutions-products/loudspeakers/portable/powered/portable-pa/k2-series/k122" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-cdj-3000",
+    "manufacturer": "Pioneer DJ",
+    "model": "CDJ-3000",
+    "category": "reproductores",
+    "summary": "Reproductor múltiple profesional. La página de especificaciones da medidas, peso y una pantalla táctil de 9 pulgadas. El cálculo de audio que describe es de 96 kHz y 32 bits flotantes en los formatos que reproduce.",
+    "suitedFor": "Cabina con archivos en USB o tarjeta, o en red Pro DJ Link.",
+    "specs": {
+      "Ancho": "329 mm",
+      "Alto": "118 mm",
+      "Fondo": "453 mm",
+      "Peso": "5,5 kg",
+      "Pantalla": "LCD táctil HD a color de 9 pulgadas",
+      "Cálculo de audio": "96 kHz / 32 bits flotantes en los formatos reproducibles",
+      "Red": "Ethernet gigabit para Pro DJ Link, hasta 6 unidades con una mesa compatible de 6 canales"
+    },
+    "strengths": [
+      "La página describe caché del archivo de audio completo y enlace Pro DJ Link por gigabit."
+    ],
+    "limits": [
+      "CloudDirectPlay pide un plan rekordbox Creative o Professional. Beatport pide suscripción.",
+      "El cable de alimentación con bloqueo V-Lock no va en todas las regiones.",
+      "No se publica un precio."
+    ],
+    "links": [
+      { "label": "Pioneer DJ, especificaciones del CDJ-3000", "url": "https://www.pioneerdj.com/en-us/product/player/cdj-3000/black/specifications/" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1200mk7",
+    "manufacturer": "Technics",
+    "model": "SL-1200MK7",
+    "category": "platos",
+    "summary": "La página de producto del Reino Unido lo presenta como plato DJ de tracción directa. En el HTML leído el 19 de octubre de 2026 están las medidas y el peso aproximado. La tabla de par, flutter y velocidades no vino en ese HTML y no se copia.",
+    "suitedFor": "Cabina de vinilo. La página lo presenta como plato DJ de tracción directa.",
+    "specs": {
+      "Alto": "169 mm",
+      "Ancho": "453 mm",
+      "Fondo": "353 mm",
+      "Peso": "9,6 kg, aproximado"
+    },
+    "strengths": [
+      "La página titula un motor de tracción directa sin núcleo, un brazo de alta sensibilidad y terminales desmontables bañados en oro."
+    ],
+    "limits": [
+      "No se publican par de arranque, wow and flutter ni rango de pitch: no estaban en el HTML leído.",
+      "No se publica un precio."
+    ],
+    "links": [
+      { "label": "Technics UK, SL-1200MK7", "url": "https://www.technics.com/uk/products/dj-series/sl-1200mk7.html" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "ortofon-concorde-mkii-dj",
+    "manufacturer": "Ortofon",
+    "model": "Concorde MKII DJ",
+    "category": "capsulas",
+    "summary": "Cápsula de imán móvil para DJ. La ficha del fabricante da 6 mV de salida y recomienda 4 g de fuerza de apoyo, dentro de un rango de 3 a 5 g. El 19 de octubre de 2026 esa página marcaba 129 EUR como precio unitario no disponible: no se publica como oferta.",
+    "suitedFor": "Brazo de plato, con la fuerza de apoyo dentro del rango de esta cápsula.",
+    "specs": {
+      "Salida": "6 mV a 1 kHz, 5 cm/s",
+      "Fuerza recomendada": "4 g",
+      "Rango de fuerza": "3–5 g",
+      "Punta": "Diamante esférico, R 18 μm",
+      "Voladizo": "Aluminio",
+      "Peso": "18,5 g",
+      "Carga recomendada": "47 kOhm",
+      "Aguja de recambio": "Stylus CC MKII DJ"
+    },
+    "strengths": [
+      "La ficha publica fuerza, salida y peso de este modelo, no de la serie entera."
+    ],
+    "limits": [
+      "La guía universal dice que solo se monta en un brazo y que no se limpia con disolventes.",
+      "El precio de 129 EUR figuraba como no disponible. No entra en la ficha."
+    ],
+    "links": [
+      { "label": "Ortofon, Concorde MKII DJ", "url": "https://ortofon.com/products/concorde-mkii-dj" },
+      {
+        "label": "Ortofon, guía universal Concorde MKII",
+        "url": "https://ortofon.com/cdn/shop/files/concordemkiiuniversaluserguide_2021.pdf?v=3209048256960289538"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-djm-a9",
+    "manufacturer": "Pioneer DJ",
+    "model": "DJM-A9",
+    "category": "mesas",
+    "summary": "Mesa de cuatro canales. La nota de AlphaTheta del 28 de febrero de 2023 describe conversores A/D y D/A de 32 bits, 14 Beat FX y dos juegos de USB Type-B y Type-C. La tabla de esa nota trae las cifras de abajo.",
+    "suitedFor": "Cabina de club con reproductores, platos o dos ordenadores a la vez.",
+    "specs": {
+      "Canales": "4",
+      "Entradas": "4 digitales coaxiales, 4 de línea RCA, 4 de phono RCA y 2 de micro",
+      "Salidas": "Máster XLR y RCA, booth jack de 6,3 mm, REC RCA, máster digital coaxial y 4 salidas de auriculares",
+      "USB": "1 Type-A y dos parejas Type-B / Type-C",
+      "Respuesta": "20 Hz–40 kHz en línea",
+      "Relación señal-ruido": "114 dB en USB y digital, 105 dB en línea, 88 dB en phono y 79 dB en micro",
+      "Distorsión": "0,005 % de línea a máster 1",
+      "Consumo": "46 W",
+      "Medidas máximas": "407,4 × 458,3 × 107,9 mm; 140,7 mm de alto con la antena",
+      "Peso": "10,2 kg"
+    },
+    "strengths": [
+      "La nota publica relación señal-ruido, distorsión, medidas y peso en una tabla.",
+      "Permite dos ordenadores a la vez y alimentación phantom en el micro."
+    ],
+    "limits": [
+      "Serato DJ Pro pide licencia o suscripción. El cable de red con bloqueo no va en todas las regiones.",
+      "No se publica un precio."
+    ],
+    "links": [
+      { "label": "Pioneer DJ, nota del DJM-A9", "url": "https://www.pioneerdj.com/en/news/2023/djm-a9-4-channel-professional-dj-mixer/" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "allen-heath-xone-96",
+    "manufacturer": "Allen & Heath",
+    "model": "Xone:96",
+    "category": "mesas",
+    "summary": "Mesa analógica de 6+2 canales con dos tarjetas USB. La página del fabricante describe ecualización de 4 bandas en cuatro canales estéreo, dos retornos con ecualización paramétrica de 3 bandas y dos filtros VCF con CRUNCH. Las medidas salen del plano de pesos.",
+    "suitedFor": "Cabina que quiere el circuito analógico de Xone y conectar dos ordenadores.",
+    "specs": {
+      "Canales": "6+2",
+      "Tarjeta": "Dos USB independientes, 96 kHz y 32 bits, 6 entradas y 6 salidas estéreo en cada una",
+      "Ecualización": "4 bandas en cuatro canales estéreo; 3 bandas paramétricas en los retornos A y B",
+      "Filtros": "Dos VCF, con CRUNCH antes del filtro",
+      "Faders": "VCA de 60 mm; crossfader Innofader Mini",
+      "Envíos": "2 estéreo; el envío 1 conmuta entre línea y alta impedancia",
+      "Medidas sin caja": "336 × 410 × 109 mm",
+      "Peso sin caja": "7 kg"
+    },
+    "strengths": [
+      "La página dice que Traktor Scratch viene certificado de serie y que hay dos sistemas de cascos independientes."
+    ],
+    "limits": [
+      "El plano no publica relación señal-ruido ni distorsión. Esta ficha tampoco.",
+      "No se publica un precio."
+    ],
+    "links": [
+      { "label": "Allen & Heath, Xone:96", "url": "https://www.allen-heath.com/hardware/xone-series/xone96/" },
+      { "label": "Allen & Heath, plano de medidas", "url": "https://www.allen-heath.com/content/uploads/2023/06/XONE_96-WEIGHTS-AND-DIMS.pdf" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "sennheiser-hd-25",
+    "manufacturer": "Sennheiser",
+    "model": "HD 25",
+    "category": "auriculares",
+    "summary": "Auriculares cerrados supraaurales, artículo 506909. La hoja de especificaciones los presenta para monitorizar con mucho nivel y poder escuchar con una sola oreja. Traen cable desmontable y adaptador de jack.",
+    "suitedFor": "Preescucha en cabina, también con una cápsula girada.",
+    "specs": {
+      "Principio": "Dinámico, cerrado",
+      "Acoplamiento": "Supraaural",
+      "Respuesta": "16–22.000 Hz",
+      "Impedancia": "70 ohmios",
+      "Potencia admisible": "200 mW",
+      "Nivel máximo": "120 dB",
+      "Distorsión": "menor de 0,3 % a 1 kHz",
+      "Presión de contacto": "unos 2,5 N",
+      "Peso sin cable": "unos 140 g",
+      "Cable": "unos 1,5 m, desmontable, de un solo lado"
+    },
+    "strengths": [
+      "La cápsula gira para escuchar con un oído y el cable se puede quitar."
+    ],
+    "limits": [
+      "Son de diadema cerrada, no un sistema de monitor de sala.",
+      "No se publica un precio."
+    ],
+    "links": [
+      { "label": "Sennheiser, hoja HD 25", "url": "https://assets.sennheiser.com/download/assets/HD_25_Product_Specification_EN.pdf/db57421ae7cd11f09469ce3d75c40f07" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "qsc-ks118",
+    "manufacturer": "QSC",
+    "model": "KS118",
+    "category": "subwoofers",
+    "summary": "Subwoofer activo de radiación directa. La ficha de QSC lo describe con un cono de 18 pulgadas y un amplificador de clase D. El modo cardioide de la tabla pide al menos dos unidades.",
+    "suitedFor": "Refuerzo de graves de un PA, de pie o tumbado, no como monitor de estudio.",
+    "specs": {
+      "Transductor": "Cono de 460 mm",
+      "Respuesta a −6 dB": "41 Hz–98 Hz",
+      "Rango a −10 dB": "35 Hz–111 Hz",
+      "Cobertura": "Omnidireccional, o cardioide con al menos dos unidades",
+      "SPL de pico": "136 dB a 1 m, ruido rosa, factor de cresta 10 dB",
+      "Amplificador": "Clase D, 3600 W de pico",
+      "Entradas": "2 combo XLR y jack, con lazos XLR",
+      "Caja": "Contrachapado de abedul de 15 mm",
+      "Medidas del recinto": "640 × 520 × 785 mm",
+      "Peso neto": "47 kg, con las ruedas"
+    },
+    "strengths": [
+      "La tabla da el pico de 136 dB a 1 m y el peso con las cuatro ruedas incluidas."
+    ],
+    "limits": [
+      "No sustituye al monitor de cerca ni al K12.2 de rango completo.",
+      "No se publica un precio."
+    ],
+    "links": [
+      { "label": "QSC, KS118", "url": "https://www.qsc.com/solutions-products/loudspeakers/portable/powered/subwoofers/ks-series/ks118" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  }
+]

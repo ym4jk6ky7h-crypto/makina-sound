@@ -3,13 +3,14 @@ import type { Door, Piece } from "../data/cover";
 import { doors, pieces } from "../data/cover";
 import { readCatalog } from "../data/catalog";
 import { readDjs } from "../data/djsCatalog";
+import { readVenues } from "../data/library";
 import type { PageCopy } from "../data/pages";
 import { archiveCopy, doorCopy, exploreCopy, projectCopy } from "../data/pages";
 import { includesQuery } from "../lib/search";
 import type { SectionId } from "../lib/section";
-import { sessionsForDj } from "../lib/sessions";
 import { Motif } from "./art/Motif";
 import { FlyerList, VenueList } from "./LibraryPages";
+import { SessionCard } from "./SessionsPage";
 
 function Frame({
   kicker,
@@ -64,7 +65,7 @@ const paths = [
   {
     href: "#explorar",
     title: "Makina actual",
-    summary: "Productores, lanzamientos y sesiones de hoy. Aún sin fichas.",
+    summary: "Sesiones cuyo título dice makina actual, y los DJs de esas sesiones que tienen ficha.",
   },
   {
     href: "#discos",
@@ -89,7 +90,7 @@ const paths = [
   {
     href: "#flyers",
     title: "Flyers",
-    summary: "Papel y cinta. Los dibujos de la web no son documentos originales.",
+    summary: "Tres carteles citados por Pont Aeri. La imagen no se copia.",
   },
   {
     href: "#archivo",
@@ -99,12 +100,12 @@ const paths = [
   {
     href: "#rincon",
     title: "El rincón del DJ",
-    summary: "Tutoriales de bricolaje. Aún sin guías publicadas.",
+    summary: "Dos guías con pasos de una página abierta: monitores y aguja.",
   },
   {
     href: "#equipo",
     title: "Equipo DJ",
-    summary: "Material y comparativas. Aún sin fichas de producto.",
+    summary: "Nueve fichas de fabricante y dos comparativas. Sin precios.",
   },
 ];
 
@@ -125,10 +126,19 @@ function Related({ current }: { current: string }) {
 export function ExplorePage() {
   const catalog = useMemo(() => readCatalog(), []);
   const djs = useMemo(() => readDjs(), []);
-  const current = catalog.sessions.filter((session) => session.era === "current");
-  const active = djs.filter((dj) =>
-    sessionsForDj(catalog.sessions, dj.id).some((session) => session.publishedAt?.startsWith("2026")),
+  const venues = useMemo(() => readVenues(), []);
+  const names = useMemo(() => new Map(djs.map((dj) => [dj.id, dj.name])), [djs]);
+  const current = useMemo(
+    () =>
+      catalog.sessions
+        .filter((session) => session.era === "current")
+        .sort((a, b) => (b.publishedAt ?? "").localeCompare(a.publishedAt ?? "")),
+    [catalog.sessions],
   );
+  const people = useMemo(() => {
+    const used = new Set(current.flatMap((session) => session.djIds ?? []));
+    return djs.filter((dj) => used.has(dj.id)).sort((a, b) => a.name.localeCompare(b.name, "es"));
+  }, [current, djs]);
 
   return (
     <Frame
@@ -138,46 +148,39 @@ export function ExplorePage() {
       lead={exploreCopy.lead}
     >
       <p className="note">
-        Una sesión reciente no es, por la fecha del vídeo, makina actual. Aquí solo se
-        marca así cuando el título ya lo dice.
+        {current.length === 1 ? "1 sesión" : `${current.length} sesiones`}. El remember se queda
+        en su sección. Un vídeo de 2026 sin esa frase en el título no entra aquí.
       </p>
-      <h2 className="jump-title">Sesiones que el título sitúa en la makina actual</h2>
+      <h2 className="jump-title">Sesiones</h2>
       {current.length === 0 ? (
         <p className="note">Ninguna sesión publicada trae esa marca en el título.</p>
       ) : (
-        <ul className="track-links">
+        <div className="session-grid">
           {current.map((session) => (
-            <li key={session.id}>
-              <a href={`#sesiones/${session.id}`}>{session.title}</a>
-            </li>
+            <SessionCard
+              key={session.id}
+              session={session}
+              djs={(session.djIds ?? []).flatMap((id) => {
+                const name = names.get(id);
+                return name ? [name] : [];
+              })}
+              venues={venues.filter((venue) => venue.sessionIds.includes(session.id)).map((venue) => venue.name)}
+            />
           ))}
-        </ul>
+        </div>
       )}
-      <h2 className="jump-title">DJs con ficha y vídeo publicado en 2026</h2>
-      <p className="sheet-note">La fecha es la de publicación en YouTube, no la de la fiesta ni una época.</p>
-      {active.length === 0 ? (
-        <p className="note">Ningún DJ con ficha tiene una sesión publicada en 2026.</p>
+      <h2 className="jump-title">DJs con ficha en estas sesiones</h2>
+      {people.length === 0 ? (
+        <p className="note">Ninguna de estas sesiones enlaza todavía con una ficha de DJ.</p>
       ) : (
         <ul className="track-links">
-          {active.map((dj) => (
+          {people.map((dj) => (
             <li key={dj.id}>
               <a href={`#djs/${dj.id}`}>{dj.name}</a>
             </li>
           ))}
         </ul>
       )}
-      <section className="essay">
-        <h2>Qué va a reunir esta sección</h2>
-        <p>
-          Tres cosas, cuando tengan fuente: quién produce ahora, qué se ha publicado y
-          qué sesiones se están moviendo. El remember no se mezcla con eso. Los
-          clásicos tienen su propia entrada.
-        </p>
-        <p>
-          Lo que no tiene ficha no se inventa. Un productor o un lanzamiento sin fuente
-          no entra en esta lista.
-        </p>
-      </section>
       <h2 className="jump-title">Seguir hacia el resto</h2>
       <Related current="#explorar" />
     </Frame>

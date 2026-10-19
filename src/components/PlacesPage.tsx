@@ -109,13 +109,13 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
             <h1>{page.title}</h1>
             <p className="dj-lead">{page.lead}</p>
           </div>
-          <p className="dj-count" aria-label={`${visible.length} referencias`}>
+          <p className="dj-count" aria-label={`${visible.length} ${visible.length === 1 ? "referencia" : "referencias"}`}>
             <span className="dj-count-num">{visible.length}</span>
-            <span className="dj-count-label">referencias, {publishedImages} imágenes</span>
+            <span className="dj-count-label">{visible.length === 1 ? "referencia" : "referencias"}, {publishedImages} {publishedImages === 1 ? "imagen" : "imágenes"}</span>
           </p>
         </header>
         <Search id="buscar-flyers" text={text} onText={setText} placeholder="Cartel o sala" />
-        <p className="note">Ninguna imagen de cartel está autorizada para publicarse aquí. Cada ficha enlaza la página donde se cita y deja la reproducción pendiente.</p>
+        <p className="note">Sección cerrada: una ficha por cada cartel del bloque «Carteles que hicieron historia». Ninguna imagen se publica.</p>
         {visible.length === 0 ? (
           <p className="note" role="status">Ningún cartel coincide. Prueba con otro nombre.</p>
         ) : (
@@ -249,7 +249,10 @@ function FlyerFile({
           <h2>Fuente</h2>
           <ul>
             {flyer.links.map((link) => (
-              <li key={link.url}><a href={link.url} rel="noreferrer">{link.label}</a></li>
+              <li key={link.url}>
+                <a href={link.url} rel="noreferrer">{link.label}</a>
+                {link.note ? <span>{link.note}</span> : null}
+              </li>
             ))}
           </ul>
         </section>

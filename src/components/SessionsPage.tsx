@@ -298,7 +298,7 @@ function SessionFile({
   );
 }
 
-function SessionCard({
+export function SessionCard({
   session,
   djs,
   venues,

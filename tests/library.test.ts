@@ -24,7 +24,7 @@ const tutorial = {
 };
 
 describe("catálogos nuevos", () => {
-  it("no publica los archivos vacíos", () => {
+  it("publica las guías y las fichas de fabricante, y deja fuera un precio a medias", () => {
     assert.deepEqual(openVenues([]), []);
     const venues = openVenues(empty);
     const flyers = openFlyers(JSON.parse(readFileSync(new URL("../src/data/flyers.json", import.meta.url), "utf8")));
@@ -32,9 +32,21 @@ describe("catálogos nuevos", () => {
     assert.deepEqual(venues.slice(0, 5).map((venue) => venue.id), ["pont-aeri", "xque", "chasis", "scorpia", "psicodromo"]);
     assert.equal(flyers.length, 3);
     assert.equal(flyers.every((flyer) => flyer.imageUrl === undefined), true);
-    assert.deepEqual(openTutorials(JSON.parse(readFileSync(new URL("../src/data/tutorials.json", import.meta.url), "utf8"))), []);
-    assert.deepEqual(openGear(JSON.parse(readFileSync(new URL("../src/data/gear.json", import.meta.url), "utf8"))), []);
-    assert.deepEqual(openComparisons(JSON.parse(readFileSync(new URL("../src/data/comparisons.json", import.meta.url), "utf8")), []), []);
+    const tutorials = openTutorials(JSON.parse(readFileSync(new URL("../src/data/tutorials.json", import.meta.url), "utf8")));
+    const gear = openGear(JSON.parse(readFileSync(new URL("../src/data/gear.json", import.meta.url), "utf8")));
+    const comparisons = openComparisons(
+      JSON.parse(readFileSync(new URL("../src/data/comparisons.json", import.meta.url), "utf8")),
+      gear,
+    );
+    assert.deepEqual(tutorials.map((tutorial) => tutorial.id), ["colocar-monitores-genelec", "cuidar-aguja-concorde"]);
+    assert.equal(gear.length, 9);
+    assert.equal(gear.every((product) => product.price === undefined), true);
+    assert.equal(gear.find((product) => product.id === "genelec-8030c")?.specs.Peso, "5 kg");
+    assert.equal(gear.find((product) => product.id === "technics-sl-1200mk7")?.specs["Par de arranque"], undefined);
+    assert.equal(comparisons.length, 2);
+    assert.equal(gear.find((product) => product.id === "sennheiser-hd-25")?.specs.Impedancia, "70 ohmios");
+    assert.equal(gear.find((product) => product.id === "qsc-ks118")?.specs["Peso neto"], "47 kg, con las ruedas");
+    assert.deepEqual(comparisons[0]?.items.map((item) => item.productId), ["genelec-8030c", "qsc-k12-2"]);
   });
 
   it("deja fuera borradores, fichas sin fuente y datos a medias", () => {
@@ -198,7 +210,23 @@ describe("fase 22 salas y flyers", () => {
     assert.equal(venuesForDj("frank-trax", venues)[0]?.id, "scorpia");
     const paper = describeFlyer("macrorave-2009", flyers, venues, names);
     assert.equal(paper.kind, "profile");
-    if (paper.kind === "profile") assert.equal(paper.venue?.id, "pont-aeri");
+    if (paper.kind === "profile") {
+      assert.equal(paper.venue?.id, "pont-aeri");
+      assert.equal(paper.flyer.imageUrl, undefined);
+      assert.equal(paper.flyer.links.some((link) => link.url.includes("last.fm")), true);
+    }
+    const moh = describeFlyer("masters-of-hardcore-2011", flyers, venues, names);
+    assert.equal(moh.kind, "profile");
+    if (moh.kind === "profile") {
+      assert.deepEqual(moh.djs.map((dj) => dj.id), ["dj-skudero", "xavi-metralla", "dj-sisu", "dj-sonic"]);
+      assert.equal(moh.flyer.links[0]?.url, "https://partyflock.nl/party/207429:Masters-Of-Hardcore");
+    }
+    const reunion = describeFlyer("vallgorguina-4ever-2025", flyers, venues, names);
+    assert.equal(reunion.kind, "profile");
+    if (reunion.kind === "profile") {
+      assert.deepEqual(reunion.djs.map((dj) => dj.id), ["dj-sisu", "dj-sonic", "xavi-metralla", "dj-skudero"]);
+      assert.match(reunion.flyer.summary, /Terminal Sabadell/);
+    }
   });
 });
 

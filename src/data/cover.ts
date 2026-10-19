@@ -67,7 +67,7 @@ export const doors: Door[] = [
     index: "05",
     title: "Flyers",
     summary:
-      "El papel, la cinta y los carteles. Los dibujos de esta web son ilustraciones, no documentos originales.",
+      "Tres carteles que Pont Aeri nombra. Los dibujos de esta web no son esos papeles.",
     kind: "paper",
     keywords: ["makina", "flyer", "flyers", "cartel", "papel", "cassette", "cinta", "recuerdo", "recuerdos", "historia"],
   },
@@ -76,7 +76,7 @@ export const doors: Door[] = [
     pieceId: "taller",
     index: "06",
     title: "El rincón del DJ",
-    summary: "Tutoriales de bricolaje para la cabina. Vacío hasta que una guía se pueda firmar.",
+    summary: "Dos guías firmadas: colocar monitores y cuidar la aguja. El resto sigue vacío.",
     kind: "session",
     keywords: ["taller", "bricolaje", "cabina", "acustica", "tutorial", "rincon"],
   },
@@ -85,7 +85,7 @@ export const doors: Door[] = [
     pieceId: "material",
     index: "07",
     title: "Equipo DJ",
-    summary: "Guías y comparativas de material. Sin precios ni fichas hasta comprobarlos.",
+    summary: "Fichas de fabricante ya comprobadas. Sin precio de tienda.",
     kind: "vinyl",
     keywords: ["equipo", "monitor", "mesa", "plato", "auriculares", "altavoz"],
   },
@@ -136,7 +136,7 @@ export const pieces: Piece[] = [
     summary:
       "Flyers, carteles y cassettes guardan la noche cuando la música ya se ha apagado.",
     reading:
-      "Donde pegaba un foco se leían los carteles de otras sesiones: tipografía apretada, un dibujo, una fecha. Al salir, en el bolsillo cabía un flyer. En la cinta cabía lo que alguien quería volver a oír el lunes, con el oído todavía acostumbrado al bombo. Cuando esos objetos entren en MAKINA SOUND, se mostrarán con procedencia. Los carteles de esta web son ilustraciones hechas para la portada.",
+      "Donde pegaba un foco se leían los carteles de otras sesiones: tipografía apretada, un dibujo, una fecha. Al salir, en el bolsillo cabía un flyer. En la cinta cabía lo que alguien quería volver a oír el lunes, con el oído todavía acostumbrado al bombo. Flyers cita los carteles que una página abierta nombra, sin copiar la imagen. Los dibujos de esta web siguen siendo ilustraciones de portada.",
     kind: "paper",
     keywords: ["makina", "flyer", "flyers", "cartel", "papel", "tinta", "cassette", "cinta", "recuerdo"],
   },

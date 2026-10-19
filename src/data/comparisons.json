@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "id": "monitor-o-pa",
+    "title": "Monitor de cerca o altavoz de sala",
+    "category": "monitores",
+    "question": "¿Sirve el mismo cajón para mezclar de cerca y para llenar una pista? Estas dos fichas no se sustituyen.",
+    "items": [
+      {
+        "productId": "genelec-8030c",
+        "suitedFor": "Quien mezcla a poca distancia y quiere la respuesta que Genelec publica para un monitor de estudio.",
+        "strengths": [
+          "Pesa 5 kg y la ficha da un SPL a corto plazo de al menos 104 dB a 1 m."
+        ],
+        "limits": [
+          "No está descrito como PA ni como monitor de suelo de una pista."
+        ]
+      },
+      {
+        "productId": "qsc-k12-2",
+        "suitedFor": "Quien necesita un altavoz de PA principal o un monitor de suelo, como dice la página de QSC.",
+        "strengths": [
+          "La tabla da 132 dB de pico a 1 m y admite las dos posiciones."
+        ],
+        "limits": [
+          "Pesa 17,7 kg y no es la referencia de campo cercano del 8030C."
+        ]
+      }
+    ],
+    "links": [
+      { "label": "Genelec, 8030C", "url": "https://www.genelec.com/8030c" },
+      { "label": "QSC, K12.2", "url": "https://www.qsc.com/solutions-products/loudspeakers/portable/powered/portable-pa/k2-series/k122" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "mesa-digital-o-analogica",
+    "title": "Mesa de club digital o mesa analógica",
+    "category": "mesas",
+    "question": "¿Hace falta la misma mesa para una cabina con reproductores Pioneer y para una cabina analógica con dos ordenadores?",
+    "items": [
+      {
+        "productId": "pioneerdj-djm-a9",
+        "suitedFor": "Quien quiere cuatro canales, phono y línea en cada uno, y la tabla de señal-ruido de la nota de Pioneer DJ.",
+        "strengths": [
+          "114 dB de señal-ruido en USB y digital, y 10,2 kg."
+        ],
+        "limits": [
+          "Serato no entra de serie: pide licencia o suscripción."
+        ]
+      },
+      {
+        "productId": "allen-heath-xone-96",
+        "suitedFor": "Quien quiere el circuito analógico de Xone, filtros VCF y dos tarjetas USB.",
+        "strengths": [
+          "Pesa 7 kg sin caja y Traktor Scratch viene certificado en la página."
+        ],
+        "limits": [
+          "Esta ficha no tiene relación señal-ruido: el plano abierto no la da."
+        ]
+      }
+    ],
+    "links": [
+      { "label": "Pioneer DJ, nota del DJM-A9", "url": "https://www.pioneerdj.com/en/news/2023/djm-a9-4-channel-professional-dj-mixer/" },
+      { "label": "Allen & Heath, Xone:96", "url": "https://www.allen-heath.com/hardware/xone-series/xone96/" }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  }
+]
