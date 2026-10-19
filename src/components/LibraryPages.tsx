@@ -284,7 +284,7 @@ function LibraryTools({
 
 function TutorialCard({ tutorial }: { tutorial: TutorialRecord }) {
   return (
-    <article className="session-card">
+    <article className="session-card catalog-card">
       <CategoryPlate kind={tutorial.category} />
       <div className="session-copy">
         <p>
@@ -315,7 +315,7 @@ function TutorialCard({ tutorial }: { tutorial: TutorialRecord }) {
 function GearCard({ product }: { product: GearRecord }) {
   const specLines = Object.entries(product.specs);
   return (
-    <article className="session-card">
+    <article className="session-card catalog-card">
       {product.image ? (
         <figure className="gear-photo">
           <img src={product.image.url} alt={product.image.alt} width={960} height={540} loading="lazy" />

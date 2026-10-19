@@ -240,7 +240,7 @@ const drawings: Record<CategoryArtKind, () => JSX.Element> = {
 export function CategoryArt({ kind }: { kind: CategoryArtKind }) {
   const Drawing = drawings[kind];
   return (
-    <svg className="motif" viewBox="0 0 320 200" aria-hidden="true">
+    <svg className="motif" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <rect width="320" height="200" fill="#171717" />
       <Drawing />
     </svg>

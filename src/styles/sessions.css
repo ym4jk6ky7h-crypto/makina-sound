@@ -257,6 +257,36 @@ a.session-card {
   text-decoration: none;
 }
 
+.session-card.catalog-card {
+  display: flex;
+  flex-direction: column;
+  height: 34rem;
+  overflow: hidden;
+}
+
+.session-card.catalog-card > .art,
+.session-card.catalog-card > .gear-photo {
+  position: relative;
+  flex: none;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.session-card.catalog-card > .art .motif,
+.session-card.catalog-card .gear-photo img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.session-card.catalog-card .session-copy {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
 .gear-photo {
   margin: 0;
 }
@@ -269,12 +299,18 @@ a.session-card {
   background: #171410;
 }
 
-.gear-photo figcaption {
+.session-card.catalog-card .gear-photo figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.15rem 0.7rem;
-  padding: 0.4rem 0.75rem 0;
-  color: rgba(240, 233, 218, 0.72);
+  margin: 0;
+  padding: 0.35rem 0.6rem;
+  background: rgba(16, 16, 16, 0.86);
+  color: rgba(240, 233, 218, 0.86);
   font-size: 0.85rem;
 }
 
