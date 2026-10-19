@@ -1,7 +1,10 @@
 import { useMemo, useState } from "react";
+import type { ReactNode } from "react";
+import { CategoryPlate } from "./art/CategoryArt.tsx";
+import type { CategoryArtKind } from "./art/CategoryArt.tsx";
 import { readComparisons, readFlyers, readGear, readTutorials, readVenues } from "../data/library.ts";
 import { equipoCopy, rinconCopy } from "../data/pages.ts";
-import type { GearCategory, GearRecord, TutorialCategory, TutorialRecord } from "../lib/collections.ts";
+import type { ComparisonRecord, GearCategory, GearRecord, TutorialCategory, TutorialRecord } from "../lib/collections.ts";
 import {
   gearCategories,
   gearCategoryLabels,
@@ -36,7 +39,8 @@ export function RinconPage() {
         </header>
         <p className="note">
           Electricidad, estructuras, cargas y fijaciones necesitan advertencia de seguridad en la
-          propia guía. Esta página no sustituye a un profesional.
+          propia guía. Esta página no sustituye a un profesional. El dibujo marca la categoría:
+          es una ilustración, no una foto del material.
         </p>
         <LibraryTools
           label="Buscar tutoriales"
@@ -47,6 +51,18 @@ export function RinconPage() {
           categories={tutorialCategories.map((id) => ({ id, label: tutorialCategoryLabels[id] }))}
           onCategory={(value) => setCategory(value as TutorialCategory | "all")}
         />
+        <CategoryIndex
+          label="Categorías del rincón"
+          selected={category}
+          onSelect={(value) => setCategory(value as TutorialCategory | "all")}
+          entries={tutorialCategories
+            .filter((id) => tutorials.some((tutorial) => tutorial.category === id))
+            .map((id) => ({
+              id,
+              label: tutorialCategoryLabels[id],
+              count: countLabel(tutorials.filter((tutorial) => tutorial.category === id).length, "guía", "guías"),
+            }))}
+        />
         {visible.length === 0 ? (
           <p className="note" role="status">
             {tutorials.length === 0
@@ -54,13 +70,27 @@ export function RinconPage() {
               : "Ningún tutorial coincide. Prueba con otra categoría."}
           </p>
         ) : (
-          <ul className="session-grid">
-            {visible.map((tutorial) => (
-              <li key={tutorial.id}>
-                <TutorialCard tutorial={tutorial} />
-              </li>
-            ))}
-          </ul>
+          tutorialCategories.map((id) => {
+            const items = visible.filter((tutorial) => tutorial.category === id);
+            if (items.length === 0) return null;
+            return (
+              <CategoryBand
+                key={id}
+                id={`rincon-${id}`}
+                kind={id}
+                title={tutorialCategoryLabels[id]}
+                count={countLabel(items.length, "guía", "guías")}
+              >
+                <ul className="session-grid">
+                  {items.map((tutorial) => (
+                    <li key={tutorial.id}>
+                      <TutorialCard tutorial={tutorial} />
+                    </li>
+                  ))}
+                </ul>
+              </CategoryBand>
+            );
+          })
         )}
       </div>
     </article>
@@ -101,7 +131,8 @@ export function EquipoPage() {
         </header>
         <p className="note">
           Un monitor de estudio y un altavoz de PA no se cambian el uno por el otro. La comparativa
-          de abajo lo dice con las dos fichas abiertas. No hay precios ni enlaces de afiliado.
+          queda en la categoría de la pregunta. No hay precios ni enlaces de afiliado. El dibujo
+          marca la categoría: es una ilustración, no una foto del fabricante.
         </p>
         <LibraryTools
           label="Buscar equipo"
@@ -112,47 +143,54 @@ export function EquipoPage() {
           categories={gearCategories.map((id) => ({ id, label: gearCategoryLabels[id] }))}
           onCategory={(value) => setCategory(value as GearCategory | "all")}
         />
-        <h2 className="jump-title">Fichas</h2>
-        {visible.length === 0 ? (
+        <CategoryIndex
+          label="Categorías de equipo"
+          selected={category}
+          onSelect={(value) => setCategory(value as GearCategory | "all")}
+          entries={gearCategories
+            .filter((id) => products.some((product) => product.category === id))
+            .map((id) => ({
+              id,
+              label: gearCategoryLabels[id],
+              count: countLabel(products.filter((product) => product.category === id).length, "ficha", "fichas"),
+            }))}
+        />
+        {visible.length === 0 && visibleComparisons.length === 0 ? (
           <p className="note" role="status">
             {products.length === 0
               ? "No hay equipos publicados. Una ficha necesita fabricante, modelo, descripción propia y la fuente de cada dato. Precios y especificaciones que no se han comprobado no se rellenan."
               : "Ningún equipo coincide. Prueba con otra categoría."}
           </p>
         ) : (
-          <ul className="session-grid">
-            {visible.map((product) => (
-              <li key={product.id}>
-                <GearCard product={product} />
-              </li>
-            ))}
-          </ul>
-        )}
-        <h2 className="jump-title">Comparativas</h2>
-        {visibleComparisons.length === 0 ? (
-          <p className="note" role="status">
-            No hay comparativas publicadas. Cada una tiene que decir para quién sirve un equipo y
-            qué deja fuera, no elegir un ganador para todos los usos.
-          </p>
-        ) : (
-          visibleComparisons.map((comparison) => (
-            <section key={comparison.id} className="essay">
-              <h3>{comparison.title}</h3>
-              <p>{comparison.question}</p>
-              <ul>
-                {comparison.items.map((item) => {
-                  const product = products.find((entry) => entry.id === item.productId);
-                  return (
-                    <li key={item.productId}>
-                      <strong>{product ? `${product.manufacturer} ${product.model}` : item.productId}</strong>
-                      {": "}
-                      {item.suitedFor}
-                    </li>
-                  );
-                })}
-              </ul>
-            </section>
-          ))
+          gearCategories.map((id) => {
+            const items = visible.filter((product) => product.category === id);
+            const comparisonsHere = visibleComparisons.filter((comparison) =>
+              category === "all" ? comparison.category === id : id === category,
+            );
+            if (items.length === 0 && comparisonsHere.length === 0) return null;
+            return (
+              <CategoryBand
+                key={id}
+                id={`equipo-${id}`}
+                kind={id}
+                title={gearCategoryLabels[id]}
+                count={countLabel(items.length, "ficha", "fichas")}
+              >
+                {items.length > 0 ? (
+                  <ul className="session-grid">
+                    {items.map((product) => (
+                      <li key={product.id}>
+                        <GearCard product={product} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                {comparisonsHere.map((comparison) => (
+                  <ComparisonBlock key={comparison.id} comparison={comparison} products={products} />
+                ))}
+              </CategoryBand>
+            );
+          })
         )}
       </div>
     </article>
@@ -246,6 +284,7 @@ function LibraryTools({
 function TutorialCard({ tutorial }: { tutorial: TutorialRecord }) {
   return (
     <article className="session-card">
+      <CategoryPlate kind={tutorial.category} />
       <div className="session-copy">
         <p>
           {tutorialCategoryLabels[tutorial.category]} · {tutorial.difficulty}
@@ -276,6 +315,7 @@ function GearCard({ product }: { product: GearRecord }) {
   const specLines = Object.entries(product.specs);
   return (
     <article className="session-card">
+      <CategoryPlate kind={product.category} />
       <div className="session-copy">
         <p>{gearCategoryLabels[product.category]}</p>
         <h3 className="session-title">
@@ -324,4 +364,108 @@ function SourceLinks({ links }: { links: { label: string; url: string; affiliate
       ))}
     </ul>
   );
+}
+
+function CategoryIndex({
+  label,
+  selected,
+  onSelect,
+  entries,
+}: {
+  label: string;
+  selected: string;
+  onSelect: (id: string) => void;
+  entries: { id: string; label: string; count: string }[];
+}) {
+  return (
+    <div className="catalog-index" role="group" aria-label={label}>
+      <button
+        type="button"
+        className={selected === "all" ? "catalog-chip is-selected" : "catalog-chip"}
+        aria-pressed={selected === "all"}
+        onClick={() => onSelect("all")}
+      >
+        <CategoryPlate kind="todas" />
+        <span className="catalog-chip-copy">
+          <strong>Todas</strong>
+          <span>Ver las categorías con ficha</span>
+        </span>
+      </button>
+      {entries.map((entry) => (
+        <button
+          key={entry.id}
+          type="button"
+          className={selected === entry.id ? "catalog-chip is-selected" : "catalog-chip"}
+          aria-pressed={selected === entry.id}
+          onClick={() => onSelect(entry.id)}
+        >
+          <CategoryPlate kind={entry.id as CategoryArtKind} />
+          <span className="catalog-chip-copy">
+            <strong>{entry.label}</strong>
+            <span>{entry.count}</span>
+          </span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function CategoryBand({
+  id,
+  kind,
+  title,
+  count,
+  children,
+}: {
+  id: string;
+  kind: CategoryArtKind;
+  title: string;
+  count: string;
+  children: ReactNode;
+}) {
+  return (
+    <section className="catalog-band" id={id} aria-labelledby={`${id}-titulo`}>
+      <header className="catalog-band-head">
+        <CategoryPlate kind={kind} />
+        <div>
+          <p className="section-kicker">{count}</p>
+          <h2 className="jump-title" id={`${id}-titulo`}>
+            {title}
+          </h2>
+        </div>
+      </header>
+      {children}
+    </section>
+  );
+}
+
+function ComparisonBlock({
+  comparison,
+  products,
+}: {
+  comparison: ComparisonRecord;
+  products: readonly GearRecord[];
+}) {
+  return (
+    <section className="essay">
+      <h3>{comparison.title}</h3>
+      <p>{comparison.question}</p>
+      <ul>
+        {comparison.items.map((item) => {
+          const product = products.find((entry) => entry.id === item.productId);
+          return (
+            <li key={item.productId}>
+              <strong>{product ? `${product.manufacturer} ${product.model}` : item.productId}</strong>
+              {": "}
+              {item.suitedFor}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
+function countLabel(count: number, one: string, many: string) {
+  return `${count} ${count === 1 ? one : many}`;
 }
