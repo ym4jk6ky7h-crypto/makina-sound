@@ -8,6 +8,7 @@ Una imagen solo se publica si la ficha de origen se ha abierto y la licencia per
 
 | Sala | Archivo | Fuente | Autor | Licencia | Atribución | Fecha de la toma | Estado |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Pont Aeri | `public/images/venues/pont-aeri.png` (74 KB) | [File:Pont Aeri Blanc.png](https://commons.wikimedia.org/wiki/File:Pont_Aeri_Blanc.png) | Ghostrider31 | Cesión al dominio público, [plantilla PD-release](https://commons.wikimedia.org/wiki/Template:PD-release) | Ghostrider31, Wikimedia Commons | Subido el 7 de septiembre de 2008. No fecha la sala. | Incorporada como logotipo, no como fotografía. |
 | Barraca | `public/images/venues/barraca.jpg` (554 KB, copia a 1600 px del original de 4000×3000) | [File:Barraca MMXXVI.jpg](https://commons.wikimedia.org/wiki/File:Barraca_MMXXVI.jpg) | Francesc Fort | CC BY-SA 4.0, [texto de la licencia](https://creativecommons.org/licenses/by-sa/4.0/) | Francesc Fort, Wikimedia Commons | 26 de julio de 2026, sello de la cámara. El pie dice «Barraca i Villa Adelina». El rótulo de esta toma dice Barraca. | Incorporada. No es una foto de 1965. |
 | Puzzle | `public/images/venues/puzzle.jpg` (666 KB, copia a 1400 px) | [File:Discoteca Puzzle.jpg](https://commons.wikimedia.org/wiki/File:Discoteca_Puzzle.jpg) | 19Tarrestnom65 | CC BY-SA 4.0 | 19Tarrestnom65, Wikimedia Commons | 9 de abril de 2022, sello de la cámara. La ficha de Commons fecha la subida el 26 de noviembre de 2022. | Incorporada. El rótulo dice Puzzle Superclub. El pie habla de El Perelló y no se adopta como localidad. |
 
@@ -17,7 +18,7 @@ La segunda toma de Barraca, `File:Barraca MMXXVI (93345).jpg`, se descargó para
 
 | Qué representa | Fuente abierta | Autor y licencia | Estado | Motivo y siguiente paso |
 | --- | --- | --- | --- | --- |
-| Logotipo Pont Aeri | [File:Pont Aeri Blanc.png](https://commons.wikimedia.org/wiki/File:Pont_Aeri_Blanc.png) | Ghostrider31, 7 de septiembre de 2008. La ficha lo da como dominio público. | Descartada | Es una marca gráfica, no una fotografía de la sala. |
+| Logotipo Pont Aeri | [File:Pont Aeri Blanc.png](https://commons.wikimedia.org/wiki/File:Pont_Aeri_Blanc.png) | Ghostrider31, 7 de septiembre de 2008. Cesión al dominio público. | Incorporada | Es la marca de la ficha, no una foto del local. |
 | Grupo Vale Music | [File:Vale Music Fundacion.png](https://commons.wikimedia.org/wiki/File:Vale_Music_Fundacion.png) | Recordmax, 6 de junio de 1997, CC BY-SA 4.0. El pie nombra a Ricardo Campoy, José María Castells, Andreu Ugas, Quique Tejada y Toni Peret. | Descartada como retrato | Las caras no están identificadas de izquierda a derecha. No se recorta. |
 | Peret, el cantante de rumba | [File:Peret, el bajista Miquel Rubió y otros músicos.jpg](https://commons.wikimedia.org/wiki/File:Peret,_el_bajista_Miquel_Rubi%C3%B3_y_otros_m%C3%BAsicos.jpg) | Miquel Rubió i Tusquellas, 1 de enero de 1960, CC BY 2.5. Nombra a Peret, Miquel Rubió, Josep Cunill, Josep Maria Bardagí, Toni Valentí y Reyes. | Descartada | No es Toni Peret. |
 | Luna-C | [File:DJ Luna-C.jpeg](https://commons.wikimedia.org/wiki/File:DJ_Luna-C.jpeg) | Alkivar, 1 de diciembre de 2001, Nashua (Nuevo Hampshire), CC0. La usa el artículo Luna-C. | Descartada | No es DJ Luna X-Files. |
@@ -31,7 +32,7 @@ La segunda toma de Barraca, `File:Barraca MMXXVI (93345).jpg`, se descargó para
 
 Se buscó cada uno de los 55 nombres en el espacio de archivos de Wikimedia Commons el 16 de octubre de 2026. La API limitó el ritmo a mitad de la primera pasada; los nombres afectados se volvieron a consultar. Ninguna ficha abierta identifica al DJ del archivo con una licencia que permita usarla como retrato.
 
-Estado de los 55: pendiente. No hay archivo local. Siguiente paso: una fotografía del propio artista, de su canal o de un fotógrafo, con licencia o autorización escrita. No sirve una foto de grupo sin identificar cada cara.
+Estado de los 55: pendiente. No hay archivo local. Desde el 19 de octubre de 2026 un logotipo con licencia entra en la tarjeta si no hay retrato. Una búsqueda nueva en Commons, el mismo día, no dio esa marca para ninguno de los 55. Siguiente paso: el logotipo o la foto del propio artista, con licencia o autorización escrita.
 
 Nombres consultados: DJ Nau, Sergi Blue, Javi Maki, DJ Sisu, DJ Pastis, DJ Buenri, DJ Skudero, Xavi Metralla, Ruboy, Gerard Requena, Nando Dixkontrol, Julio Posadas, Ricardo F, Frank T.R.A.X., Da Terror, DJ Sonic, DJ Lucena, DJ Sepi, DJ Cesk, Xavi BCN, Javi Tracker, DJ Luna X-Files, DJ Piyuli, Bassaul DJ, DJ Pitu, Adrian Kuyck, DJ Rottar, Javi Boss, Dany BPM, DJ Marta, Ruben XXL, Jordi Beat, Dani Kaos, DJ Reke, DJ Skryker, Oskar Mad, DJ Konik, Pedro Miras, Julio Navas, David Amo, Alberto Tapia, César Benito, Juan Cruz, Fran Bit, Joan Creus, DJ X-Centrik, DJ Bull, DJ Pepebilly, DJ Invi, DJ Al-Fredo, DJ T-TY, DJ Sek, Toni Peret, Quique Tejada y José María Castells.
 

@@ -86,7 +86,7 @@ export function PlacesPage({ kind }: { kind: "salas" | "flyers" }) {
               ))}
             </ul>
           )}
-          <p className="sheet-note">Barraca y Puzzle muestran fotografías con licencia comprobada. El resto de las placas son composiciones del archivo, no fotografías del local. Area y Concor siguen fuera: el foro que las separa solo responde por http y el directorio https no fecha esa historia. Area de Beethoven solo aparece en un recuerdo de foro.</p>
+          <p className="sheet-note">La tarjeta usa el logotipo cuando hay una marca con licencia. Si no la hay, conserva la fotografía verificada o la placa. Pont Aeri tiene logotipo. Barraca y Puzzle tienen fotografía. Area y Concor siguen fuera: el foro que las separa solo responde por http. Area de Beethoven solo aparece en un recuerdo de foro.</p>
         </div>
       </article>
     );
@@ -259,8 +259,10 @@ function FlyerFile({
 }
 
 function VenuePhoto({ image, large }: { image: VenueImage; large?: boolean }) {
+  const logo = image.kind === "logo";
+  const className = ["venue-photo", large ? "is-large" : "", logo ? "is-logo" : ""].filter(Boolean).join(" ");
   return (
-    <figure className={large ? "venue-photo is-large" : "venue-photo"}>
+    <figure className={className}>
       <img src={publicAsset(image.url)} alt={image.alt} loading="lazy" decoding="async" />
       {large ? (
         <figcaption>

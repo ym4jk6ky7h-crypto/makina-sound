@@ -22,7 +22,7 @@ const artistRoles: { role: DjCredit; title: string; note?: string }[] = [
 ];
 
 export type DjImage =
-  | { kind: "photo"; url: string; alt: string; sourceName: string; sourceUrl: string; attribution: string }
+  | { kind: "photo" | "logo"; url: string; alt: string; sourceName: string; sourceUrl: string; attribution: string }
   | { kind: "illustration"; label: "Ilustración" | "Imagen no disponible" };
 
 export function publicAsset(url: string, base = import.meta.env.BASE_URL || "/"): string {
@@ -111,12 +111,15 @@ export function portraitImage(dj: Pick<DjProfile, "name" | "portrait">): DjImage
     portrait.licenseUrl &&
     portrait.checkedAt
   ) {
+    const logo = portrait.kind === "logo";
     const duo = dj.name.includes("&");
     const attribution = [portrait.photographer, portrait.license].filter(Boolean).join(". ");
     return {
-      kind: "photo",
+      kind: logo ? "logo" : "photo",
       url: portrait.imageUrl,
-      alt: duo ? `Fotografía del dúo ${dj.name}` : `Fotografía de ${dj.name}`,
+      alt: logo
+        ? `Logotipo de ${dj.name}`
+        : duo ? `Fotografía del dúo ${dj.name}` : `Fotografía de ${dj.name}`,
       sourceName: portrait.sourceName,
       sourceUrl: portrait.sourceUrl,
       attribution,
@@ -126,7 +129,7 @@ export function portraitImage(dj: Pick<DjProfile, "name" | "portrait">): DjImage
 }
 
 export function shownPortrait(image: DjImage, failed: boolean): DjImage {
-  if (image.kind === "photo" && failed) return { kind: "illustration", label: "Imagen no disponible" };
+  if ((image.kind === "photo" || image.kind === "logo") && failed) return { kind: "illustration", label: "Imagen no disponible" };
   return image;
 }
 

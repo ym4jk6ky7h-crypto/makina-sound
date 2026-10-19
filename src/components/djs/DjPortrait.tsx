@@ -36,13 +36,14 @@ export function DjPortrait({
       </span>
     );
   }
+  const logo = shown.kind === "logo";
   return (
-    <figure className={large ? "dj-photo is-large" : "dj-photo"}>
+    <figure className={`${large ? "dj-photo is-large" : "dj-photo"}${logo ? " is-logo" : ""}`}>
       <img
         src={publicAsset(shown.url)}
         alt={shown.alt}
-        width={large ? 640 : 480}
-        height={large ? 800 : 600}
+        width={logo ? 720 : large ? 640 : 480}
+        height={logo ? 196 : large ? 800 : 600}
         loading="lazy"
         decoding="async"
         onError={() => setFailed(true)}

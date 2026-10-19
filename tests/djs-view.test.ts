@@ -181,6 +181,18 @@ describe("fase 07 directorio y ficha", () => {
       sourceUrl: "https://example.com/fuente",
       attribution: "Cesión de prueba para esta ficha",
     });
+    const logo = portraitImage(openDjs([{
+      ...fixture[0],
+      id: "logo-prueba",
+      name: "Logo Prueba",
+      portrait: { ...fixture[0].portrait, kind: "logo", imageUrl: "/images/djs/logo-prueba.png" },
+    }])[0]);
+    if (logo.kind === "logo") {
+      assert.equal(logo.alt, "Logotipo de Logo Prueba");
+      assert.equal(logo.url, "/images/djs/logo-prueba.png");
+    } else {
+      assert.fail("el logotipo verificado no entra como marca");
+    }
     const duo = portraitImage({
       name: "Pastis & Buenri",
       portrait: {

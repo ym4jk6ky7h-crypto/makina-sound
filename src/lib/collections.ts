@@ -32,6 +32,7 @@ export type VenueImage = {
   caption: string;
   author: string;
   takenAt?: string;
+  kind?: "photo" | "logo";
   license: string;
   licenseUrl: string;
   sourceName: string;
@@ -255,7 +256,9 @@ function readVenueImages(value: unknown, venueId: string): VenueImage[] | null {
     const sourceName = text(record.sourceName);
     const sourceUrl = text(record.sourceUrl);
     const takenAt = text(record.takenAt);
+    const kind = text(record.kind);
     if (!url || !alt || !caption || !author || !license || !licenseUrl || !sourceName || !sourceUrl) return null;
+    if (record.kind !== undefined && kind !== "photo" && kind !== "logo") return null;
     if (!httpsUrl(licenseUrl) || !httpsUrl(sourceUrl)) return null;
     if (record.takenAt !== undefined && (!takenAt || !isPublishedDate(takenAt))) return null;
     const local = VENUE_IMAGE.test(url);
@@ -274,6 +277,7 @@ function readVenueImages(value: unknown, venueId: string): VenueImage[] | null {
       sourceName,
       sourceUrl,
       takenAt,
+      kind: kind === "logo" ? "logo" : undefined,
     });
   }
   return images;

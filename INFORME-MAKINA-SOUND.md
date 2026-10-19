@@ -7,7 +7,7 @@ Este archivo describe la web tal como está en el código ahora. No es un plan. 
 
 ## Estado vigente — 16 de octubre de 2026
 
-Fases 01 a 30 cerradas en el código. `#salas` es un archivo de 33 fichas. Se puede buscar por nombre, alias y localidad, y filtrar por la localidad publicada. Entran Desk, en L'Hospitalet de Llobregat, y dos fotografías con licencia: Barraca (Francesc Fort, 2026) y Puzzle (19Tarrestnom65, 2022). Urban no tiene ficha. Area, Concor y Area Concor siguen sin ficha. Los 55 perfiles siguen sin retrato: Commons no dio una fotografía identificable y reutilizable. Siguen 3 carteles citados sin imagen, 55 fichas, 618 tarjetas y 150 sesiones. El detalle está en `informes/FASE-30-imagenes-historicas-desk-urban.md`.
+Fases 01 a 30 cerradas en el código. `#salas` es un archivo de 33 fichas. La tarjeta de una sala muestra el logotipo cuando la licencia está comprobada: Pont Aeri usa la marca que Ghostrider31 cedió al dominio público. Barraca y Puzzle conservan su fotografía. El resto sigue en placa. Un DJ muestra el logotipo si no hay retrato y la marca tiene licencia; todavía no hay ninguno en Commons. Urban no tiene ficha. Siguen 55 fichas, 618 tarjetas y 150 sesiones. El detalle está en `informes/FASE-30-imagenes-historicas-desk-urban.md` y en `informes/INVENTARIO-IMAGENES-HISTORICAS.md`.
 
 La fase 21 publica la web en GitHub Pages: https://ym4jk6ky7h-crypto.github.io/makina-sound/. El detalle está en `informes/FASE-21-publicacion-y-retratos.md`.
 
@@ -643,5 +643,7 @@ Estado de la fase: **completada**. `#salas` pasa de 27 a 32 fichas. Entran Barç
 Estado de la fase: **completada**. `#salas` pasa de 32 a 33 fichas. Entra Desk, en L'Hospitalet de Llobregat, sin fechas ni calle. Urban no entra. Barraca y Puzzle muestran fotografías CC BY-SA 4.0, de Francesc Fort (2026) y de 19Tarrestnom65 (2022). Los 55 perfiles siguen sin retrato. No cambian las 618 tarjetas ni las 150 sesiones. Pages sirve `assets/index-Cczm8gar.js` y `assets/index-29UJ0Wtn.css`.
 
 `npm test`: 48 pruebas, 0 fallos. La compilación local queda en `assets/index-CCrk20bk.js` y `assets/index-BKqj0BqF.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-Cczm8gar.js` y `assets/index-29UJ0Wtn.css`. El detalle está en `informes/FASE-30-imagenes-historicas-desk-urban.md`.
+
+Después, la tarjeta de sala pasa a preferir el logotipo. Pont Aeri muestra la marca que Ghostrider31 cedió al dominio público. Barraca y Puzzle conservan la fotografía. Un retrato de DJ puede ser un logotipo con la misma documentación; Commons no dio ninguno de los 55. La compilación local de ese ajuste queda en `assets/index-D2obL-Zp.js` y `assets/index-GOoQUkSE.css`. Con `VITE_BASE=/makina-sound/` queda en `assets/index-BaaPHzOs.js` y `assets/index-Df83xEmx.css`.
 
 

@@ -316,6 +316,42 @@
   display: block;
 }
 
+.venue-photo.is-logo,
+.venue-photo.is-logo img,
+.dj-photo.is-logo,
+.dj-photo.is-logo img {
+  background: #f4f0e6;
+  object-fit: contain;
+  object-position: center;
+}
+
+.venue-photo.is-logo img,
+.dj-card .dj-photo.is-logo,
+.dj-card .dj-photo.is-logo img {
+  aspect-ratio: 2.35 / 1;
+  box-sizing: border-box;
+  padding: 0.7rem 0.9rem;
+}
+
+.venue-photo.is-large.is-logo img,
+.dj-photo.is-large.is-logo img {
+  aspect-ratio: 3.4 / 1;
+  max-height: 9rem;
+  padding: 0.85rem 1.1rem;
+}
+
+.venue-photo.is-logo figcaption,
+.venue-photo.is-logo figcaption span,
+.dj-photo.is-logo figcaption,
+.dj-photo.is-logo figcaption span {
+  color: #241f18;
+}
+
+.venue-photo.is-logo figcaption a,
+.dj-photo.is-logo figcaption a {
+  color: #3f5200;
+}
+
 .dj-file-head:has(.venue-photo) {
   grid-template-columns: minmax(0, 1fr);
 }

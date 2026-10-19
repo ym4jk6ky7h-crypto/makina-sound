@@ -11,7 +11,8 @@
       "Esa web presenta a Skudero, Xavi Metralla, Sonic y Sisu como el núcleo de una etapa de Vallgorguina, y dice que la cabina empieza antes y reúne a más generaciones. El CCCB incluye a Nando Dixkontrol entre los residentes de Pont Aeri, sin fechar esa etapa en la ficha leída. Las biografías ya publicadas de DJ Pastis y DJ Buenri los sitúan en la sala antes de su paso a Xque.",
       "El 5 de agosto de 2012, La Vanguardia recogió el anuncio de Ramón Escudero: el local de Vallgorguina cerraría a partir de noviembre, después de 21 años, por la subida del IVA del ocio nocturno. El 9 Nou, el 28 de diciembre de 2012, contó el cierre de esa sala. Una sesión del catálogo titulada «Closing Party @ Pont Aeri (Junio 2024)» nombra el nombre en 2024: no es el cierre de 2012, y la fecha guardada es la de publicación del vídeo. Otra sesión, «DJ NAU @ Pont aeri (34 Aniversario cierre Sala Terrassa) Abril 2026», también nombra la sala en el título. Abril de 2026 no se guarda como fecha de la noche ni como fecha de un cierre del local de Terrassa.",
       "El Español, el 6 de noviembre de 2016, sitúa un episodio de enero de 1995 en Terrassa, el traslado a Manresa y un cierre definitivo en 2010. La Vanguardia, ya citada, anuncia el cierre del local de Vallgorguina en 2012. Esta ficha no sustituye una fecha por la otra.",
-      "El artículo reproduce un cartel de Pont Aeri en Manresa fechado en 2000. No se publica la imagen: la ficha solo recoge el pie. Tampoco convierte ese año en una fecha de apertura o de cierre."
+      "El artículo reproduce un cartel de Pont Aeri en Manresa fechado en 2000. No se publica la imagen: la ficha solo recoge el pie. Tampoco convierte ese año en una fecha de apertura o de cierre.",
+      "El logotipo de la ficha es el archivo Pont Aeri Blanc de Wikimedia Commons. Ghostrider31 lo subió el 7 de septiembre de 2008 como trabajo propio y lo cedió al dominio público. Es una marca gráfica, no una fotografía de Terrassa, Manresa, Traiguera ni Vallgorguina."
     ],
     "djIds": [
       "dj-skudero",
@@ -25,6 +26,19 @@
     "sessionIds": [
       "gWNOt-He3g8",
       "dGN_8ey-jwM"
+    ],
+    "images": [
+      {
+        "url": "/images/venues/pont-aeri.png",
+        "kind": "logo",
+        "alt": "Logotipo de Pont Aeri, con las letras sobre unas alas y un círculo partido en azul y gris.",
+        "caption": "Marca gráfica cedida al dominio público por Ghostrider31 el 7 de septiembre de 2008. No es una fotografía de la sala.",
+        "author": "Ghostrider31",
+        "license": "Dominio público (cesión del autor)",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-release",
+        "sourceName": "Wikimedia Commons, Pont Aeri Blanc",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pont_Aeri_Blanc.png"
+      }
     ],
     "links": [
       {

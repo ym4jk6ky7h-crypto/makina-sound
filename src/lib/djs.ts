@@ -53,6 +53,7 @@ export type DjPortrait = {
   license?: string;
   licenseUrl?: string;
   checkedAt?: string;
+  kind?: "photo" | "logo";
 };
 
 export type DjProfile = {
@@ -234,6 +235,8 @@ function readPortrait(value: unknown): DjPortrait | undefined {
   const license = text(record.license);
   const licenseUrl = text(record.licenseUrl);
   const checkedAt = text(record.checkedAt);
+  const kind = text(record.kind);
+  if (record.kind !== undefined && kind !== "photo" && kind !== "logo") return { status: "unavailable" };
   if (status === "verified") {
     if (
       !imageUrl || !sourceUrl || !sourceName || !license || !licenseUrl || !checkedAt ||
@@ -252,6 +255,7 @@ function readPortrait(value: unknown): DjPortrait | undefined {
       checkedAt,
       photographer,
       rightsHolder,
+      kind: kind === "logo" ? "logo" : undefined,
     };
   }
   if ((status === "pending" || status === "candidate") && sourceUrl && sourceName && httpsUrl(sourceUrl)) {

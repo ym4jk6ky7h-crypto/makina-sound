@@ -344,7 +344,12 @@ describe("fase 30 desk y fotografia", () => {
     assert.equal(barraca?.images[0]?.takenAt, "2026-07-26");
     assert.ok(readFileSync(new URL("../public/images/venues/barraca.jpg", import.meta.url)).length > 1000);
     const pictured = venues.filter((venue) => venue.images.length > 0).map((venue) => venue.id);
-    assert.deepEqual(pictured, ["barraca", "puzzle"]);
+    assert.deepEqual(pictured, ["pont-aeri", "barraca", "puzzle"]);
+    const pont = venues.find((venue) => venue.id === "pont-aeri");
+    assert.equal(pont?.images[0]?.kind, "logo");
+    assert.equal(pont?.images[0]?.author, "Ghostrider31");
+    assert.equal(pont?.images[0]?.url, "/images/venues/pont-aeri.png");
+    assert.ok(readFileSync(new URL("../public/images/venues/pont-aeri.png", import.meta.url)).length > 1000);
     const puzzle = venues.find((venue) => venue.id === "puzzle");
     assert.equal(puzzle?.images[0]?.author, "19Tarrestnom65");
     assert.equal(puzzle?.images[0]?.url, "/images/venues/puzzle.jpg");
