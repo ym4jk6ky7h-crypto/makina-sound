@@ -39,10 +39,13 @@ describe("catálogos nuevos", () => {
       gear,
     );
     assert.deepEqual(tutorials.map((tutorial) => tutorial.id), ["colocar-monitores-genelec", "cuidar-aguja-concorde"]);
-    assert.equal(gear.length, 53);
-    assert.equal(gear.filter((product) => product.image).length, 44);
+    assert.equal(gear.length, 65);
+    assert.equal(gear.filter((product) => product.image).length, 56);
     assert.equal(gear.every((product) => !product.image || product.image.licenseUrl.startsWith("https://")), true);
-    assert.equal(gear.find((product) => product.id === "pioneerdj-ddj-flx4")?.image?.sourceName, "Wikimedia Commons");
+    assert.equal(gear.find((product) => product.id === "pioneerdj-ddj-flx4")?.specs.Peso, "2,1 kg");
+    assert.equal(gear.find((product) => product.id === "pioneerdj-ddj-flx4")?.specs.Ancho, "482 mm");
+    assert.equal(gear.find((product) => product.id === "pioneerdj-ddj-400")?.specs.Fondo, "272,4 mm");
+    assert.equal(gear.find((product) => product.id === "pioneerdj-ddj-rev1")?.specs.Ancho, undefined);
     assert.equal(gear.every((product) => product.price === undefined), true);
     assert.equal(gear.find((product) => product.id === "genelec-8030c")?.specs.Peso, "5 kg");
     assert.equal(gear.find((product) => product.id === "technics-sl-1200mk7")?.specs["Par de arranque"], undefined);

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { CategoryPlate } from "./art/CategoryArt.tsx";
 import type { CategoryArtKind } from "./art/CategoryArt.tsx";
@@ -12,6 +12,7 @@ import {
   tutorialCategoryLabels,
 } from "../lib/collections.ts";
 import { includesQuery } from "../lib/search.ts";
+import { readFocus } from "../lib/section.ts";
 
 export function RinconPage() {
   const tutorials = useMemo(() => readTutorials(), []);
@@ -102,8 +103,23 @@ export function EquipoPage() {
   const comparisons = useMemo(() => readComparisons(), []);
   const [text, setText] = useState("");
   const [category, setCategory] = useState<GearCategory | "all">("all");
+  const [brand, setBrand] = useState("all");
+  const [focus, setFocus] = useState(() => readFocus());
+  useEffect(() => {
+    function onHash() {
+      setFocus(readFocus());
+    }
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [focus]);
+  const opened = focus ? products.find((product) => product.id === focus) : undefined;
+  const browsing = category === "all" && text.trim().length === 0;
   const visible = products.filter((product) => {
     if (category !== "all" && product.category !== category) return false;
+    if (brand !== "all" && product.manufacturer !== brand) return false;
     return includesQuery(text, [product.manufacturer, product.model, product.summary, gearCategoryLabels[product.category]]);
   });
   const visibleComparisons = comparisons.filter((comparison) => {
@@ -113,7 +129,37 @@ export function EquipoPage() {
     if (category !== "all" && !touches) return false;
     return includesQuery(text, [comparison.title, comparison.question]);
   });
+  const brands = [
+    ...new Set(
+      products
+        .filter((product) => category === "all" || product.category === category)
+        .map((product) => product.manufacturer),
+    ),
+  ].sort((left, right) => left.localeCompare(right, "es"));
   const page = equipoCopy;
+
+  function chooseCategory(value: GearCategory | "all") {
+    setCategory(value);
+    setBrand("all");
+  }
+
+  if (focus && !opened) {
+    return (
+      <article className="sheet">
+        <div className="wrap">
+          <p className="back">
+            <a href="#equipo">Volver a equipo</a>
+          </p>
+          <header className="section-head">
+            <h1>Ficha no encontrada</h1>
+            <p className="section-intro">No hay un equipo con el identificador «{focus}».</p>
+          </header>
+        </div>
+      </article>
+    );
+  }
+
+  if (opened) return <GearDetail product={opened} />;
 
   return (
     <article className="sheet">
@@ -131,9 +177,11 @@ export function EquipoPage() {
         </header>
         <p className="note">
           Un monitor de estudio y un altavoz de PA no se cambian el uno por el otro. La comparativa
-          queda en la categoría de la pregunta. No hay precios ni enlaces de afiliado. La fotografía
-          entra cuando Wikimedia Commons la publica con licencia libre. Si no hay esa foto, queda la
-          ilustración de la categoría. Una ficha sin tabla de fabricante no inventa cifras.
+          queda en la categoría de la pregunta. Pulsa una ficha para ver qué es, qué lleva, las
+          conexiones y las medidas que se han leído. No hay precios de tienda ni enlaces de afiliado.
+          La fotografía entra cuando Wikimedia Commons la publica con licencia libre. Si no hay esa
+          foto, queda la ilustración de la categoría. Una ficha sin tabla de fabricante no inventa
+          cifras.
         </p>
         <LibraryTools
           label="Buscar equipo"
@@ -142,12 +190,12 @@ export function EquipoPage() {
           onText={setText}
           category={category}
           categories={gearCategories.map((id) => ({ id, label: gearCategoryLabels[id] }))}
-          onCategory={(value) => setCategory(value as GearCategory | "all")}
+          onCategory={(value) => chooseCategory(value as GearCategory | "all")}
         />
         <CategoryIndex
           label="Categorías de equipo"
           selected={category}
-          onSelect={(value) => setCategory(value as GearCategory | "all")}
+          onSelect={(value) => chooseCategory(value as GearCategory | "all")}
           entries={gearCategories
             .filter((id) => products.some((product) => product.category === id))
             .map((id) => ({
@@ -156,42 +204,46 @@ export function EquipoPage() {
               count: countLabel(products.filter((product) => product.category === id).length, "ficha", "fichas"),
             }))}
         />
-        {visible.length === 0 && visibleComparisons.length === 0 ? (
+        {browsing ? (
           <p className="note" role="status">
-            {products.length === 0
-              ? "No hay equipos publicados. Una ficha necesita fabricante, modelo, descripción propia y la fuente de cada dato. Precios y especificaciones que no se han comprobado no se rellenan."
-              : "Ningún equipo coincide. Prueba con otra categoría."}
+            Hay {countLabel(products.length, "ficha", "fichas")}. Elige una categoría y, si hace falta, una marca.
           </p>
         ) : (
-          gearCategories.map((id) => {
-            const items = visible.filter((product) => product.category === id);
-            const comparisonsHere = visibleComparisons.filter((comparison) =>
-              category === "all" ? comparison.category === id : id === category,
-            );
-            if (items.length === 0 && comparisonsHere.length === 0) return null;
-            return (
-              <CategoryBand
-                key={id}
-                id={`equipo-${id}`}
-                kind={id}
-                title={gearCategoryLabels[id]}
-                count={countLabel(items.length, "ficha", "fichas")}
-              >
-                {items.length > 0 ? (
-                  <ul className="session-grid">
-                    {items.map((product) => (
-                      <li key={product.id}>
-                        <GearCard product={product} />
-                      </li>
+          <>
+            {category !== "all" ? <BrandBar brands={brands} selected={brand} onSelect={setBrand} /> : null}
+            {visible.length === 0 && visibleComparisons.length === 0 ? (
+              <p className="note" role="status">
+                {products.length === 0
+                  ? "No hay equipos publicados. Una ficha necesita fabricante, modelo, descripción propia y la fuente de cada dato. Precios y especificaciones que no se han comprobado no se rellenan."
+                  : "Ningún equipo coincide. Prueba con otra categoría o con otra marca."}
+              </p>
+            ) : (
+              gearCategories.map((id) => {
+                const items = visible.filter((product) => product.category === id);
+                const comparisonsHere =
+                  brand === "all"
+                    ? visibleComparisons.filter((comparison) =>
+                        category === "all" ? comparison.category === id : id === category,
+                      )
+                    : [];
+                if (items.length === 0 && comparisonsHere.length === 0) return null;
+                return (
+                  <CategoryBand
+                    key={id}
+                    id={`equipo-${id}`}
+                    kind={id}
+                    title={gearCategoryLabels[id]}
+                    count={countLabel(items.length, "ficha", "fichas")}
+                  >
+                    <BrandGroups items={items} />
+                    {comparisonsHere.map((comparison) => (
+                      <ComparisonBlock key={comparison.id} comparison={comparison} products={products} />
                     ))}
-                  </ul>
-                ) : null}
-                {comparisonsHere.map((comparison) => (
-                  <ComparisonBlock key={comparison.id} comparison={comparison} products={products} />
-                ))}
-              </CategoryBand>
-            );
-          })
+                  </CategoryBand>
+                );
+              })
+            )}
+          </>
         )}
       </div>
     </article>
@@ -313,9 +365,8 @@ function TutorialCard({ tutorial }: { tutorial: TutorialRecord }) {
 }
 
 function GearCard({ product }: { product: GearRecord }) {
-  const specLines = Object.entries(product.specs);
   return (
-    <article className="session-card catalog-card">
+    <article className="session-card catalog-card gear-teaser">
       {product.image ? (
         <figure className="gear-photo">
           <img src={product.image.url} alt={product.image.alt} width={960} height={540} loading="lazy" />
@@ -332,35 +383,204 @@ function GearCard({ product }: { product: GearRecord }) {
       <div className="session-copy">
         <p>{gearCategoryLabels[product.category]}</p>
         <h3 className="session-title">
-          {product.manufacturer} {product.model}
+          <a className="gear-open" href={`#equipo/${product.id}`}>
+            {product.manufacturer} {product.model}
+          </a>
         </h3>
         <p>{product.summary}</p>
-        {product.suitedFor ? <p>Para quién: {product.suitedFor}</p> : null}
-        {specLines.length > 0 ? (
-          <ul>
-            {specLines.map(([name, value]) => (
-              <li key={name}>
-                {name}: {value}
-              </li>
-            ))}
-          </ul>
-        ) : null}
-        {product.limits.length > 0 ? (
-          <ul>
-            {product.limits.map((limit) => (
-              <li key={limit}>{limit}</li>
-            ))}
-          </ul>
-        ) : null}
-        {product.price ? (
-          <p>
-            {product.price.amount} {product.price.currency} en {product.price.shop}, comprobado el{" "}
-            {product.price.checkedAt}.
-          </p>
-        ) : null}
-        <SourceLinks links={product.links} />
+        <p className="gear-more">Abrir ficha</p>
       </div>
     </article>
+  );
+}
+
+function splitGearFacts(specs: Record<string, string>) {
+  const measures: [string, string][] = [];
+  const connections: [string, string][] = [];
+  const included: [string, string][] = [];
+  for (const entry of Object.entries(specs)) {
+    if (/^(medidas|peso|alto|ancho|fondo|faders de tempo)/i.test(entry[0])) measures.push(entry);
+    else if (/^(entrada|entradas|salida|salidas|usb|red|cable|tarjeta|envíos|envios|auriculares|bluetooth|seguridad|alimentación)/i.test(entry[0])) {
+      connections.push(entry);
+    } else included.push(entry);
+  }
+  return { measures, connections, included };
+}
+
+function GearDetail({ product }: { product: GearRecord }) {
+  const facts = splitGearFacts(product.specs);
+  return (
+    <article className="sheet">
+      <div className="wrap gear-detail">
+        <p className="back">
+          <a href="#equipo">Volver a equipo</a>
+        </p>
+        <header className="section-head">
+          <p className="section-kicker">{gearCategoryLabels[product.category]}</p>
+          <h1>
+            {product.manufacturer} {product.model}
+          </h1>
+          <p className="section-intro">{product.summary}</p>
+        </header>
+        {product.image ? (
+          <figure className="gear-hero">
+            <img src={product.image.url} alt={product.image.alt} width={960} height={540} />
+            <figcaption>
+              <a href={product.image.sourceUrl} rel="noreferrer">
+                {product.image.author}
+              </a>
+              <span>
+                {product.image.license}
+                {" · "}
+                <a href={product.image.licenseUrl} rel="noreferrer">
+                  licencia
+                </a>
+              </span>
+            </figcaption>
+          </figure>
+        ) : (
+          <CategoryPlate kind={product.category} />
+        )}
+        <section className="essay">
+          <h2>Qué es</h2>
+          <p>{product.summary}</p>
+          {product.suitedFor ? <p>{product.suitedFor}</p> : null}
+          {product.checkedAt ? <p>Lectura del {product.checkedAt}.</p> : null}
+        </section>
+        <section className="essay">
+          <h2>Qué lleva</h2>
+          <FactList
+            rows={facts.included}
+            empty="La página abierta no lista piezas, controles o programas de este modelo."
+          />
+          {product.strengths.length > 0 ? (
+            <ul>
+              {product.strengths.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+        </section>
+        <section className="essay">
+          <h2>Conexiones</h2>
+          <FactList rows={facts.connections} empty="La página abierta no describe las conexiones de este modelo." />
+        </section>
+        <section className="essay">
+          <h2>Medidas</h2>
+          <FactList rows={facts.measures} empty="La página abierta no da medidas ni peso de este modelo." />
+        </section>
+        <section className="essay">
+          <h2>Precio</h2>
+          {product.price ? (
+            <p>
+              {product.price.amount} {product.price.currency} en {product.price.shop}, comprobado el{" "}
+              {product.price.checkedAt}.{" "}
+              <a href={product.price.url} rel="noreferrer">
+                Ver la fuente
+              </a>
+              .
+            </p>
+          ) : (
+            <p>
+              No hay un precio en esta ficha. La página abierta no daba una cifra disponible, y el
+              archivo no copia ofertas de tienda ni enlaces de afiliado. Un precio más bajo cambia de
+              día: no se inventa.
+            </p>
+          )}
+        </section>
+        {product.limits.length > 0 ? (
+          <section className="essay">
+            <h2>Límites de la ficha</h2>
+            <ul>
+              {product.limits.map((limit) => (
+                <li key={limit}>{limit}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+        <section className="essay">
+          <h2>Fuentes</h2>
+          <SourceLinks links={product.links} />
+        </section>
+      </div>
+    </article>
+  );
+}
+
+function FactList({ rows, empty }: { rows: [string, string][]; empty: string }) {
+  if (rows.length === 0) return <p>{empty}</p>;
+  return (
+    <dl className="gear-facts">
+      {rows.map(([name, value]) => (
+        <div key={name}>
+          <dt>{name}</dt>
+          <dd>{value}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+function BrandBar({
+  brands,
+  selected,
+  onSelect,
+}: {
+  brands: string[];
+  selected: string;
+  onSelect: (brand: string) => void;
+}) {
+  if (brands.length < 2) return null;
+  return (
+    <div className="era-filters brand-bar" role="group" aria-label="Marcas">
+      <button
+        type="button"
+        className={selected === "all" ? "is-selected" : ""}
+        aria-pressed={selected === "all"}
+        onClick={() => onSelect("all")}
+      >
+        Todas las marcas
+      </button>
+      {brands.map((brand) => (
+        <button
+          key={brand}
+          type="button"
+          className={selected === brand ? "is-selected" : ""}
+          aria-pressed={selected === brand}
+          onClick={() => onSelect(brand)}
+        >
+          {brand}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function BrandGroups({ items }: { items: GearRecord[] }) {
+  const brands = [...new Set(items.map((item) => item.manufacturer))].sort((left, right) => left.localeCompare(right, "es"));
+  if (brands.length < 2) return <GearGrid items={items} />;
+  return (
+    <>
+      {brands.map((brand) => (
+        <section key={brand} className="brand-group" aria-label={brand}>
+          <h3 className="brand-title">{brand}</h3>
+          <GearGrid items={items.filter((item) => item.manufacturer === brand)} />
+        </section>
+      ))}
+    </>
+  );
+}
+
+function GearGrid({ items }: { items: GearRecord[] }) {
+  if (items.length === 0) return null;
+  return (
+    <ul className="session-grid">
+      {items.map((product) => (
+        <li key={product.id}>
+          <GearCard product={product} />
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -401,7 +621,7 @@ function CategoryIndex({
         <CategoryPlate kind="todas" />
         <span className="catalog-chip-copy">
           <strong>Todas</strong>
-          <span>Ver las categorías con ficha</span>
+            <span>Elige una categoría</span>
         </span>
       </button>
       {entries.map((entry) => (

@@ -304,6 +304,7 @@ a.session-card {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   gap: 0.15rem 0.7rem;
@@ -316,6 +317,105 @@ a.session-card {
 
 .gear-photo figcaption a {
   color: var(--acid);
+}
+
+.brand-bar {
+  margin-top: 1rem;
+}
+
+.brand-group {
+  margin-top: 1.1rem;
+}
+
+.brand-title {
+  margin: 0.2rem 0 0;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.session-card.catalog-card.gear-teaser {
+  height: 27rem;
+}
+
+.session-card.catalog-card {
+  position: relative;
+}
+
+.gear-open {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gear-open::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.gear-open:focus-visible {
+  outline: 2px solid var(--acid);
+  outline-offset: 2px;
+}
+
+.gear-more {
+  color: var(--acid);
+  font-weight: 700;
+}
+
+.gear-hero {
+  max-width: 52rem;
+  margin: 1.1rem 0 0;
+}
+
+.gear-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #171410;
+}
+
+.gear-hero figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  margin-top: 0.45rem;
+  color: rgba(240, 233, 218, 0.78);
+  font-size: 0.92rem;
+}
+
+.gear-hero figcaption a {
+  color: var(--acid);
+}
+
+.gear-facts {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.35rem 0 0;
+}
+
+.gear-facts div {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.gear-facts dt {
+  font-weight: 700;
+}
+
+.gear-facts dd {
+  margin: 0;
+}
+
+.gear-detail .essay ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.15rem;
 }
 
 .catalog-index {

@@ -831,12 +831,21 @@
     "manufacturer": "Pioneer DJ",
     "model": "DDJ-400",
     "category": "controladoras",
-    "summary": "La fotografía muestra una Pioneer DDJ-400 sobre una mesa, con ordenadores.",
-    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
-    "specs": {},
-    "strengths": [],
+    "summary": "Controladora de 2 canales para rekordbox. La página de Pioneer DJ publica las medidas y el peso. La fotografía de Commons la muestra sobre una mesa, con ordenadores.",
+    "suitedFor": "Quien mezcla con rekordbox en una controladora de dos canales.",
+    "specs": {
+      "Canales": "2",
+      "Programa": "rekordbox",
+      "Ancho": "482 mm",
+      "Alto": "59,2 mm",
+      "Fondo": "272,4 mm",
+      "Peso": "2,1 kg"
+    },
+    "strengths": [
+      "La tabla da 482 mm de ancho, 59,2 mm de alto, 272,4 mm de fondo y 2,1 kg."
+    ],
     "limits": [
-      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+      "La página leída no trae la tabla de terminales ni un precio. Esta ficha no los inventa."
     ],
     "image": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/DDJ-400_on_a_desk_with_computers.jpg/960px-DDJ-400_on_a_desk_with_computers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -848,6 +857,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:DDJ-400_on_a_desk_with_computers.jpg"
     },
     "links": [
+      {
+        "label": "Pioneer DJ, DDJ-400",
+        "url": "https://www.pioneerdj.com/en/product/dj-controllers/ddj-400/"
+      },
       {
         "label": "Wikimedia Commons",
         "url": "https://commons.wikimedia.org/wiki/File:DDJ-400_on_a_desk_with_computers.jpg"
@@ -891,12 +904,30 @@
     "manufacturer": "Pioneer DJ",
     "model": "DDJ-FLX4",
     "category": "controladoras",
-    "summary": "El texto la identifica como controladora Pioneer DJ DDJ-FLX4.",
-    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
-    "specs": {},
-    "strengths": [],
+    "summary": "Controladora de 2 canales. La página de Pioneer DJ publica las medidas, el peso y los terminales. La fotografía de Commons la identifica como DDJ-FLX4.",
+    "suitedFor": "Cabina de dos canales conectada a un ordenador o a un teléfono, según la página de Pioneer DJ.",
+    "specs": {
+      "Canales": "2",
+      "Salida máster": "RCA no balanceada",
+      "Entrada de micro": "Jack TRS de 6,3 mm",
+      "Auriculares": "Terminal de salida PHONES",
+      "USB": "Puerto Type-C para PC, Mac, iOS y Android",
+      "Alimentación": "Bus USB",
+      "Bluetooth": "Un smartphone puede enviar el sonido por Bluetooth",
+      "Cable": "USB Type-C incluido",
+      "Seguridad": "Ranura Kensington",
+      "Ancho": "482 mm",
+      "Alto": "59,2 mm",
+      "Fondo": "272,8 mm",
+      "Peso": "2,1 kg"
+    },
+    "strengths": [
+      "La tabla da 482 mm de ancho, 59,2 mm de alto, 272,8 mm de fondo y 2,1 kg.",
+      "La página describe salida máster RCA, micro de 6,3 mm y USB Type-C."
+    ],
     "limits": [
-      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+      "La página no publica un precio.",
+      "El terminal de auriculares se nombra, pero el HTML no dice el diámetro del jack."
     ],
     "image": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg/960px-Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -908,6 +939,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg"
     },
     "links": [
+      {
+        "label": "Pioneer DJ, DDJ-FLX4",
+        "url": "https://www.pioneerdj.com/en/product/dj-controllers/ddj-flx4/"
+      },
       {
         "label": "Wikimedia Commons",
         "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg"
@@ -921,12 +956,19 @@
     "manufacturer": "Pioneer DJ",
     "model": "DDJ-REV1",
     "category": "controladoras",
-    "summary": "El archivo está entre las controladoras de DJ y el texto lo llama Pioneer DJ DDJ-REV1.",
-    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
-    "specs": {},
-    "strengths": [],
+    "summary": "Controladora de 2 canales para Serato DJ Lite, que la página llama gratuito. Pioneer DJ dice que el diseño imita una mesa DJM-S y platos PLX. La fotografía de Commons la identifica como DDJ-REV1.",
+    "suitedFor": "Scratch y formato abierto en dos canales, con Serato DJ Lite.",
+    "specs": {
+      "Canales": "2",
+      "Programa": "Serato DJ Lite",
+      "Faders de tempo": "60 mm"
+    },
+    "strengths": [
+      "La página dice que los faders de tempo miden 60 mm, más largos que los de la DDJ-SB3."
+    ],
     "limits": [
-      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+      "En el HTML hay medidas de varios modelos juntas. No se copia una cifra que no esté rotulada como de esta controladora.",
+      "No se publica un precio."
     ],
     "image": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pioneer_DJ_DDJ-REV1.jpg/960px-Pioneer_DJ_DDJ-REV1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -938,6 +980,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DJ_DDJ-REV1.jpg"
     },
     "links": [
+      {
+        "label": "Pioneer DJ, DDJ-REV1",
+        "url": "https://www.pioneerdj.com/en/product/dj-controllers/ddj-rev1/"
+      },
       {
         "label": "Wikimedia Commons",
         "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DJ_DDJ-REV1.jpg"
@@ -1631,6 +1677,366 @@
       {
         "label": "Wikimedia Commons",
         "url": "https://commons.wikimedia.org/wiki/File:Traktor_Kontrol_S4_%26_Pioneer_HDJ-2000.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-cdj-2000",
+    "manufacturer": "Pioneer DJ",
+    "model": "CDJ-2000",
+    "category": "reproductores",
+    "summary": "La fotografía lo identifica como reproductor Pioneer CDJ-2000.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/CDJ_2000.jpg/960px-CDJ_2000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ CDJ-2000",
+      "author": "Fabexplosive",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CDJ_2000.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:CDJ_2000.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-cdj-900",
+    "manufacturer": "Pioneer DJ",
+    "model": "CDJ-900",
+    "category": "reproductores",
+    "summary": "La fotografía lo identifica como CDJ-900.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/CDJ_900.JPG/960px-CDJ_900.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ CDJ-900",
+      "author": "Mattia.bramb",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CDJ_900.JPG"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:CDJ_900.JPG"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-plx-1000",
+    "manufacturer": "Pioneer DJ",
+    "model": "PLX-1000",
+    "category": "platos",
+    "summary": "La fotografía muestra un plato Pioneer PLX-1000 con una cápsula Ortofon Concorde DJ.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Pioneer_PLX_1000_turntable_%2823759260846%29.jpg/960px-Pioneer_PLX_1000_turntable_%2823759260846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ PLX-1000",
+      "author": "Peter VanLane",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_PLX_1000_turntable_(23759260846).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_PLX_1000_turntable_(23759260846).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "vestax-pmc-27mk2",
+    "manufacturer": "Vestax",
+    "model": "PMC-27mk2",
+    "category": "mesas",
+    "summary": "La fotografía lo identifica como mesa Vestax PMC-27mk2.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Vestax_PMC-27mk2.jpg/960px-Vestax_PMC-27mk2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Vestax PMC-27mk2",
+      "author": "Remco Brink",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vestax_PMC-27mk2.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Vestax_PMC-27mk2.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "vestax-pmc-580pro",
+    "manufacturer": "Vestax",
+    "model": "PMC-580Pro",
+    "category": "mesas",
+    "summary": "La fotografía lo identifica como mesa Vestax PMC-580Pro.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Mixer_Vestax-PMC580Pro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Vestax PMC-580Pro",
+      "author": "TSchenke",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mixer_Vestax-PMC580Pro.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Mixer_Vestax-PMC580Pro.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "ortofon-concorde-s-120",
+    "manufacturer": "Ortofon",
+    "model": "Concorde S-120",
+    "category": "capsulas",
+    "summary": "La fotografía lo identifica como cápsula Ortofon Concorde S-120.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Ortofon_Concorde_S-120_%28-1211%29_%2810217169844%29.jpg/960px-Ortofon_Concorde_S-120_%28-1211%29_%2810217169844%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Ortofon Concorde S-120",
+      "author": "mark sebastian from New York City",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ortofon_Concorde_S-120_(-1211)_(10217169844).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Ortofon_Concorde_S-120_(-1211)_(10217169844).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "krk-rokit-5",
+    "manufacturer": "KRK",
+    "model": "Rokit 5",
+    "category": "monitores",
+    "summary": "La fotografía lo identifica como altavoz KRK Rokit 5.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/KRK_Rokit_5.jpg/960px-KRK_Rokit_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de KRK Rokit 5",
+      "author": "TaurusEmerald",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KRK_Rokit_5.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:KRK_Rokit_5.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "genelec-8030a",
+    "manufacturer": "Genelec",
+    "model": "8030A",
+    "category": "monitores",
+    "summary": "La fotografía lo identifica como monitor activo Genelec 8030A.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Genelec_8030A_activespeaker.jpg/960px-Genelec_8030A_activespeaker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Genelec 8030A",
+      "author": "Tumi-1983",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genelec_8030A_activespeaker.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Genelec_8030A_activespeaker.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "audio-technica-at-lp120",
+    "manufacturer": "Audio-Technica",
+    "model": "AT-LP120",
+    "category": "platos",
+    "summary": "La fotografía lo identifica como plato Audio-Technica AT-LP120.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Atlp120.jpg/960px-Atlp120.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Audio-Technica AT-LP120",
+      "author": "Editidiot",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlp120.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Atlp120.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "audio-technica-at95e",
+    "manufacturer": "Audio-Technica",
+    "model": "AT95E",
+    "category": "capsulas",
+    "summary": "La fotografía es un primer plano de la cápsula Audio-Technica AT95E.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Audio-Technica_AT95E_cartridge.jpg/960px-Audio-Technica_AT95E_cartridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Audio-Technica AT95E",
+      "author": "Federico Ettlin from Montevideo, Uruguay",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audio-Technica_AT95E_cartridge.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Audio-Technica_AT95E_cartridge.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "reloop-rp-1000mk3",
+    "manufacturer": "Reloop",
+    "model": "RP-1000MK3",
+    "category": "platos",
+    "summary": "La fotografía lo identifica como plato Reloop RP-1000MK3.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Gramofon_RP-1000MK3_firmy_Reloop.jpg/960px-Gramofon_RP-1000MK3_firmy_Reloop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Reloop RP-1000MK3",
+      "author": "muzyczny.pl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gramofon_RP-1000MK3_firmy_Reloop.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Gramofon_RP-1000MK3_firmy_Reloop.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-djm-900nxs2",
+    "manufacturer": "Pioneer DJ",
+    "model": "DJM-900NXS2",
+    "category": "mesas",
+    "summary": "La fotografía lo identifica como DJM-900NXS2.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/DJM_900NXS2_1_2016-05-14.jpg/960px-DJM_900NXS2_1_2016-05-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DJM-900NXS2",
+      "author": "F ASTILY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DJM_900NXS2_1_2016-05-14.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:DJM_900NXS2_1_2016-05-14.jpg"
       }
     ],
     "checkedAt": "2026-10-19",
