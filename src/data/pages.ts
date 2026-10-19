@@ -37,7 +37,7 @@ export const equipoCopy = {
   kicker: "07",
   label: "Material",
   title: "Equipo DJ",
-  lead: "Sección cerrada. Cada cifra sale de la página del fabricante abierta el 19 de octubre de 2026. No hay precios de tienda ni enlaces de afiliado.",
+  lead: "Sección cerrada. Las cifras solo entran si se abrió la página del fabricante. Las fotos entran cuando Wikimedia Commons las publica con licencia libre. No hay precios de tienda ni enlaces de afiliado.",
 };
 
 export const projectCopy: PageCopy = {

@@ -29,7 +29,10 @@
       "La página no publica un precio. Esta ficha tampoco."
     ],
     "links": [
-      { "label": "Genelec, 8030C", "url": "https://www.genelec.com/8030c" }
+      {
+        "label": "Genelec, 8030C",
+        "url": "https://www.genelec.com/8030c"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"
@@ -63,7 +66,10 @@
       "La página no publica un precio. Esta ficha tampoco."
     ],
     "links": [
-      { "label": "QSC, K12.2", "url": "https://www.qsc.com/solutions-products/loudspeakers/portable/powered/portable-pa/k2-series/k122" }
+      {
+        "label": "QSC, K12.2",
+        "url": "https://www.qsc.com/solutions-products/loudspeakers/portable/powered/portable-pa/k2-series/k122"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"
@@ -93,7 +99,10 @@
       "No se publica un precio."
     ],
     "links": [
-      { "label": "Pioneer DJ, especificaciones del CDJ-3000", "url": "https://www.pioneerdj.com/en-us/product/player/cdj-3000/black/specifications/" }
+      {
+        "label": "Pioneer DJ, especificaciones del CDJ-3000",
+        "url": "https://www.pioneerdj.com/en-us/product/player/cdj-3000/black/specifications/"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"
@@ -119,7 +128,10 @@
       "No se publica un precio."
     ],
     "links": [
-      { "label": "Technics UK, SL-1200MK7", "url": "https://www.technics.com/uk/products/dj-series/sl-1200mk7.html" }
+      {
+        "label": "Technics UK, SL-1200MK7",
+        "url": "https://www.technics.com/uk/products/dj-series/sl-1200mk7.html"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"
@@ -149,7 +161,10 @@
       "El precio de 129 EUR figuraba como no disponible. No entra en la ficha."
     ],
     "links": [
-      { "label": "Ortofon, Concorde MKII DJ", "url": "https://ortofon.com/products/concorde-mkii-dj" },
+      {
+        "label": "Ortofon, Concorde MKII DJ",
+        "url": "https://ortofon.com/products/concorde-mkii-dj"
+      },
       {
         "label": "Ortofon, guía universal Concorde MKII",
         "url": "https://ortofon.com/cdn/shop/files/concordemkiiuniversaluserguide_2021.pdf?v=3209048256960289538"
@@ -186,7 +201,10 @@
       "No se publica un precio."
     ],
     "links": [
-      { "label": "Pioneer DJ, nota del DJM-A9", "url": "https://www.pioneerdj.com/en/news/2023/djm-a9-4-channel-professional-dj-mixer/" }
+      {
+        "label": "Pioneer DJ, nota del DJM-A9",
+        "url": "https://www.pioneerdj.com/en/news/2023/djm-a9-4-channel-professional-dj-mixer/"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"
@@ -216,8 +234,14 @@
       "No se publica un precio."
     ],
     "links": [
-      { "label": "Allen & Heath, Xone:96", "url": "https://www.allen-heath.com/hardware/xone-series/xone96/" },
-      { "label": "Allen & Heath, plano de medidas", "url": "https://www.allen-heath.com/content/uploads/2023/06/XONE_96-WEIGHTS-AND-DIMS.pdf" }
+      {
+        "label": "Allen & Heath, Xone:96",
+        "url": "https://www.allen-heath.com/hardware/xone-series/xone96/"
+      },
+      {
+        "label": "Allen & Heath, plano de medidas",
+        "url": "https://www.allen-heath.com/content/uploads/2023/06/XONE_96-WEIGHTS-AND-DIMS.pdf"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"
@@ -249,7 +273,10 @@
       "No se publica un precio."
     ],
     "links": [
-      { "label": "Sennheiser, hoja HD 25", "url": "https://assets.sennheiser.com/download/assets/HD_25_Product_Specification_EN.pdf/db57421ae7cd11f09469ce3d75c40f07" }
+      {
+        "label": "Sennheiser, hoja HD 25",
+        "url": "https://assets.sennheiser.com/download/assets/HD_25_Product_Specification_EN.pdf/db57421ae7cd11f09469ce3d75c40f07"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"
@@ -281,7 +308,1330 @@
       "No se publica un precio."
     ],
     "links": [
-      { "label": "QSC, KS118", "url": "https://www.qsc.com/solutions-products/loudspeakers/portable/powered/subwoofers/ks-series/ks118" }
+      {
+        "label": "QSC, KS118",
+        "url": "https://www.qsc.com/solutions-products/loudspeakers/portable/powered/subwoofers/ks-series/ks118"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "behringer-bcd2000",
+    "manufacturer": "Behringer",
+    "model": "BCD2000",
+    "category": "controladoras",
+    "summary": "La ficha de la fotografía lo llama controlador DJ Behringer BCD-2000.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Behringer_BCD2000.jpg/960px-Behringer_BCD2000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Behringer BCD2000",
+      "author": "RetroK",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Behringer_BCD2000.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Behringer_BCD2000.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "denon-dn-hc4500",
+    "manufacturer": "Denon",
+    "model": "DN-HC4500",
+    "category": "controladoras",
+    "summary": "La fotografía muestra un puesto con la controladora Denon DN-HC4500. El texto también nombra una Hercules DJ Console MK1.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/DENON_DN-HC4500_DJ_Controller.jpg/960px-DENON_DN-HC4500_DJ_Controller.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Denon DN-HC4500",
+      "author": "Thiemo Mättig ( maettig.com )",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DENON_DN-HC4500_DJ_Controller.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:DENON_DN-HC4500_DJ_Controller.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "behringer-bcd3000",
+    "manufacturer": "Behringer",
+    "model": "BCD3000",
+    "category": "controladoras",
+    "summary": "La fotografía está titulada como Behringer BCD3000 B-Control Deejay.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Behringer_BCD3000_B-Control_DeeJay.jpg/960px-Behringer_BCD3000_B-Control_DeeJay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Behringer BCD3000",
+      "author": "claire rowland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Behringer_BCD3000_B-Control_DeeJay.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Behringer_BCD3000_B-Control_DeeJay.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "hercules-dj-control-double-deck",
+    "manufacturer": "Hercules",
+    "model": "DJ Control Double Deck",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Hercules DJ Control Double Deck.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Hercules_DJ_Control_Double_Deck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Hercules DJ Control Double Deck",
+      "author": "Jyri Engestrom from Helsinki, Finland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hercules_DJ_Control_Double_Deck.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Hercules_DJ_Control_Double_Deck.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "hercules-dj-console-mk1",
+    "manufacturer": "Hercules",
+    "model": "DJ Console MK1",
+    "category": "controladoras",
+    "summary": "El texto dice que la fotografía es de una Hercules DJ Console MK1, tomada en 2009.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Hercules_dj_console_mk1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Hercules DJ Console MK1",
+      "author": "Prduser",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hercules_dj_console_mk1.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Hercules_dj_console_mk1.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "native-instruments-traktor-kontrol-s2",
+    "manufacturer": "Native Instruments",
+    "model": "Traktor Kontrol S2",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Native Instruments Traktor Kontrol S2.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/NI_Traktor_Kontrol_S2_-_DJ_gear.jpg/960px-NI_Traktor_Kontrol_S2_-_DJ_gear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Native Instruments Traktor Kontrol S2",
+      "author": "David J",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_S2_-_DJ_gear.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_S2_-_DJ_gear.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "native-instruments-traktor-kontrol-s4",
+    "manufacturer": "Native Instruments",
+    "model": "Traktor Kontrol S4",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Native Instruments Traktor Kontrol S4. El texto la describe como controladora MIDI para pinchar con portátil.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/NI_Traktor_Kontrol_S4.jpg/960px-NI_Traktor_Kontrol_S4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Native Instruments Traktor Kontrol S4",
+      "author": "Barry Walker",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_S4.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_S4.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "native-instruments-traktor-kontrol-s8",
+    "manufacturer": "Native Instruments",
+    "model": "Traktor Kontrol S8",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Native Instruments Traktor Kontrol S8.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/NI_Traktor_Kontrol_S8_illuminated_in_the_dark_%28left_side_angled%29_%282016-10-15_11.32_by_Clubfungus_%40pixabay_1744118%29.jpg/960px-NI_Traktor_Kontrol_S8_illuminated_in_the_dark_%28left_side_angled%29_%282016-10-15_11.32_by_Clubfungus_%40pixabay_1744118%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Native Instruments Traktor Kontrol S8",
+      "author": "Kurt State",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_S8_illuminated_in_the_dark_(left_side_angled)_(2016-10-15_11.32_by_Clubfungus_@pixabay_1744118).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_S8_illuminated_in_the_dark_(left_side_angled)_(2016-10-15_11.32_by_Clubfungus_@pixabay_1744118).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "numark-mixtrack",
+    "manufacturer": "Numark",
+    "model": "Mixtrack",
+    "category": "controladoras",
+    "summary": "El texto describe la fotografía como controladora Numark Mixtrack para software de DJ.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Numark_Mixtrack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Numark Mixtrack",
+      "author": "Create Digital Media",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Numark_Mixtrack.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Numark_Mixtrack.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "numark-mixdeck",
+    "manufacturer": "Numark",
+    "model": "MixDeck",
+    "category": "controladoras",
+    "summary": "El texto la identifica como controladora digital MixDeck de Numark, con CD, mp3, USB e iPod.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Odtwarzacz_CD_mp3_USB_iPod%2C_cyfrowy_kontroler_MixDeck_firmy_Numark.jpg/960px-Odtwarzacz_CD_mp3_USB_iPod%2C_cyfrowy_kontroler_MixDeck_firmy_Numark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Numark MixDeck",
+      "author": "muzyczny.pl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odtwarzacz_CD_mp3_USB_iPod,_cyfrowy_kontroler_MixDeck_firmy_Numark.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Odtwarzacz_CD_mp3_USB_iPod,_cyfrowy_kontroler_MixDeck_firmy_Numark.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "numark-mixdeck-quad",
+    "manufacturer": "Numark",
+    "model": "MixDeck Quad",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Numark MixDeck Quad.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Numark_MIXDECK_QUAD_setup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Numark MixDeck Quad",
+      "author": "Stephen Heywood",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Numark_MIXDECK_QUAD_setup.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Numark_MIXDECK_QUAD_setup.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "reloop-terminal-mix-8",
+    "manufacturer": "Reloop",
+    "model": "Terminal Mix 8",
+    "category": "controladoras",
+    "summary": "La fotografía muestra el frente de una Reloop Terminal Mix 8. El texto la llama controladora para Serato DJ.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Reloop_Terminal_Mix_8_Serato_DJ_Controller_-_front_%282015-06-19_16.21.59_by_%E3%83%93%E3%83%83%E3%82%B0%E3%82%A2%E3%83%83%E3%83%97%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Reloop Terminal Mix 8",
+      "author": "ビッグアップジャパン from EARTH, EARTH",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reloop_Terminal_Mix_8_Serato_DJ_Controller_-_front_(2015-06-19_16.21.59_by_%E3%83%93%E3%83%83%E3%82%B0%E3%82%A2%E3%83%83%E3%83%97%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Reloop_Terminal_Mix_8_Serato_DJ_Controller_-_front_(2015-06-19_16.21.59_by_%E3%83%93%E3%83%83%E3%82%B0%E3%82%A2%E3%83%83%E3%83%97%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-ddj-sb",
+    "manufacturer": "Pioneer DJ",
+    "model": "DDJ-SB",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Pioneer DDJ-SB. El texto dice que se usó con Serato.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Pioneer_DDJ-SB_DJ_Controller_-_a_chance_for_me_to_monkey_with_Serato_-_Eva_Egolf%27s_EDM_workshop_%28by_Ethan_Hein%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Pioneer DJ DDJ-SB",
+      "author": "Ethan Hein from Brooklyn, United States",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-SB_DJ_Controller_-_a_chance_for_me_to_monkey_with_Serato_-_Eva_Egolf%27s_EDM_workshop_(by_Ethan_Hein).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-SB_DJ_Controller_-_a_chance_for_me_to_monkey_with_Serato_-_Eva_Egolf%27s_EDM_workshop_(by_Ethan_Hein).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-ddj-sx2",
+    "manufacturer": "Pioneer DJ",
+    "model": "DDJ-SX2",
+    "category": "controladoras",
+    "summary": "El texto identifica la fotografía como una controladora Pioneer DDJ-SX2 junto a un portátil.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Printemps_de_Bourges_2019-15%2C_contr%C3%B4leur_DJ_%28cropped%29.jpg/960px-Printemps_de_Bourges_2019-15%2C_contr%C3%B4leur_DJ_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DDJ-SX2",
+      "author": "Cjp24",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Printemps_de_Bourges_2019-15,_contr%C3%B4leur_DJ_(cropped).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Printemps_de_Bourges_2019-15,_contr%C3%B4leur_DJ_(cropped).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "native-instruments-traktor-kontrol-z1",
+    "manufacturer": "Native Instruments",
+    "model": "Traktor Kontrol Z1",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Native Instruments Traktor Kontrol Z1 junto a un iPad y unos auriculares.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/NI_Traktor_Kontrol_Z1%2C_DJ_software_on_iPad%2C_headphone%2C_and_flyers_-_not_the_worst_%EF%BC%83DJ_booth_%EF%BC%83traktor_trash_%EF%BC%83MP3death_future_%EF%BC%83gear_pack_%EF%BC%83tight_%282013-07-12_by_j_bizzie%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Native Instruments Traktor Kontrol Z1",
+      "author": "j bizzie from MINNEAPOLIS, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_Z1,_DJ_software_on_iPad,_headphone,_and_flyers_-_not_the_worst_%EF%BC%83DJ_booth_%EF%BC%83traktor_trash_%EF%BC%83MP3death_future_%EF%BC%83gear_pack_%EF%BC%83tight_(2013-07-12_by_j_bizzie).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:NI_Traktor_Kontrol_Z1,_DJ_software_on_iPad,_headphone,_and_flyers_-_not_the_worst_%EF%BC%83DJ_booth_%EF%BC%83traktor_trash_%EF%BC%83MP3death_future_%EF%BC%83gear_pack_%EF%BC%83tight_(2013-07-12_by_j_bizzie).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "native-instruments-traktor-kontrol-z2",
+    "manufacturer": "Native Instruments",
+    "model": "Traktor Kontrol Z2",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Native Instruments Traktor Kontrol Z2.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Traktor_Kontrol_Z2_%28photo_by_Audiotecna%29.jpg/960px-Traktor_Kontrol_Z2_%28photo_by_Audiotecna%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Native Instruments Traktor Kontrol Z2",
+      "author": "Audiotecna",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traktor_Kontrol_Z2_(photo_by_Audiotecna).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Traktor_Kontrol_Z2_(photo_by_Audiotecna).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "korg-zero4",
+    "manufacturer": "Korg",
+    "model": "Zero4",
+    "category": "controladoras",
+    "summary": "El texto describe la Korg Zero4 como mesa de DJ, controladora MIDI, interfaz de audio y efectos.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/KORG_Zero4_%28closeup%29.jpg/960px-KORG_Zero4_%28closeup%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Korg Zero4",
+      "author": "Ryuta Ishimoto",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KORG_Zero4_(closeup).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:KORG_Zero4_(closeup).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-ddj-400",
+    "manufacturer": "Pioneer DJ",
+    "model": "DDJ-400",
+    "category": "controladoras",
+    "summary": "La fotografía muestra una Pioneer DDJ-400 sobre una mesa, con ordenadores.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/DDJ-400_on_a_desk_with_computers.jpg/960px-DDJ-400_on_a_desk_with_computers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DDJ-400",
+      "author": "Nelsnelson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DDJ-400_on_a_desk_with_computers.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:DDJ-400_on_a_desk_with_computers.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-ddj-wego",
+    "manufacturer": "Pioneer DJ",
+    "model": "DDJ-WeGO",
+    "category": "controladoras",
+    "summary": "El texto la identifica como controladora portátil de entrada Pioneer DDJ-WeGO.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Pioneer_DDJ-WeGO_in_Syntrend_Creative_Park_20191031.jpg/960px-Pioneer_DDJ-WeGO_in_Syntrend_Creative_Park_20191031.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DDJ-WeGO",
+      "author": "Solomon203",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-WeGO_in_Syntrend_Creative_Park_20191031.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-WeGO_in_Syntrend_Creative_Park_20191031.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-ddj-flx4",
+    "manufacturer": "Pioneer DJ",
+    "model": "DDJ-FLX4",
+    "category": "controladoras",
+    "summary": "El texto la identifica como controladora Pioneer DJ DDJ-FLX4.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg/960px-Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DDJ-FLX4",
+      "author": "Solomon203",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DDJ-FLX4_at_Taipei_Media_School_booth_20250810.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-ddj-rev1",
+    "manufacturer": "Pioneer DJ",
+    "model": "DDJ-REV1",
+    "category": "controladoras",
+    "summary": "El archivo está entre las controladoras de DJ y el texto lo llama Pioneer DJ DDJ-REV1.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pioneer_DJ_DDJ-REV1.jpg/960px-Pioneer_DJ_DDJ-REV1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DDJ-REV1",
+      "author": "TaurusEmerald",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DJ_DDJ-REV1.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DJ_DDJ-REV1.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "audiopan-pokket-mixer",
+    "manufacturer": "Audiopan",
+    "model": "Pokket Mixer",
+    "category": "mesas",
+    "summary": "El texto la describe como mesa móvil Audiopan Pokket Mixer, con ecualización y cue, hecha en Berlín.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/AUDIOPAN_Pokket_Mixer_-_zero_battery_mixer_with_EQ_%26_cue%2C_built_in_Berlin%21_pokketmixer.com_%282011-10-23_by_j_bizzie%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Audiopan Pokket Mixer",
+      "author": "j bizzie from MINNEAPOLIS, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:AUDIOPAN_Pokket_Mixer_-_zero_battery_mixer_with_EQ_%26_cue,_built_in_Berlin!_pokketmixer.com_(2011-10-23_by_j_bizzie).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:AUDIOPAN_Pokket_Mixer_-_zero_battery_mixer_with_EQ_%26_cue,_built_in_Berlin!_pokketmixer.com_(2011-10-23_by_j_bizzie).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "es-djr-400",
+    "manufacturer": "E&S",
+    "model": "DJR 400",
+    "category": "mesas",
+    "summary": "El texto la describe como mesa rotativa portátil E&S DJR 400.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/E%26S_DJR_400_-_First_Portable_Rotary_Mixer_-_conceived_by_Jer%C3%B4me_Barb%C3%A9_%26_Dj_Deep_-_angled_%282010-12-05_19.45.12_by_Tristan_Schmurr%29.jpg/960px-E%26S_DJR_400_-_First_Portable_Rotary_Mixer_-_conceived_by_Jer%C3%B4me_Barb%C3%A9_%26_Dj_Deep_-_angled_%282010-12-05_19.45.12_by_Tristan_Schmurr%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de E&S DJR 400",
+      "author": "Tristan Schmurr from Luxembourg, Luxembourg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:E%26S_DJR_400_-_First_Portable_Rotary_Mixer_-_conceived_by_Jer%C3%B4me_Barb%C3%A9_%26_Dj_Deep_-_angled_(2010-12-05_19.45.12_by_Tristan_Schmurr).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:E%26S_DJR_400_-_First_Portable_Rotary_Mixer_-_conceived_by_Jer%C3%B4me_Barb%C3%A9_%26_Dj_Deep_-_angled_(2010-12-05_19.45.12_by_Tristan_Schmurr).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "amix-rmc55",
+    "manufacturer": "AMIX",
+    "model": "RMC55",
+    "category": "mesas",
+    "summary": "La fotografía muestra la mesa AMIX RMC55, con una fuente AMP 24 y una interfaz Native Instruments Audio 8 DJ.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/AMIX_RMC55_DJ_mixer_%28right-side_angled%29%2C_with_AMP_24_power_supply%2C_and_NI_Audio_8_DJ_audio_interface_%282017-03-10_17.11_by_Lorenzo_Clubbing_Tracks_%40pexels_366707%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de AMIX RMC55",
+      "author": "Pexels: Lorenzo Clubbing Tracks",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:AMIX_RMC55_DJ_mixer_(right-side_angled),_with_AMP_24_power_supply,_and_NI_Audio_8_DJ_audio_interface_(2017-03-10_17.11_by_Lorenzo_Clubbing_Tracks_@pexels_366707).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:AMIX_RMC55_DJ_mixer_(right-side_angled),_with_AMP_24_power_supply,_and_NI_Audio_8_DJ_audio_interface_(2017-03-10_17.11_by_Lorenzo_Clubbing_Tracks_@pexels_366707).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "tascam-x-9",
+    "manufacturer": "Tascam",
+    "model": "X-9",
+    "category": "mesas",
+    "summary": "La fotografía muestra la parte trasera de una mesa Tascam X-9.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/TASCAM_X-9_Professional_Digital_DJ_Mixer_-_viewed_from_rear_%282016-12-09_20.00.59_%40pxhere_1264937%29.jpg/960px-TASCAM_X-9_Professional_Digital_DJ_Mixer_-_viewed_from_rear_%282016-12-09_20.00.59_%40pxhere_1264937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Tascam X-9",
+      "author": "Karsten Wachtmann",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TASCAM_X-9_Professional_Digital_DJ_Mixer_-_viewed_from_rear_(2016-12-09_20.00.59_@pxhere_1264937).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:TASCAM_X-9_Professional_Digital_DJ_Mixer_-_viewed_from_rear_(2016-12-09_20.00.59_@pxhere_1264937).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-djm-2000nxs",
+    "manufacturer": "Pioneer DJ",
+    "model": "DJM-2000NXS",
+    "category": "mesas",
+    "summary": "El texto de la fotografía de Expomusic 2014 la identifica como mesa Pioneer DJM-2000NXS de cuatro canales.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/DJ_equipment_-_Expomusic_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Pioneer DJ DJM-2000NXS",
+      "author": "Paulo Guereta from São Paulo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DJ_equipment_-_Expomusic_2014.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:DJ_equipment_-_Expomusic_2014.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-djm-350",
+    "manufacturer": "Pioneer DJ",
+    "model": "DJM-350",
+    "category": "mesas",
+    "summary": "El texto la identifica como mesa Pioneer DJM-350.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Pioneer_DJM-350_20181003.jpg/960px-Pioneer_DJM-350_20181003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DJM-350",
+      "author": "Natanarkia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DJM-350_20181003.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DJM-350_20181003.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-djm-400",
+    "manufacturer": "Pioneer DJ",
+    "model": "DJM-400",
+    "category": "mesas",
+    "summary": "La fotografía muestra dos Pioneer CDJ-350 y una mesa DJM-400.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/DJ_gear_-_Pioneer_CDJ-350_%28x2%29%2C_DJM-400_%28by_David_J%2C_9288913605%29.jpg/960px-DJ_gear_-_Pioneer_CDJ-350_%28x2%29%2C_DJM-400_%28by_David_J%2C_9288913605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DJM-400",
+      "author": "David J from Alingsås, Sweden",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DJ_gear_-_Pioneer_CDJ-350_(x2),_DJM-400_(by_David_J,_9288913605).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:DJ_gear_-_Pioneer_CDJ-350_(x2),_DJM-400_(by_David_J,_9288913605).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-djm-600",
+    "manufacturer": "Pioneer DJ",
+    "model": "DJM-600",
+    "category": "mesas",
+    "summary": "La fotografía muestra una Pioneer DJM-600 en Japón.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Pioneer_DJM-600_in_Japan_%283476350726%29.jpg/960px-Pioneer_DJM-600_in_Japan_%283476350726%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DJM-600",
+      "author": "galki",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DJM-600_in_Japan_(3476350726).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DJM-600_in_Japan_(3476350726).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-djm-900nxs",
+    "manufacturer": "Pioneer DJ",
+    "model": "DJM-900NXS",
+    "category": "mesas",
+    "summary": "La fotografía muestra una Pioneer DJM-900 Nexus.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Pioneer_DJM-900_Nexus_2013-06-27.jpg/960px-Pioneer_DJM-900_Nexus_2013-06-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ DJM-900NXS",
+      "author": "Pete Brown from Gambrills, MD, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_DJM-900_Nexus_2013-06-27.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_DJM-900_Nexus_2013-06-27.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-svm-1000",
+    "manufacturer": "Pioneer DJ",
+    "model": "SVM-1000",
+    "category": "mesas",
+    "summary": "La fotografía muestra la parte trasera de una Pioneer SVM-1000. El texto también nombra un DVJ-1000.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Pioneer_SVM-1000_DVJ_mixer_%28rear%29.jpg/960px-Pioneer_SVM-1000_DVJ_mixer_%28rear%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ SVM-1000",
+      "author": "Jaymis Loveday",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_SVM-1000_DVJ_mixer_(rear).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_SVM-1000_DVJ_mixer_(rear).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "allen-heath-xone-42",
+    "manufacturer": "Allen & Heath",
+    "model": "Xone:42",
+    "category": "mesas",
+    "summary": "La fotografía es un montaje con CDJ y una Allen & Heath Xone:42.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/CDJ_and_Xone_42_Setup_1_2016-06-10.jpg/960px-CDJ_and_Xone_42_Setup_1_2016-06-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Allen & Heath Xone:42",
+      "author": "F ASTILY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CDJ_and_Xone_42_Setup_1_2016-06-10.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:CDJ_and_Xone_42_Setup_1_2016-06-10.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "vestax-pmc-06-pro-a",
+    "manufacturer": "Vestax",
+    "model": "PMC-06 Pro A",
+    "category": "mesas",
+    "summary": "El texto describe dos platos Technics 1200 y una mesa Vestax PMC-06 Pro A para turntablism.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Turntables_and_mixer.jpg/960px-Turntables_and_mixer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Vestax PMC-06 Pro A",
+      "author": "Baskoner",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turntables_and_mixer.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Turntables_and_mixer.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-cdj-350",
+    "manufacturer": "Pioneer DJ",
+    "model": "CDJ-350",
+    "category": "reproductores",
+    "summary": "La fotografía muestra dos Pioneer CDJ-350 y una mesa DJM-400.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/DJ_gear_-_Pioneer_CDJ-350_%28x2%29%2C_DJM-400_%28by_David_J%2C_9288913605%29.jpg/960px-DJ_gear_-_Pioneer_CDJ-350_%28x2%29%2C_DJM-400_%28by_David_J%2C_9288913605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ CDJ-350",
+      "author": "David J from Alingsås, Sweden",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DJ_gear_-_Pioneer_CDJ-350_(x2),_DJM-400_(by_David_J,_9288913605).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:DJ_gear_-_Pioneer_CDJ-350_(x2),_DJM-400_(by_David_J,_9288913605).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-cdj-1000mk2",
+    "manufacturer": "Pioneer DJ",
+    "model": "CDJ-1000 MK2",
+    "category": "reproductores",
+    "summary": "El archivo se titula CDJ-1000 MK2 y el texto dice que la fotografía representa un Pioneer CDJ-1000.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Pioneer-cdj-1000-mk2-181756.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Fotografía de Pioneer DJ CDJ-1000 MK2",
+      "author": "Dj Fassbwoy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer-cdj-1000-mk2-181756.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer-cdj-1000-mk2-181756.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-xdj-aero",
+    "manufacturer": "Pioneer DJ",
+    "model": "XDJ-AERO",
+    "category": "reproductores",
+    "summary": "La fotografía muestra una Pioneer XDJ-AERO en IFA 2013.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Pioneer_XDJ-AERO_in_IFA_20130907.jpg/960px-Pioneer_XDJ-AERO_in_IFA_20130907.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ XDJ-AERO",
+      "author": "Lukas Plewnia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pioneer_XDJ-AERO_in_IFA_20130907.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pioneer_XDJ-AERO_in_IFA_20130907.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1200mk2",
+    "manufacturer": "Technics",
+    "model": "SL-1200MK2",
+    "category": "platos",
+    "summary": "La fotografía muestra un plato Technics SL-1200MK2.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Plattenspieler_Technics_SL-1200MK2.jpg/960px-Plattenspieler_Technics_SL-1200MK2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Technics SL-1200MK2",
+      "author": "Fst76",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plattenspieler_Technics_SL-1200MK2.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Plattenspieler_Technics_SL-1200MK2.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1200-1972",
+    "manufacturer": "Technics",
+    "model": "SL-1200 (1972)",
+    "category": "platos",
+    "summary": "El texto la identifica como un Technics SL-1200 original de 1972.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Technics_SL-1200_Original_1972.jpg/960px-Technics_SL-1200_Original_1972.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Technics SL-1200 (1972)",
+      "author": "BMRR",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technics_SL-1200_Original_1972.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Technics_SL-1200_Original_1972.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1200mk5",
+    "manufacturer": "Technics",
+    "model": "SL-1200 MK5",
+    "category": "platos",
+    "summary": "El texto la identifica como Technics SL-1200 MK5.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Technics_sl-1200_mk5.jpg/960px-Technics_sl-1200_mk5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Technics SL-1200 MK5",
+      "author": "MärkJ2057",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technics_sl-1200_mk5.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Technics_sl-1200_mk5.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1210mk2",
+    "manufacturer": "Technics",
+    "model": "SL-1210MK2",
+    "category": "platos",
+    "summary": "El texto la identifica como plato de DJ Technics SL-1210MK2.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Technics_SL1210.jpg/960px-Technics_SL1210.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Technics SL-1210MK2",
+      "author": "Fabexplosive",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technics_SL1210.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Technics_SL1210.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1200g",
+    "manufacturer": "Technics",
+    "model": "SL-1200G",
+    "category": "platos",
+    "summary": "La fotografía muestra un Technics SL-1200G con una cápsula Audio-Technica AT33Sa.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Technics_SL-1200G_turntable_and_Audio_Technica_AT33sa_cartridge_%2826818068828%29.jpg/960px-Technics_SL-1200G_turntable_and_Audio_Technica_AT33sa_cartridge_%2826818068828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Technics SL-1200G",
+      "author": "david falkner from Birmingham, England",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technics_SL-1200G_turntable_and_Audio_Technica_AT33sa_cartridge_(26818068828).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Technics_SL-1200G_turntable_and_Audio_Technica_AT33sa_cartridge_(26818068828).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1200gr",
+    "manufacturer": "Technics",
+    "model": "SL-1200GR",
+    "category": "platos",
+    "summary": "El archivo se titula como plato Technics SL-1200GR.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Technics_SL-1200GR_turntable.jpg/960px-Technics_SL-1200GR_turntable.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Technics SL-1200GR",
+      "author": "chinnian from Singapore",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technics_SL-1200GR_turntable.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Technics_SL-1200GR_turntable.jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "technics-sl-1200gae",
+    "manufacturer": "Technics",
+    "model": "SL-1200GAE",
+    "category": "platos",
+    "summary": "El texto la identifica como plato Technics SL-1200GAE.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Technics_Turntable_SL1200GAE_%2824110396509%29.jpg/960px-Technics_Turntable_SL1200GAE_%2824110396509%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Technics SL-1200GAE",
+      "author": "Maurizio Pesce from Milan, Italia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technics_Turntable_SL1200GAE_(24110396509).jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Technics_Turntable_SL1200GAE_(24110396509).jpg"
+      }
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "published"
+  },
+  {
+    "id": "pioneerdj-hdj-2000",
+    "manufacturer": "Pioneer DJ",
+    "model": "HDJ-2000",
+    "category": "auriculares",
+    "summary": "La fotografía muestra unos Pioneer HDJ-2000 apoyados en una Traktor Kontrol S4.",
+    "suitedFor": "El uso lo dice el texto de la fotografía, no una ficha de fabricante.",
+    "specs": {},
+    "strengths": [],
+    "limits": [
+      "La página de Commons no trae una tabla del fabricante. Esta ficha no publica cifras."
+    ],
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Traktor_Kontrol_S4_%26_Pioneer_HDJ-2000.jpg/960px-Traktor_Kontrol_S4_%26_Pioneer_HDJ-2000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fotografía de Pioneer DJ HDJ-2000",
+      "author": "Leslie Jones",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traktor_Kontrol_S4_%26_Pioneer_HDJ-2000.jpg"
+    },
+    "links": [
+      {
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Traktor_Kontrol_S4_%26_Pioneer_HDJ-2000.jpg"
+      }
     ],
     "checkedAt": "2026-10-19",
     "status": "published"

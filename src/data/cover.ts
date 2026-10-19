@@ -85,7 +85,7 @@ export const doors: Door[] = [
     pieceId: "material",
     index: "07",
     title: "Equipo DJ",
-    summary: "Fichas de fabricante ya comprobadas. Sin precio de tienda.",
+    summary: "Fotos con licencia y fichas de fabricante. Sin precio de tienda.",
     kind: "vinyl",
     keywords: ["equipo", "monitor", "mesa", "plato", "auriculares", "altavoz"],
   },

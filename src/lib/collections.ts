@@ -102,6 +102,7 @@ export const gearCategories = [
   "pa",
   "subwoofers",
   "mesas",
+  "controladoras",
   "reproductores",
   "platos",
   "capsulas",
@@ -116,6 +117,7 @@ export const gearCategoryLabels: Record<GearCategory, string> = {
   pa: "Altavoces de PA",
   subwoofers: "Subwoofers",
   mesas: "Mesas de mezclas",
+  controladoras: "Controladoras",
   reproductores: "Reproductores",
   platos: "Platos",
   capsulas: "Cápsulas y agujas",
@@ -131,6 +133,16 @@ export type GearPrice = {
   checkedAt: string;
 };
 
+export type GearImage = {
+  url: string;
+  alt: string;
+  author: string;
+  license: string;
+  licenseUrl: string;
+  sourceName: string;
+  sourceUrl: string;
+};
+
 export type GearRecord = {
   id: string;
   manufacturer: string;
@@ -142,6 +154,7 @@ export type GearRecord = {
   limits: string[];
   suitedFor?: string;
   price?: GearPrice;
+  image?: GearImage;
   links: SourceLink[];
   checkedAt?: string;
 };
@@ -454,6 +467,22 @@ function readSpecs(value: unknown): Record<string, string> | null {
   return specs;
 }
 
+function readGearImage(value: unknown): GearImage | undefined | null {
+  if (value === undefined) return undefined;
+  if (!value || typeof value !== "object") return null;
+  const record = value as Record<string, unknown>;
+  const url = text(record.url);
+  const alt = text(record.alt);
+  const author = text(record.author);
+  const license = text(record.license);
+  const licenseUrl = text(record.licenseUrl);
+  const sourceName = text(record.sourceName);
+  const sourceUrl = text(record.sourceUrl);
+  if (!url || !httpsUrl(url) || !alt || !author || !license) return null;
+  if (!licenseUrl || !httpsUrl(licenseUrl) || !sourceName || !sourceUrl || !httpsUrl(sourceUrl)) return null;
+  return { url, alt, author, license, licenseUrl, sourceName, sourceUrl };
+}
+
 export function openGear(value: unknown): GearRecord[] {
   if (!Array.isArray(value)) return [];
   const seen = new Set<string>();
@@ -472,9 +501,10 @@ export function openGear(value: unknown): GearRecord[] {
     const limits = stringList(record.limits ?? [], true);
     const links = readLinks(record.links);
     const price = readPrice(record.price);
+    const image = readGearImage(record.image);
     const checked = checkedAt(record);
     if (!id || !slug(id) || seen.has(id) || !manufacturer || !model || !category || !summary) continue;
-    if (!specs || !strengths || !limits || !links || price === null || checked === null) continue;
+    if (!specs || !strengths || !limits || !links || price === null || image === null || checked === null) continue;
     seen.add(id);
     products.push({
       id,
@@ -487,6 +517,7 @@ export function openGear(value: unknown): GearRecord[] {
       limits,
       suitedFor: text(record.suitedFor),
       price: price ?? undefined,
+      image: image ?? undefined,
       links,
       checkedAt: checked ?? undefined,
     });

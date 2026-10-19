@@ -60,6 +60,17 @@ function Mesas() {
   );
 }
 
+function Controladoras() {
+  return (
+    <>
+      <rect x="28" y="40" width="264" height="120" rx="6" fill="#242424" stroke="#F0E9DA" strokeWidth="3" />
+      <circle cx="92" cy="100" r="28" fill="#101010" stroke="#E7FF42" strokeWidth="5" />
+      <circle cx="228" cy="100" r="28" fill="#101010" stroke="#FF3B8D" strokeWidth="5" />
+      <rect x="142" y="78" width="36" height="44" fill="#F0E9DA" />
+    </>
+  );
+}
+
 function Reproductores() {
   return (
     <>
@@ -210,6 +221,7 @@ const drawings: Record<CategoryArtKind, () => JSX.Element> = {
   pa: Pa,
   subwoofers: Subwoofers,
   mesas: Mesas,
+  controladoras: Controladoras,
   reproductores: Reproductores,
   platos: Platos,
   capsulas: Capsulas,

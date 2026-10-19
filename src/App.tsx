@@ -238,7 +238,7 @@ function Home({
           index="06"
           kicker="Taller"
           title="Rincón y equipo"
-          intro="Dos guías con pasos citados y nueve fichas de fabricante. No hay precios ni un ganador único."
+          intro="Dos guías con pasos citados y un equipo con fotos libres o ficha de fabricante. No hay precios ni un ganador único."
         />
       ) : null}
       <NightInside />

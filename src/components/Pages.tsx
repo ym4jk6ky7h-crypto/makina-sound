@@ -105,7 +105,7 @@ const paths = [
   {
     href: "#equipo",
     title: "Equipo DJ",
-    summary: "Nueve fichas de fabricante y dos comparativas. Sin precios.",
+    summary: "Fotos con licencia y fichas de fabricante. Sin precios.",
   },
 ];
 

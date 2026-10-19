@@ -131,8 +131,9 @@ export function EquipoPage() {
         </header>
         <p className="note">
           Un monitor de estudio y un altavoz de PA no se cambian el uno por el otro. La comparativa
-          queda en la categoría de la pregunta. No hay precios ni enlaces de afiliado. El dibujo
-          marca la categoría: es una ilustración, no una foto del fabricante.
+          queda en la categoría de la pregunta. No hay precios ni enlaces de afiliado. La fotografía
+          entra cuando Wikimedia Commons la publica con licencia libre. Si no hay esa foto, queda la
+          ilustración de la categoría. Una ficha sin tabla de fabricante no inventa cifras.
         </p>
         <LibraryTools
           label="Buscar equipo"
@@ -315,7 +316,19 @@ function GearCard({ product }: { product: GearRecord }) {
   const specLines = Object.entries(product.specs);
   return (
     <article className="session-card">
-      <CategoryPlate kind={product.category} />
+      {product.image ? (
+        <figure className="gear-photo">
+          <img src={product.image.url} alt={product.image.alt} width={960} height={540} loading="lazy" />
+          <figcaption>
+            <a href={product.image.sourceUrl} rel="noreferrer">
+              {product.image.author}
+            </a>
+            <span>{product.image.license}</span>
+          </figcaption>
+        </figure>
+      ) : (
+        <CategoryPlate kind={product.category} />
+      )}
       <div className="session-copy">
         <p>{gearCategoryLabels[product.category]}</p>
         <h3 className="session-title">

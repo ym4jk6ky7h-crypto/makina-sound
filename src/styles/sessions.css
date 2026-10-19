@@ -257,6 +257,31 @@ a.session-card {
   text-decoration: none;
 }
 
+.gear-photo {
+  margin: 0;
+}
+
+.gear-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #171410;
+}
+
+.gear-photo figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.7rem;
+  padding: 0.4rem 0.75rem 0;
+  color: rgba(240, 233, 218, 0.72);
+  font-size: 0.85rem;
+}
+
+.gear-photo figcaption a {
+  color: var(--acid);
+}
+
 .catalog-index {
   display: grid;
   grid-template-columns: 1fr 1fr;
